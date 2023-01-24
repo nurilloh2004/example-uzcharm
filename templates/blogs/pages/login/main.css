@@ -1,0 +1,79 @@
+/*body {*/
+/*    background-image: url(../../images/bg-charm2.png);*/
+/*    background-repeat: no-repeat;*/
+/*    background-position: left;*/
+/*    height: 100vh;*/
+/*}*/
+
+
+/*.login__page {*/
+/*    height: 300px;*/
+/*    width: 100%;*/
+/*}*/
+
+/*p {*/
+/*    margin-bottom: 1rem;*/
+/*    font-size: inherit;*/
+/*    line-height: 1.5;*/
+/*    text-rendering: optimizeLegibility;*/
+/*}*/
+
+/*.item-center {*/
+/*    transform: translate(0%, 25%);*/
+/*}*/
+
+/*.input-sign {*/
+/*    padding: 0.76923rem;*/
+/*    border: 0.0625rem solid #cccccc;*/
+/*    border-radius: 0.3125rem;*/
+/*    background-color: #FFF;*/
+/*    color: #595959;*/
+/*    line-height: 1.5;*/
+/*    height: auto;*/
+/*    transition: all 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86);*/
+/*    box-shadow: none;*/
+/*    margin: 15px 0;*/
+/*}*/
+
+/*.heading_login {*/
+/*    color: #fff;*/
+/*    height: 100%;*/
+/*    display: flex;*/
+/*    align-items: flex-end;*/
+/*    padding-bottom: 30px;*/
+/*}*/
+
+/*.sign {*/
+/*    background-color: #744D32;*/
+/*    padding: 10px;*/
+/*    border: none;*/
+/*    outline: none;*/
+/*    color: #fff;*/
+/*    border-radius: 5px;*/
+/*}*/
+
+/*.input-sign:focus {*/
+/*    box-shadow: 0 1px 3px 0 #cfd7df;*/
+/*}*/
+
+/*label.is-required:after {*/
+/*    content: '*';*/
+/*    color: #dc3545;*/
+/*    margin-left: 0.3125rem;*/
+/*}*/
+
+/*label {*/
+/*    display: inline-block;*/
+/*    vertical-align: top;*/
+/*    font-weight: 600;*/
+/*    margin-bottom: 0.5rem;*/
+/*    color: #404040;*/
+/*    font-size: 1.0625rem;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*@media(min-width:300px) and (max-width:768px) {*/
+/*    .item-center {*/
+/*        transform: unset;*/
+/*    }*/
+/*}*/

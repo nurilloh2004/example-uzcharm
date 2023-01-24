@@ -1,0 +1,121 @@
+{% extends "users/base.html" %}
+{% load i18n static %}
+
+{% block css%}
+<style>
+      .card__header {
+            text-align: center;
+        }
+
+        .card__header img {
+            height: 100px;
+        }
+        .backto_home {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .backto_home a {
+            text-decoration: none;
+        }
+        .body_c {
+            background-color: rgb(228, 229, 247);
+        }
+        .online__reception{
+            background-color: #fff;
+            box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+</style>
+{% endblock css %}
+
+{% block main %}
+
+<div class="body_c">
+
+    <div class="container">
+        <div class="row">
+
+    
+            <div class="col-md-12 my-5">
+                <div class="card overflow-hidden online__reception border-0">
+                    <div class="card__header">
+                        {#<img src="{{ menu_settings.logo.url }}" class="brand__logo event-content" alt="logo">#}
+
+                        <img src="https://static.tildacdn.com/tild3633-3563-4762-a631-376137353932/UZCHARMSANOAT_LOGO_1.jpg"
+                             alt="">
+                        <h3 class="text-center">{{ menu_settings.logo_text|safe }}</h3>
+                    </div>
+                    <form action="{% url 'blogs:virtual_reception_form' %}" method="POST" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <div class="card-body px-5 row">
+    
+                            <div class="col-md-6 my-3">
+                                <label for="{{form.company_name.id}}">{{form.company_name.label}}</label>
+                                {{form.company_name}}
+                            </div>
+    
+                            <div class="col-lg-6 col-md-6 my-3">
+                                <label for="{{form.email.id}}">{{form.email.label}}</label>
+                                {{form.email}}
+                            </div>
+    
+                            <div class="col-lg-6 col-md-6 my-3">
+                                <label for="{{form.phone_number.id}}">{{form.phone_number.label}}</label>
+                                {{form.phone_number}}
+                            </div>
+    
+                            <div class="col-lg-6 col-md-6 my-3">
+                                <label for="{{form.region.id}}">{{form.region.label}}</label>
+                                {{form.region}}
+                            </div>
+    
+                            <div class="col-lg-6 col-md-6 my-3">
+                                <label for="{{form.address.id}}">{{form.address.label}}</label>
+                                {{form.address}}
+                            </div>
+    
+                            <div class="col-lg-12 col-md-12 my-3">
+                                {{form.file_upload.label}}
+                                {{form.file_upload}}
+                            </div>
+    
+                            <div class="col-lg-12 my-3">
+                                {{form.message.label}}
+                                {{form.message}}
+                            </div>
+    
+                            <div class="col-lg-12 my-3">
+                                <div class="form-check">
+                                    <input class="form-check-input input__form_con" type="checkbox" value=""
+                                           id="defaultCheck1" required>
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        {% trans 'Allow my question to be published' %}
+                                    </label>
+                                </div>
+                            </div>
+    
+                            <div class="col-lg-3">
+                                <button class="outline-none btn__send btn btn-primary">{% trans 'Send' %}</button>
+                            </div>
+
+                            {{form.errors}}
+    
+                        </div>
+                    </form>
+                    <div class="text-center mb-5 mt-0">
+                        <a class="backto_home" href="{% url 'blogs:index' %}">
+                            <i class="ri-arrow-left-s-line" style="margin-right: 7px;"></i>
+                            {% trans 'Back to home' %}
+                        </a>
+                    </div>
+                </div>
+            </div>
+          
+        </div>
+    </div>
+    </div>
+{% endblock %}

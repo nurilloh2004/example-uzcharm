@@ -1,0 +1,893 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media (min-width: 900px) and (max-width: 755px) {
+    .dropdowns-group .drop-tog {
+        font-size: 17px;
+        margin-bottom: 23px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .header-middle .numbers-col .phone_numbers {
+        padding-left: 5px
+    }
+
+    .dropdowns-group .drop-tog {
+        font-size: 17px;
+        margin-bottom: 23px;
+    }
+
+    .nav-bottom .navbar {
+        padding: 10px 0;
+    }
+
+    .banner .text-banner h1 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 52px;
+        color: #FFFFFF;
+    }
+
+    .dropdowns-group .drop-tog {
+        font-size: 12px
+    }
+
+
+    .header .container .menu_left ul li a span {
+        display: none
+    }
+
+    .header-middle .container .row .col-md-7 a img {
+        height: 70px;
+        width: 70px
+    }
+
+    .header-middle .container .row .col-md-7 a h3 {
+        font-size: 25px;
+        line-height: 31px;
+    }
+
+    .header-middle .container .row .col-md-5 .phone_numbers .register-button {
+        width: 199px;
+        font-size: 14px
+    }
+
+    .map {
+        display: none
+    }
+
+    .top-expo .expo {
+        height: auto
+    }
+}
+
+@media (max-width: 972px) {
+.col-header-logo{
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.header-middle .col-header-logo a{
+    display: block;
+}
+.numbers-col{
+    justify-content: center!important;
+}
+}
+
+@media (max-width: 768px) {
+    .media-video{
+        font-size: 28px;
+    }
+     .usefull-sites .usefull-site-carousel .item{
+        text-align: center;
+    }
+    .usefull-sites .usefull-site-carousel .item img{
+            margin: 0 auto!important;
+    margin-bottom: 20px!important;
+    }
+    .header-middle .numbers-col {
+        padding-bottom: 31px;
+    }
+
+    .responsive-news {
+        min-height: 410px;
+    }
+
+    .news .item {
+        padding: 10px;
+        margin-top: 40px;
+    }
+
+    .banner-col-asosa {
+        order: 1;
+        margin-bottom: 40px;
+    }
+
+    .about-order {
+        order: 2;
+    }
+
+    .ass {
+        padding-bottom: 0;
+        display: block;
+    }
+
+    .dropdowns-group .ass .asosation a {
+        padding: 14px 22px;
+        margin-left: auto;
+        margin-bottom: 0;
+        margin-top: 2rem;
+        font-size: 14px;
+    }
+
+    .dropdowns-group .ass .asosation h3 {
+        font-size: 13px;
+    }
+
+    .dropdowns-group .drop-tog img {
+        margin-right: 0 !important;
+    }
+
+    .dropdowns-group .drop-tog .fa-chevron-down {
+        margin-left: 0 !important;
+    }
+
+    .dropdowns-group .menu-drop .dropdown-item {
+        white-space: inherit;
+    }
+
+    .help {
+        display: block;
+    }
+
+    .search-btn {
+        display: block;
+    }
+
+    .footer {
+        justify-content: center;
+        display: flex;
+        text-align: center;
+    }
+
+    .input-columns {
+        margin-bottom: 40px;
+    }
+
+    ul.phone_number:before {
+        display: none;
+    }
+
+    .footer-mob {
+        margin-bottom: 40px;
+        justify-content: center;
+    }
+
+    .logo {
+        justify-content: center;
+        margin-bottom: 46px;
+    }
+
+    .working-hours {
+        margin-bottom: 40px;
+    }
+
+    .description-about-com {
+        margin-bottom: 40px;
+    }
+
+    .list-items h1 {
+        margin-bottom: 55px;
+    }
+
+    .map {
+        display: none
+    }
+
+    .top-expo .expo {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        height: auto
+    }
+
+    .top-expo .expo .col-md-12 img {
+        margin: 10px
+    }
+
+    .header-middle .col-header-logo a h3 {
+        font-size: 26px;
+        line-height: 28px;
+    }
+
+    .text-res {
+        justify-content: center;
+    }
+
+    .header-middle .col-header-logo {
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        display: flex
+    }
+
+    .header-middle .col-header-logo a img {
+        width: 110px;
+        height: 110px
+    }
+
+    .nav-bottom .navbar {
+        padding: 15px 13px
+    }
+
+    .enter-button span {
+        display: block;
+    }
+
+    .brand-text {
+        padding: 0 8px;
+    }
+
+    .header-middle .numbers-col .border-number {
+        display: none;
+    }
+
+    .header-middle .numbers-col {
+        justify-content: space-between;
+        padding-right: 12px;
+    }
+
+    .header-middle .numbers-col .phone_numbers .register-button span {
+        display: block;
+    }
+
+    .header-middle .numbers-col a {
+        font-size: 16px;
+    }
+
+    .header-middle .numbers-col .phone_numbers {
+        padding-left: 0;
+    }
+
+    .header-middle .numbers-col .phone_numbers2 .enter-button {
+        height: 48px;
+        background-color: #183b8c;
+        color: #fff;
+        border: 2px solid #183b8c;
+        transition: all .3s;
+        width: 100%;
+    }
+
+    .banner .text-banner button {
+        padding: 12px 22px;
+        font-size: 14px;
+    }
+
+    .header-middle .numbers-col .phone_numbers2 {
+        width: 100%;
+        margin: 0 10px;
+    }
+
+    .header-middle .numbers-col .phone_numbers {
+        width: 100%;
+        margin: 0 5px;
+    }
+
+    .menu_left ul li a span {
+        display: none
+    }
+
+    .menu .menu_right ul {
+        padding: 0;
+        margin: 0
+    }
+
+    .header-middle .numbers-col .phone_numbers2 a {
+        display: block;
+    }
+
+    .header .container .menu_left ul li a {
+        padding: 17px 14px
+    }
+
+    .header .container .menu_right ul li {
+        padding: 12.5px 2px;
+    }
+
+    .header .container .menu_right ul li a {
+        font-size: 15px;
+    }
+
+    .header .container .menu_left ul li a img {
+        margin-right: 0
+    }
+
+    .usefull-sites .col-md-12 {
+        padding: 33px
+    }
+
+    .productss {
+        padding: 0 20px;
+        margin-top: 54px
+    }
+
+    .responsive-news {
+        margin: 0 auto
+    }
+
+    .dropdowns-group .ass .asosation button {
+        margin-bottom: 50px;
+        width: 100%
+    }
+
+    .news .col-md-4 {
+        padding: 16px
+    }
+
+    .res-drop-group {
+        margin: 20px 0
+    }
+
+    .banner .text-banner h1 {
+        font-size: 43px;
+        line-height: 55px;
+    }
+
+    .dropdowns-group .drop-tog {
+        font-size: 14px;
+        justify-content: space-around;
+    }
+
+    .dropdowns-group .ass .asosation h1 {
+        font-size: 26px
+    }
+
+    .news .col-md-4 .card {
+        width: 100%
+    }
+
+
+    .productss .container .row .owl-carousel {
+        padding: 25px 0 52px 0
+    }
+
+    .block img {
+        width: 100%
+    }
+}
+
+@media (max-width: 576px) {
+    .usefull-sites .usefull-site-carousel .item{
+        text-align: center;
+    }
+    .usefull-sites .usefull-site-carousel .item img{
+            margin: 0 auto;
+    margin-bottom: 20px;
+    }
+   
+    .mobile__version_c{
+        display: none;
+    }
+    .over-lay .cross {
+        margin-top: 55px;
+    }
+
+    .overlay__con {
+        margin-top: 55px;
+    }
+
+    .box {
+        bottom: -45%;
+    }
+
+    .header-middle .col-header-logo a {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .statistics__card-content {
+        margin-bottom: 50px;
+    }
+
+    .account__drop-menu {
+        border-radius: 0;
+        margin-left: -123px !important;
+    }
+
+    .over-lay {
+        padding: 80px 0;
+    }
+
+    .news .item {
+        padding: 10px;
+        margin-top: 40px;
+    }
+
+    .ass {
+        padding-bottom: 0;
+        display: none;
+    }
+
+    .dropdowns-group .ass .asosation a {
+        padding: 14px 22px;
+        margin-left: auto;
+        margin-bottom: 0;
+        margin-top: 2rem;
+        font-size: 14px;
+    }
+
+    .dropdowns-group .ass .asosation h3 {
+        font-size: 13px;
+    }
+
+    .banner-col-asosa {
+        display: none;
+    }
+
+    .dropdowns-group .drop-tog span {
+        font-size: 20px;
+    }
+
+    .dropdowns-group .drop-tog img {
+        margin-right: 0 !important;
+    }
+
+    .dropdowns-group .drop-tog .fa-chevron-down {
+        margin-left: 0 !important;
+    }
+
+    .dropdowns-group .menu-drop .dropdown-item {
+        white-space: inherit;
+    }
+
+    .help {
+        display: none;
+    }
+
+    .search-btn {
+        display: none;
+    }
+
+    .footer {
+        justify-content: center;
+        display: flex;
+        text-align: center;
+    }
+
+    .input-columns {
+        margin-bottom: 40px;
+    }
+
+    ul.phone_number:before {
+        display: none;
+    }
+
+    .footer-mob {
+        margin-bottom: 40px;
+        justify-content: center;
+    }
+
+    .logo {
+        justify-content: center;
+        margin-bottom: 46px;
+    }
+
+    .working-hours {
+        margin-bottom: 40px;
+    }
+
+    .description-about-com {
+        margin-bottom: 40px;
+    }
+
+    .list-items h1 {
+        margin-bottom: 55px;
+    }
+
+    .map {
+        display: none
+    }
+
+    .top-expo .expo {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        height: auto
+    }
+
+    .top-expo .expo .col-md-12 img {
+        margin: 10px
+    }
+
+    .header-middle .col-header-logo a h3 {
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    .text-res {
+        justify-content: center;
+    }
+
+    .header-middle .col-header-logo {
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin-bottom: 30px;
+    }
+
+    .header-middle .col-header-logo a img {
+        width: 110px;
+        height: 110px
+    }
+
+    .nav-bottom .navbar {
+        padding: 15px 13px
+    }
+
+    .enter-button span {
+        display: none;
+    }
+
+    .brand-text {
+        padding: 0 8px;
+    }
+
+    .header-middle .numbers-col .border-number {
+        display: none;
+    }
+
+    .header-middle .numbers-col {
+        justify-content: space-between;
+        padding-bottom: 46px;
+        padding-right: 12px;
+    }
+
+    .header-middle .numbers-col .phone_numbers .register-button span {
+        display: none;
+    }
+
+    .header-middle .numbers-col a {
+        font-size: 16px;
+    }
+    .header{
+        padding: 0;
+    }
+
+    .header-middle .numbers-col .phone_numbers {
+        padding-left: 0;
+    }
+
+    .banner .text-banner button {
+        padding: 12px 22px;
+        font-size: 14px;
+    }
+
+    .header-middle .numbers-col .phone_numbers2 {
+        width: 100%;
+        margin: 0 10px;
+    }
+
+    .header-middle .numbers-col .phone_numbers {
+        width: 100%;
+        margin: 0 5px;
+    }
+
+    .menu_left ul li a span {
+        display: none
+    }
+
+    .menu .menu_right ul {
+        padding: 0;
+        margin: 0
+    }
+
+    .header-middle .numbers-col .phone_numbers2 a {
+        display: block;
+    }
+
+    .header .container .menu_left ul li a {
+        padding: 17px 14px
+    }
+
+    .header .container .menu_right ul li {
+        padding: 12.5px 2px;
+    }
+
+    .header .container .menu_right ul li a {
+        font-size: 15px;
+    }
+
+    .header .container .menu_left ul li a img {
+        margin-right: 0
+    }
+
+    .usefull-sites .col-md-12 {
+        padding: 33px
+    }
+
+    .productss {
+        padding: 0 20px;
+        margin-top: 54px
+    }
+
+    .responsive-news {
+        margin: 0 auto
+    }
+
+    .dropdowns-group .ass .asosation button {
+        margin-bottom: 50px;
+        width: 100%
+    }
+
+    .news .col-md-4 {
+        padding: 16px
+    }
+
+    .res-drop-group {
+        margin: 20px 0
+    }
+
+    .banner .text-banner h1 {
+        font-size: 27px;
+        line-height: 29px
+    }
+
+    .dropdowns-group .drop-tog {
+        font-size: 14px;
+        justify-content: space-around;
+    }
+
+    .dropdowns-group .ass .asosation h1 {
+        font-size: 26px
+    }
+
+    .news .col-md-4 .card {
+        width: 100%
+    }
+
+    .productss .container .row .owl-carousel {
+        padding: 25px 0 52px 0
+    }
+
+    .block img {
+        width: 100%
+    }
+}
+
+@media (max-width: 992px) {
+    .account__head {
+        position: absolute;
+        top: 20px;
+        right: 15px;
+        z-index: 1;
+    }
+
+    .account__drop-menu {
+        margin-top: 13px;
+        border-radius: 0;
+        margin-left: -86px;
+    }
+
+    .description-about-com {
+        text-align: center;
+    }
+
+    .logo {
+        display: block;
+        text-align: center;
+    }
+
+    .nav-bottom .navbar ul li a::after {
+        display: none;
+    }
+
+    .offcanvas-header {
+        display: block;
+        position: fixed;
+    }
+
+    .img-house {
+        display: none;
+    }
+
+    .navbar-nav {
+        margin-top: 20%;
+    }
+
+    .navbar-collapse {
+        z-index: 1;
+        position: fixed;
+        top: 0;
+        height: 100vh;
+        bottom: 0;
+        left: 100%;
+        width: 100%;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        overflow-y: auto;
+        visibility: hidden;
+        background-color: #000000bf;
+        transition: all 1s;
+    }
+
+    .navbar-collapse.show {
+        visibility: visible;
+        transform: translateX(-100%)
+    }
+
+    .nav-bottom .navbar ul li {
+        display: block !important
+    }
+
+    .list-items h1 {
+        margin-bottom: 55px;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 800px) {
+    #myText {
+        font-size: 20px
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1250px;
+    }
+}
+
+
+
+.html {
+    scroll-behavior: smooth
+}
+
+body {
+    background-color: #f8f8f8;
+}
+
+@keyframes scroll {
+    100% {
+        transform: translate(-50%, 15px);
+        opacity: 0
+    }
+}
+
+@keyframes pulse-grow-on-hover {
+    to {
+        transform: scale(1.1)
+    }
+}
+
+@keyframes show-list {
+    0% {
+        opacity: 0;
+        transform: translateY(200px)
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #5286ff;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #fff;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+#back-top {
+    z-index: 3;
+    position: fixed;
+    display: none;
+    font-size: 50px;
+    color: #fff;
+    bottom: -55px;
+    transform: translateX(-50%);
+    left: 50%;
+    width: auto
+}
+
+#back-top button {
+    width: 100px;
+    height: 90px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: #5286ff;
+    border: none;
+    outline: none;
+    border-radius: 100%;
+    transition: all .5s
+}
+
+#back-top button i {
+    color: #fff;
+    margin-top: -44px
+}
+
+#back-top button:hover {
+    background-color: #465fbf;
+    transition: all .5s;
+    box-shadow: inset 5px 5px 20px 0 rgba(255, 133, 0, 0), 5px 5px 20px 0 #354895
+}
+
+a#back-top {
+    display: block;
+    text-decoration: none
+}
+
+#back-top i {
+    display: block
+}
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    overflow: hidden;
+    background: #fff;
+}
+
+#preloader:before {
+    content: url("/static/assets/images/brand.svg");
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    top: calc(40% - 30px);
+    left: calc(50% - 50px);
+    animation-name: pulse-grow-on-hover;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.pretext {
+    position: absolute;
+    top: 53%;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Font Awesome 5 Brands';
+    text-transform: uppercase;
+}
+
+#myText {
+    font-size: 40px;
+    color: #183b8c;
+    word-spacing: 10px;
+    width: 100%;
+    text-align: center;
+    animation-name: track-in-out;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+#navbar_top.fixed-top {
+    transition: all 1s;
+    background: #000000c7;
+}
+
+img {
+    -webkit-user-drag: none;
+}

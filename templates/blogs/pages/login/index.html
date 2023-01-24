@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+    <section>
+        <div class="container">
+
+            <div class="row item-center" style="justify-content: center">
+
+                <div class="col-md-5">
+                    <img src="{% static '../../images/illustration-login.svg' %}" alt="">
+                </div>
+                <div class="col-md-5 mt-5  mb-5 pb-5">
+
+                    <p>Login to access all our resources</p>
+
+                    <label  class="is-required">Email Address</label>
+                    <input type="text" required class="input-sign form-control">
+
+                    <label  class="is-required">Password</label>
+                    <input type="text" required class="input-sign form-control">
+
+                    <button class="sign w-100 mt-5">Sign In</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- footer/// -->
+
+    <script src="/bootstrap/jquery/jquery.min.js"></script>
+    <script src="/bootstrap/js/popper.min.js "></script>
+    <script src="/bootstrap/js/bootstrap.js "></script>
+    <script src="/assets/app/drop.js"></script>
+    <script>
+        // navbar
+        $("[data-trigger]").on("click", function() {
+            var trigger_id = $(this).attr('data-trigger');
+            $(trigger_id).toggleClass("show");
+            $('body').toggleClass("offcanvas-active");
+        });
+
+        // close button
+        $(".btn-close").click(function(e) {
+            $(".navbar-collapse").removeClass("show");
+            $("body").removeClass("offcanvas-active");
+        });
+
+    </script>
+
+{% endblock %}

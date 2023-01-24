@@ -1,0 +1,200 @@
+{% extends "users/base.html" %}
+
+{% load i18n %}
+
+{% block main %}
+    <div class="body_c">
+        <div class="container" style="padding-top: 60px;">
+            <div class="row">
+                <div class="col-md-7 m-auto">
+                    <div class="card mb-5 color_card border-0">
+                        <div class="card-body">
+
+                            <div class="card__header">
+                                {#<img src="{{ menu_settings.logo.url }}" class="brand__logo event-content" alt="logo">#}
+
+                                <img src="https://static.tildacdn.com/tild3633-3563-4762-a631-376137353932/UZCHARMSANOAT_LOGO_1.jpg"
+                                     alt="">
+                                <h3 class="text-center">{{ menu_settings.logo_text|safe }}</h3>
+                            </div>
+
+                            {% include "partials/_messages.html" %}
+                            <form action="{% url 'register' %}" method="post" enctype="multipart/form-data">
+                                {% csrf_token %}
+
+                                <div class="row justify-content-center">
+                                    <div class="col-md-12">
+                                        <div class="form-group mb-3">
+                                            <input type="text" class="form-control" name="username" placeholder="{% trans 'Username' %}">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group mb-3">
+                                            <input type="text" class="form-control" name="fullname"
+                                                   placeholder="{% trans 'Fullname' %}">
+                                        </div>
+
+
+                                        <div class="form-group mb-3">
+                                            <input type="password" class="form-control" name="password1"
+                                                   placeholder="{% trans 'Password' %}">
+                                        </div>
+
+
+                                        <div class="form-group mb-3">
+                                            <input type="text" class="form-control" name="phone"
+                                                   placeholder="{% trans 'Phone' %}">
+                                        </div>
+
+                                        <div class="form-group mb-3">
+                                            <textarea class="form-control" rows="3" name="financial-projections"
+                                                      placeholder="{% trans 'Financial Projections' %}">
+                                            </textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group mb-3">
+                                            <input type="email" class="form-control" name="email"
+                                                   placeholder="{% trans 'Email' %}">
+                                        </div>
+
+                                        <div class="form-group mb-3">
+                                            <input type="password" class="form-control" name="password2"
+                                                   placeholder="{% trans 'Password (Confirmation)' %}">
+                                        </div>
+
+                                        <div class="form-group mb-3">
+                                            <input type="file" name="organization-charter"
+                                                   class="form-control-file border-0">
+                                        </div>
+
+
+                                        <div class="form-group mb-3">
+                                            <textarea class="form-control" rows="3"
+                                                      name="organization-details"
+                                                      placeholder="{% trans 'Organization Passport' %}">
+                                            </textarea>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <input type="submit" class="btn btn__se text-white"
+                                               value="{% trans 'Register' %}">
+                                    </div>
+
+                                    <div class="text-center mt-2 mb-2">
+                                        <a class="backto_home" href="{% url 'blogs:index' %}">
+                                            <i class="ri-arrow-left-s-line" style="margin-right: 7px;"></i>
+                                            {% trans 'Back to home' %}
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block css %}
+    <style>
+        .backto_home {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .card-body .messages {
+            padding: 0;
+        }
+
+        .btn__se {
+            background-color: rgb(69, 69, 185);
+            color: white;
+            padding: 18px 20px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            width: 100%;
+            border-radius: 10px;
+            border: none;
+        }
+
+        .color_card {
+            background-color: #fff;
+            box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .card__header {
+            text-align: center;
+        }
+
+        .card__header img {
+            height: 100px;
+        }
+
+        .card__header h3 {
+            margin-bottom: 40px;
+            font-size: 24px;
+            font-style: normal;
+        }
+
+        .form-group input {
+            padding: 10px 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+
+        .form-group input::placeholder {
+            font-size: 12px;
+        }
+
+        .form-group input:focus {
+            box-shadow: none;
+        }
+
+
+        .card-title {
+            color: #fff;
+            font-weight: 700;
+            font-style: italic;
+        }
+
+        .form-group label {
+            color: #fff;
+            margin-bottom: 10px;
+            font-style: italic;
+        }
+
+        .form-group input {
+            padding: 7px;
+        }
+
+        .reg_a {
+            color: #fff;
+            font-style: italic;
+            text-decoration: underline;
+            float: right;
+            font-size: 18px;
+            margin-top: 5px;
+        }
+
+        .reg_a:hover {
+            color: #fff;
+        }
+
+        .body_c {
+            height: 100%;
+            background-color: rgb(228, 229, 247);
+        }
+    </style>
+{% endblock css %}

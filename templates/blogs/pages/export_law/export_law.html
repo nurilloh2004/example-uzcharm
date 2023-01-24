@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% load i18n static %}
+{% load isimg %}
+
+{% block content %}
+
+<section class="all__news" style="background: url('{% static 'assets/images/bannerimg.png' %}')">
+  <div class="container h-100">
+    <div class="row h-100">
+      <div class="col-md-12">
+        <div class="heading_news-all">
+          <h1>{{ export_law.title }}</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% if export_law.media %}
+<div class="container mt-4 mb-3">
+  <div class="row">
+    <div class="col-md-12 m-auto" style="text-align: center">
+      {% if export_law.media|isimg %}
+      <img src="{{ export_law.media.url }}" style="width: 100%" />
+      {% else %}
+      <video height="400" controls>
+        <source src="{{ export_law.media.url }}" type="video/mp4" />
+      </video>
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% endif %}
+
+<div class="container">
+  <div class="row">
+
+    <div class="col-md-3">
+        <ul class="list-group">
+            <li class="list-group-item text-center text-white" style="background-color: #183b8c;">
+                {{tuts_parent.name}}
+            </li>
+            {% for child in tuts_parent.children.all %}
+                {% if child.url != "virtual_reception/" %}
+                    <a class="text-decoration-none" href="../{{child.url}}">
+                        <li class="list-group-item rounded-0">{{ child.name }}</li>
+                    </a>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="col-md-9 mt-5">
+      <div class="card shadow border-0">
+        <div class="card-body">
+          {{ export_law.content|safe }}
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+{% endblock content %}

@@ -1,0 +1,56 @@
+{% extends "users/base.html" %}
+
+{% load static %}
+{% load i18n %}
+
+
+{% block main %}
+<div class="card my-3" style="border: none;">
+    <div style="font-weight: 700; line-height: 100%; text-align: center; margin-left: auto;" class="mb-2">{% trans 'Fullname:' %} {{request.user.fullname}}
+    </div>
+    {% include "users/tabs.html" %}
+    {% include "partials/_messages.html" %}
+    <form action="{% url 'settings' %}" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="form-group mb-3">
+            <label>{% trans 'Fullname' %}</label>
+            <input type="text" class="form-control" name="fullname" value="{{request.user.fullname}}">
+        </div>
+        <div class="form-group mb-3">
+            <label>{% trans 'Email' %}</label>
+            <input type="email" class="form-control" name="email" value="{{request.user.email}}">
+        </div>
+        <div class="form-group mb-3">
+            <label>{% trans 'Username' %}</label>
+            <input type="text" class="form-control" name="username" value="{{request.user.username}}">
+        </div>
+        <div class="form-group mb-3">
+            <label>{% trans 'Phone' %}</label>
+            <input type="text" class="form-control" name="phone" value="{{request.user.phone}}">
+        </div>
+        <div class="form-group mb-3">
+            <label>{% trans 'Organization Passport' %}</label>
+            <textarea class="form-control" rows="3" name="organization-details">{{request.user.organization_details}}</textarea>
+        </div>
+        <div class="form-group mb-3">
+            <label>{% trans 'Financial Projections' %}</label>
+            <textarea class="form-control" rows="3" name="financial-projections">{{request.user.financial_projections}}</textarea>
+        </div>
+        <div class="form-group mb-3">
+            {% if request.user.organization_charter %}
+                <div style="position: relative; width: 250px;">
+                    <img src="{{request.user.organization_charter.url}}" style="width: 100%;">
+                    <a href="{% url 'settings' %}?action=delete-charter">
+                        <img src="{% static 'assets/images/remove.svg' %}" style="position: absolute; width: 25px; top: 20px; right: 20px; cursor: pointer;">
+                    </a>
+                </div>
+            {% else %}
+                <label>{% trans 'Organization Charter' %}<br><input type="file" name="organization-charter" class="form-control-file">
+                </label>
+            {% endif %}
+        </div>
+        <input type="submit" class="btn btn-primary" value="{% trans 'Save Changes' %}">
+    </form>
+</div>
+
+{% endblock %}

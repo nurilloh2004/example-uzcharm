@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% load i18n static %}
+
+
+
+
+{% block content %}
+
+
+    <section class="all__news" style="background: url('{% static 'assets/images/bannerimg.png' %}')">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-md-12">
+                    {% for item in events %}
+                        <div class="heading_news-all">
+                            <h1>{{ item.title }}</h1>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        </section>
+
+                        <div class="container mt-4 mb-3">
+                            <div class="row">
+                                <div class="col-md-7 m-auto">
+                                    <img style="height: 300px;width: 100%;object-fit: cover" src="{{ item.image.url }}"
+                                         alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container">
+                            <div class="row">
+                               
+                                <div class="col-md-12">
+                                    {{ item.content|safe }}
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+
+
+
+
+{% endblock content %}

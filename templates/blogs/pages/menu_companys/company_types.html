@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+{% load i18n static %}
+
+
+{% block css %}
+<style>
+    .card-wrap {
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    }
+
+    .hgroup h1 {
+        font-size: 25px;
+        text-transform: capitalize;
+    }
+
+    .search__form input {
+        margin-bottom: 1.5rem;
+        color: #8b8d94;
+        border-top-width: 1px;
+        border-right-width: 1px;
+        border-bottom-width: 1px;
+        border-left-width: 1px;
+        padding: 5px 15px 5px 15px;
+        border-color: rgba(51, 51, 51, 0.11);
+        background-color: #fdfdfd;
+        border-radius: 2px;
+    }
+
+    .pro___card h5{
+        opacity: 0;
+        transition: al.5s;
+        color: transparent;
+    }
+    .pro___card:hover h5{
+        opacity: 1;
+        color: #fff;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center mb-4 mt-4">
+                <div class="hgroup">
+                    <h1>{% trans 'Uyushma tarkibidagi aʼzo korxonalar kategoriyasi' %}</h1>
+                </div>
+            </div>
+
+            <div class="container">
+               <div class="row">
+                <div class="col-md-3">
+                    <ul class="list-group mt-0">
+                        <li class="list-group-item text-center text-white" style="background-color: #183b8c;">
+                            {{tuts_parent.name}}
+                        </li>
+                        {% for child in tuts_parent.children.all %}
+                            {% if child.url != "virtual_reception/" %}
+                                <a class="text-decoration-none" href="../{{child.url}}">
+                                    <li class="list-group-item rounded-0">{{ child.name }}</li>
+                                </a>
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="col-md-9">
+                    <div class="row">
+                        {% if company_types %}
+                            {% for item in company_types %}
+                            
+                                <div class="col-lg-4 mb-4 col-md-6 col-12 pro___card mt-2">
+                                    <a class="text-decoration-none" href="{% url 'blogs:menu_companys' item.slug %}">
+                                    <div class="shadow overflow-hidden position-relative text-center" style="border-radius: 20px;">
+                                      <img src="{{item.image.url}}" alt="{{ item.title }}">
+                      
+                                      <h5>{{ item.name }}</h5>
+                                    </div>
+                                </a>
+                                  </div>
+                                 
+                            {% endfor %}
+                        {% else %}
+                            <h1>{% trans 'Topilmadi!' %}</h1>
+                        {% endif %}
+                    </div>
+                </div>
+               </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}

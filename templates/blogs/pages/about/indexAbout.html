@@ -1,0 +1,111 @@
+{% extends 'base.html' %}
+{% load i18n static %}
+
+{% block js %}
+    <script src="{% static 'bootstrap/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'assets/owl-js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'assets/app/index.js' %}"></script>
+    <script>
+
+    </script>
+{% endblock %}
+
+{% block content %}
+
+    <section class="all__news" style="background: url('{% static 'assets/images/bannerimg.png' %}')">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-md-12">
+                    <div class="heading_news-all">
+                        <h1>{% trans 'ABOUT THE ASSOCIATION' %}</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="photo-gallery mt-5 pt-5">
+        <div class="container">
+
+            <div class="row parent">
+              
+
+                <div class="col-md-3">
+                    <ul class="list-group mt-5">
+                        <li class="list-group-item">{% trans 'About us' %}</li>
+                        {#<li class="list-group-item">{% trans 'Company structure' %}</li>#}
+                        <li class="list-group-item">{% trans 'Association history' %}</li>
+                        <li class="list-group-item">{% trans 'report' %}</li>
+                        <li class="list-group-item">{% trans 'legislation' %}</li>
+                        <li class="list-group-item">{% trans 'Regional administration' %}</li>
+                    </ul>
+                </div>
+
+
+                <div class="col-md-9">
+                    <div class="items list-items">
+                        <h1 class="text-center">{% trans 'About us' %}</h1>
+                        <div class="border-top-items mx-auto"></div>
+                        <h6>
+                            {% for item in items %}
+                                {{ item.about_us_content|safe }}
+                            {% endfor %}
+                        </h6>
+                    </div>
+
+                    <div class="items list-items">
+                        <h1>{% trans 'Association History' %}</h1>
+                        <div class="border-top-items mx-auto"></div>
+
+                        <div class="lb_news_text">
+                            <p>
+                                {% for item in items %}
+                                    {{ item.about_us_history|safe }}
+                                {% endfor %}
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="items list-items">
+                        <h1>{% trans 'REPORTS ON THE ACCOMPLISHED WORK' %}</h1>
+                        <div class="border-top-items mx-auto"></div>
+
+                        <p>
+                            {% for item in items %}
+                                {{ item.company_report|safe }}
+                            {% endfor %}
+                        </p>
+                    </div>
+
+                    <div class="items list-items">
+                        <h1>{% trans 'Legislation' %}</h1>
+                        <div class="border-top-items mx-auto"></div>
+
+                        <p>
+                            {% for item in legislation %}
+                                {{ item.title }}
+                                {{ item.main_text|safe }}
+                            {% endfor %}
+                        </p>
+                    </div>
+
+                    <div class="items list-items">
+                        <h1>{% trans 'Regional Administration' %}</h1>
+                        <div class="border-top-items mx-auto"></div>
+
+                        <p>
+                            {% for item in regional %}
+                                {{ item.title }}
+                                {{ item.main_text|safe }}
+                            {% endfor %}
+                        </p>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+
+{% endblock %}

@@ -1,0 +1,154 @@
+{% extends 'base.html' %}
+{% load i18n static %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+
+                <div class="tabbable mt-5">
+                    <ul class="nav nav-tabs">
+
+                        <li class="active list-tabs">
+                            <a class="text-center" href="#tab1" data-toggle="tab">
+                                {% trans 'Main' %}
+                            </a>
+                        </li>
+
+
+                        <li class="list-tabs">
+                            <a class="text-center" href="#tab2" data-toggle="tab">
+                                {% trans 'Resume' %}
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content shadow">
+                        <div class="tab-pane vacancy-tabpane active" id="tab1">
+                            {% for item in vacancy %}
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="vacancy-text">
+                                            <h1>{{ item.title }}</h1>
+                                            <h4>{{ item.description|safe }}</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+
+                        <div class="tab-pane" id="tab2">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <label>{% trans 'Full Name' %}</label>
+                                    <input type="text" class="form-control mb-4">
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <label>{% trans 'Date of birth' %}</label>
+                                    <input type="text" class="form-control mb-4">
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <label>{% trans 'Nationality' %}</label>
+                                    {#                                    <select class="form-select form-control mb-4" aria-label="Default select example">#}
+                                    {#                                        <option></option>#}
+                                    {#                                    </select>#}
+                                    <input type="text" class="form-control mb-4">
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <label>{% trans 'Marital status' %}</label>
+                                    {#                                    <select class="form-select form-control mb-4" aria-label="Default select example">#}
+                                    {#                                        <option></option>#}
+                                    {#                                    </select>#}
+                                    <input type="text" class="form-control mb-4">
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <label>{% trans 'Address' %}</label>
+                                    <input type="text" class="form-control mb-4">
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <label>{% trans 'Phone number' %}</label>
+                                    <input type="text" class="form-control mb-4">
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <label>{% trans 'Email' %}</label>
+                                    <input type="email" class="form-control mb-4">
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <label>{% trans 'TIN number' %}</label>
+                                    <input type="text" class="form-control mb-4">
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <label>{% trans 'Degree' %}</label>
+                                     <input type="text" class="form-control mb-4">
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <label>{% trans 'Speciality' %}</label>
+
+                                    <select class="form-select form-control mb-4"
+                                            aria-label="Default select example">
+                                        {% for vacancy in vacancy %}
+                                            <option>
+                                                {{ vacancy.speciality }}
+                                            </option>
+                                        {% endfor %}
+                                    </select>
+
+                                </div>
+
+                                <div class="col-lg-12">
+                                    <label>{% trans 'Additional information' %}</label>
+                                    <textarea maxlength="5000" rows="8" class="form-control mb-4 w-100"></textarea>
+                                </div>
+
+                                <div class="col-md-10 form-upload1">
+                                    <button class="file-upload1 form-control mt-0">
+                                        <input type="file" class="file-input mb-4" size="100">
+                                        <i class="fa fa-cloud-upload"
+                                           aria-hidden="true"></i>&nbsp;&nbsp;{% trans 'Upload Resume' %}
+                                    </button>
+                                </div>
+                                <div class="col-lg-2">
+                                    <button type="submit" class="btn btn-primary form-control">
+                                        <i class="ri-send-plane-2-line" style="font-size: 20px;"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+
+{% block js %}
+
+    <script src="{% static 'bootstrap/js/bootstrap.bundle.js' %}"></script>
+    <script src="{% static 'bootstrap/jquery/jquery.min.js' %}"></script>
+    <script>
+        $(function () {
+            var hash = window.location.hash;
+            hash && $('ul.nav a[href="' + hash + '"]').tab('show');
+
+            $('.nav-tabs a').click(function (e) {
+                $(this).tab('show');
+                var scrollmem = $('body').scrollTop();
+                window.location.hash = this.hash;
+                $('html,body').scrollTop(scrollmem);
+            });
+        });
+    </script>
+
+{% endblock %}

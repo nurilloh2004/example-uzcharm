@@ -1,0 +1,129 @@
+{% extends "base.html" %}
+{% load i18n static %}
+
+{% block css %}
+    <style>
+        .person-list__wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: all .5s;
+        }
+
+        .person-list__name h4 {
+            font-size: 21px;
+            font-weight: 500;
+            text-align: center;
+            word-break: break-word;
+            margin: 0;
+        }
+
+        .person-list__position h3 {
+            font-size: 15px;
+            font-weight: 700;
+            word-break: break-word;
+            margin: 3px 0;
+        }
+
+        .person-list__name {
+            margin-bottom: 15px;
+        }
+
+        .person-list__number {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        .person-list__wrapper {
+            border-radius: 10px;
+            padding: 10px 10px;
+            box-shadow: 1px 0px 16px 0px #d2cece47;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin: 10px auto;
+        }
+
+        .person-list__image > img {
+            border-radius: 10px;
+            object-fit: cover;
+            height: 340px;
+            width: 300px;
+        }
+
+        .person-list__wrapper:hover {
+            transform: translate(0px, -24px);
+            z-index: 1;
+            box-shadow: 30px 10px 16px 0px #d2cece47;
+        }
+
+        @media (max-width: 768px) {
+            .person-list__wrapper {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+{% endblock css %}
+
+{% block content %}
+
+
+    <section class="all__news" style="background: url('{% static 'assets/images/bannerimg.png' %}')">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-md-12">
+                    <div class="heading_news-all">
+                        <h1>
+                            {% if type == "directors" %}
+                                {% trans 'LEADERSHIP' %}
+                            {% else %}
+                                {% trans 'PRESS LEADERS' %}
+                            {% endif %}
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="row mt-5">
+            {% for staff in leadership %}
+                <div class="col-lg-6 col-md-12 col-12 mb-4">
+                    <div class="person-list__wrapper">
+                        <div class="person-list__image">
+                            <img src="{{ staff.image.url }}" alt="{{ staff.name }}" class="img-fluid">
+                        </div>
+                        <div class="person-list__flex">
+                            <div style="font-size: 12px!important">
+                                <div class="person-list__name">
+                                    <h4>{{ staff.name }}</h4>
+                                </div>
+                                <div class="person-list__position small-detail mb-3 my-2" style="text-align: center;">
+                                    <h3>{{ staff.position }}</h3>
+                                </div>
+
+                                <div class="person-list__days small-detail">
+                                    <div><i class="fas fa-calendar mr-2"></i>{% trans 'Qabul kunlari' %}</div>
+                                    <span class="ml-4">{{ staff.reception }}</span>
+                                </div>
+
+                                <div class="person-list__number small-detail">
+                                    <div><i class="fa fa-phone mr-2" aria-hidden="true"></i>{% trans 'Phone Number' %}</div>
+                                    <span class="ml-4">
+                                        <a href="tel: +998 55 502-33-70">{{ staff.phone_number }}</a></span>
+                                </div>
+
+                                <div class="person-list__email small-detail">
+                                    <div><i class="fas fa-envelope-open-text mr-2"></i>E-Mail</div>
+                                    <span class="ml-4"><a href="">{{ staff.email }}</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+{% endblock content %}

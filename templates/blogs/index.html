@@ -1,0 +1,438 @@
+{% extends "base.html" %}
+{% load i18n static %}
+
+{% block js %}
+    <script>
+        $('.banners').owlCarousel({
+            loop: true,
+            margin: 10,
+            dots: false,
+            nav: false,
+            autoplay: true,
+            autoplayHoverPause: !0,
+            navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        });
+    </script>
+{% endblock js %}
+{% block content %}
+    <div class="banner">
+        <div class="banners owl-carousel owl-theme">
+            {% for banner in banners %}
+                <div class="item">
+                    <img src="{% get_media_prefix %}{{ banner.banner_carousel }}" alt="">
+                    <div class="text-teaser">
+                    <span>
+                        {% if banner.text %}
+                            {{ banner.text }}
+                        {% endif %}
+                    </span>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <!-- ОБ АССОЦИАЦИИ -->
+    <section class="dropdowns-group">
+        <div class="container">
+            <div class="row m-auto">
+
+                {% for item in short_links %}
+                    <div class="col-lg-4 col-12 col-md-4 mb-3 res-drop-group">
+                        <div class="dropdown">
+                            <button data-aos="fade-up" class="btn drop-tog w-100" type="button"
+                                    id="dropdownMenuButton{{ forloop.counter }}" data-toggle="dropdown"
+                                    aria-expanded="false">
+                                <img src="{% get_media_prefix %}{{ item.icon }}" class="mr-auto img__drop__btn" alt="">
+                                <span>{{ item.name }}</span>
+                                <i class="far fa-chevron-down ml-auto"></i>
+                            </button>
+
+                            <div class="dropdown-menu menu-drop"
+                                 aria-labelledby="dropdownMenuButton{{ forloop.counter }}">
+                                {% for subitem in item.children.all %}
+                                    <a class="dropdown-item" href="{{ subitem }}">{{ subitem.name }}</a>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+
+            </div>
+        </div>
+    </section>
+
+    <section class="news pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mb-5" id='news' data-aos="fade-up">
+                    <h1>{% trans 'All news' %}</h1>
+                    <div class="mx-auto border_bot"></div>
+                </div>
+
+                <div class="new-carousel owl-carousel owl-theme col-md-12">
+                    {% for link in news %}
+                        <a href="{{ link.get_absolute_url }}" class="text-decoration-none">
+                            <div class="news-home__item">
+                                <div class="news-home__image">
+                                    <img src="{% get_media_prefix %}{{ link.image }}" alt="">
+                                </div>
+                                <div class="news-home__teaser">
+                                    <p>{{ link.short_description|safe }}</p>
+                                    <span class="news-home__date"><i class="fas fa-calendar-week mr-2"></i> {{ link.created|date:"d.m.Y" }}</span>
+                                </div>
+                            </div>
+                        </a>
+                    {% endfor %}
+                </div>
+
+                <div class="batafsil-btn mx-auto mt-5"
+                     data-aos="fade-up">
+                    <a href="{% url 'blogs:news_list' %}">{% trans 'more...' %}
+                        <i class="far fa-long-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="statistics" style="background: linear-gradient(0deg,rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(49, 62, 78, 0.4), rgba(49, 62, 78, 0.4)), url('{% get_media_prefix %}{{ menu_settings.site_background }}'); background-attachment: fixed;background-size: cover;">
+        <div class="container">
+
+            <div class="col-md-12 mb-5 text-center" data-aos="fade-up">
+                <div class="col-md-12 text-center" data-aos="fade-up">
+                    <h1 class="text-uppercase media-video text-white">{% trans 'Statistics' %}</h1>
+                    <div class="border-media mx-auto"></div>
+                </div>
+
+                <div class="statistics__wrapper" id="counter">
+                    <div class="row">
+                        {% for item in infographics %}
+                            <div data-aos="zoom-in" data-aos-easing="ease-in-out"   class="statistics__card col-lg-3 col-md-6 col-12 aos-init">
+                                <div class="statistics__card-content clearfix">
+                                    <img src="{% get_media_prefix %}{{ item.icon }}" style="width: 70px; height: 70px; object-fit: cover;">
+                                    <h6>{{ item.title }}</h6>
+                                    <div class="statistics__count" data-num="{{ item.value }}">0</div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="productss pb-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12" data-aos="fade-up">
+                    <h1>{% trans 'PRODUCTS' %}</h1>
+                    <div class="border-product mx-auto"></div>
+                </div>
+
+                <div class="col-md-12" id="products">
+                    <div class="products-carousel owl-carousel owl-theme position-relative" data-aos="fade-up">
+                        {% for item in product_categories %}
+                            <div class="item pro___card mt-2">
+                                <a class="text-decoration-none" href="{% url 'blogs:menu_companys' item.slug %}">
+                                    <div class="shadow overflow-hidden position-relative text-center" style="border-radius: 20px;">
+                                    <img src="{% get_media_prefix %}{{item.image}}" alt="{{ item.name }}">
+                    
+                                    <h5>{{ item.name }}</h5>
+                                    </div>
+                                </a>
+                            </div>
+
+                          
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <div class="batafsil-btn-pro my-5 p-0 mx-auto aos-init aos-animate" data-aos="fade-up">
+                    <a href="{% url 'blogs:product_list' %}"
+                       class="text-decoration-none text-white">{% trans 'more...' %}
+                        <i class="far fa-long-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-swiper-gallery">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-12 header-photo-text p-0 my-5" data-aos="fade-up">
+                    <h1>{% trans 'PHOTO GALLERY' %}</h1>
+                    <div class="border-photo mx-auto"></div>
+                </div>
+
+                {% for photo in photogallery %}
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <a href="{% url 'blogs:gallery-images' _id=photo.id %}">
+                            <div class="block overflow-hidden" data-aos="fade-up">
+                                <img data-aos="fade-down-right" src="{% get_media_prefix %}{{ photo.image }}" class="img-full w-100" alt="{{ photo.title }}">
+                                <p>{{ photo.title }}</p>
+                            </div>
+                        </a>
+                    </div>
+                {% endfor %}
+
+                <div class="col-md-12 btn-foote" data-aos="fade-up">
+                    <a href="{% url 'blogs:gallery' %}" class="btn-photo-footer mx-auto">{% trans 'more...' %}
+                        <i class="far fa-long-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="video">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center" data-aos="fade-up">
+                    <h1 class="text-uppercase media-video mt-5">{% trans 'Media Uzcharmsanoat' %}</h1>
+                    <div class="border-media mx-auto mb-5"></div>
+                </div>
+                {% for item in media %}
+                    <div class="col-lg-3 col-md-3 col-6" data-aos="fade-up">
+                        <a data-fancybox href="https://youtube.com/embed/{{ item.link }}">
+                            <img src="https://img.youtube.com/vi/{{ item.link }}/0.jpg" class="img-video-section" alt="{{ item.title }}">
+                            <i class="far fa-play-circle play__btn_icons"></i>
+                        </a>
+                    </div>
+                {% endfor %}
+
+
+                <div class="col-lg-4 mx-auto col-md-12 mb-4">
+                    <div class="media-button my-3 text-center" data-aos="fade-up">
+                        <a href="{% url 'blogs:media' %}" class="text-dark text-decoration-none">
+                            <p class="text-center media-button">
+                                {% trans 'See all videos' %}
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="faq" style="background: url('{% static 'assets/images/img-gallery/faq_charm.png' %}')">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mb-5 pb-2 text-center" data-aos="fade-up">
+                    <h1>{% trans 'FAQs' %}</h1>
+                    <div class="border-faq mx-auto"></div>
+                </div>
+
+                {% for item in questions %}
+                    <div class="col-md-6 drop-col">
+                        <ul class="faq-list" data-aos="fade-up">
+                            <li class="J_list">
+                                <div class="list-header">
+                                    <p class="m-0">{{ item.question }}</p>
+                                    <i class="fal fa-chevron-circle-down ml-auto"></i>
+                                </div>
+                                <div class="list-content">
+                                    <div class="list-content-inner">
+                                        {{ item.answer }}
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                {% endfor %}
+
+                <div class="col-md-12">
+                    <a href="{% url 'blogs:faq' %}" data-aos="fade-up"
+                       class="faqs-button mx-auto text-decoration-none text-white">
+                        {% trans 'more...' %}
+                        <i class="far fa-long-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="top-expo">
+        <div class="expo"
+             style="background-image: linear-gradient(
+                     0deg
+                     , rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(
+                     0deg
+                     , rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(
+                     0deg
+                     , rgba(49, 62, 78, 0.4), rgba(49, 62, 78, 0.4)), url('{{ menu_settings.site_background2 }}');background-attachment: fixed; background-size: cover;">
+            <div class="container">
+
+                <div class="col-lg-12 mb-3 mt-3 ">
+                    <h1 class="text-uppercase media-video text-white">{% trans 'Кўргазма ва электрон платформалар' %}</h1>
+                   <div class="border-media mx-auto mb-5"></div>
+               </div>
+
+                <div class="row">
+                    {% for item in expolinks %}
+                        <div class="col-md-3 col-lg-3 col-12 text-center mt-4">
+                            <a href="{{ item.link_to_website }}" class="text-decoration-none">
+                                <img data-aos="fade-up" class="img-expo"
+                                     src="{% get_media_prefix %}{{ item.image }}"
+                                     alt="{{ item.title }}">
+                                <p>{{ item.title }}</p>
+                            </a>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="map">
+        <section class="grapic"
+                 style="background: url('{% static 'assets/images/img-gallery/karta-charm.png' %}')">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-12 mb-4" data-aos="fade-up">
+                        <h1 class="pb-0">{% trans 'Interactive map' %}</h1>
+                        <div class="top-border mx-auto"></div>
+                    </div>
+
+                    <div class="col-md-7 px-5" data-aos="fade-up">
+                        <div id="map">
+                            <div class="bigInfoBox">
+                                <div class=" noPadding mapBox">
+                                    <div class="mapBox">
+                                        <div id="vmap">
+                                            <div id="vmap-tooltip"></div>
+                                            <svg width="116%" height="450" viewBox="0 0 560 350">
+                                                <g>
+                                                    {% for region in regions %}
+                                                        <path d="{{region.path_directions}}" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="1" fill="#d5d5d5" original="#d5d5d5" data-city="{{region.name}}" data-phone="{{region.phone}}" data-email="{{region.email}}" data-director_image="{% if region.director_image %}{{region.director_image.url}}{% else %}https://cdn2.iconfinder.com/data/icons/people-1-1/128/Businessman-Manager-Director-Worker-Avatar-512.png{% endif %}" data-company_name="{{region.company_name}}"  data-director_name="{{region.director_name}}" id="region_{{region.id}}" class="jvectormap-region class_region" fill-opacity="1"></path>
+                                                    {% endfor %}
+
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-5" data-aos="fade-up">
+                        <div class="card map-card radius-5 m-0">
+                            <div class="card-body cart__map m-0">
+
+                                <h2> <i class="fas fa-map-marker-alt mr-3"></i> <span id="id_region_name">{{tashkent.name}}</span></h2>
+
+                                <div class="img__map">
+                                    <img src="" alt="" id="id_region_image">
+                                    <h3 class="mb-0 ml-3" id="id_region_director_name">{{tashkent.director_name}}</h3>
+                                </div>
+    
+                                <h3 class="mb-0"> <i class="fas fa-building mr-3"></i> <span id="id_region_company_name">{{tashkent.company_name}}</span></h3>
+    
+                                <h3 class="mb-0"> <i class="fas fa-envelope mr-3"></i> <span id="id_region_email">{{tashkent.email}}</span></h3>
+
+                                <div class="d-flex columns-main-map">
+                                    <div>
+                                        <i class="far fa-phone-laptop mr-3"></i>
+                                    </div>
+                                    <h4 class="p-0 map-phone">
+                                        {{tashkent.phone}}
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section class="partner-asosation">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 header-assos mt-5" data-aos="fade-up">
+                    <h1>{% trans 'ASSOCIATION PARTNERS' %}</h1>
+                    <div class="border-partners mx-auto"></div>
+                </div>
+
+                <div class="col-md-12 rounded mb-5">
+                    <div class="owl-carousel overflow-hidden owl-theme partner-carousel position-relative pb-4"
+                         data-aos="fade-up">
+                        {% for link in partners %}
+                            <div class="item p-2 shadow">
+
+                                   <a href="" target="_blank">
+                                    <img style="height: 149px;
+                                    width: 100%;
+                                    object-fit: contain;" data-aos="fade-down-right" class="partners__images" data-aos-duration="1000"
+                                    src="{% get_media_prefix %}{{ link.image }}"
+                                    alt="{{ link.name_of_partner }}">
+                                   </a>
+
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="usefull-sites" style="background: url('{% static 'assets/images/bg-charm2.png' %}')">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12" data-aos="fade-up">
+                    <h1>{% trans 'USEFUL LINKS' %}</h1>
+                    <div class="border-bott mx-auto"></div>
+                </div>
+
+                <div class="col-md-12 px-3 mb-5">
+                    <div class="owl-carousel pb-3 owl-theme usefull-site-carousel position-relative overflow-hidden"
+                         data-aos="fade-up">
+                        {% for link in useful_links %}
+                            <a href="{{ link.link_to_website }}" target="_blank" class="text-decoration-none">
+                                <div class="item vq_car">
+                                   <span>
+                                    <img src="{% get_media_prefix %}{{ link.image }}">
+                                   </span>
+                                   <h4>{{ link.title }}</h4>
+                                </div>
+                            </a>
+                        {% endfor %}
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const regionsSvg = document.querySelectorAll(".class_region");
+        regionsSvg.forEach((region) => {
+            region.addEventListener("click", () => {
+                const data = region.dataset;
+                document.getElementById("id_region_name").innerText = data.city;
+                document.getElementById("id_region_image").setAttribute("src", data.director_image);
+                document.getElementById("id_region_company_name").innerText = data.company_name;
+                document.getElementById("id_region_email").innerText = data.email;
+                document.getElementById("id_region_director_name").innerText = data.director_name;
+            });
+        });
+    </script>
+{% endblock %}

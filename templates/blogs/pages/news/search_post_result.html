@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% load i18n static %}
+
+{% block content %}
+    <div class="wrapper" style="background: linear-gradient(
+            0deg
+            , rgba(255, 255, 255, .65), rgba(229, 229, 229, 1)), fixed url('{% static 'assets/images/bannerimg.png' %}') center center/cover no-repeat;">
+        <section class="search">
+            <div class="container py-3">
+                <div class="bg-white p-4">
+                    <h1>{% trans "Search results" %}: {{ request.GET.search }}</h1>
+                    <div class="row g-3">
+
+                        {% if news %}
+                            <ul>
+
+                                {% for new in news %}
+                                    <div class="col-md-12 p-3 search__card">
+                                    <div class="search__card-title">
+                                        <h3 class="mb-3">Организация</h3>
+                                    </div>
+                                    <div class="row gy-3 search__card-content">
+
+                                    <div class="col-lg-3 col-md-6 col-12">
+                                        <a href="{{ new.get_absolute_url }}">
+                                            <i class="fal fa-external-link">{{ new.title }}</i>
+                                        </a>
+                                    </div>
+                                {% endfor %}
+
+                            </ul>
+                        {% else %}
+                            <p class="text-danger" style="font-size: 26px;margin-left: 17px;">{% trans "No data found" %}</p>
+                        {% endif %}
+
+
+                    </div>
+                </div>
+
+
+            </div>
+    </div>
+    </div>
+    </section>
+
+    </div>
+
+{% endblock content %}

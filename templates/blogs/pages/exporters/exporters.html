@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% load i18n static %}
+
+<style>
+    .card-wrap {
+        background-color: #fff;
+        border-radius: 6px;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    }
+
+    .page-title-head h1 {
+        font-size: 23px;
+        text-transform: capitalize;
+    }
+
+    .card-wrap .card-body p, li {
+        text-transform: capitalize;
+    }
+</style>
+
+
+{% block content %}
+
+
+    <section class="all__news" style="background: url('{% static 'assets/images/bannerimg.png' %}')">
+        <div class="container h-100">
+            <div class="row h-100">
+
+                <div class="col-md-12">
+
+                    <div class="heading_news-all">
+                        <h1>{{ exporter.title }}</h1>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-3">
+                <ul class="list-group mt-0">
+                    <li class="list-group-item text-center text-white" style="background-color: #183b8c;">
+                        {{tuts_parent.name}}
+                    </li>
+                    {% for child in tuts_parent.children.all %}
+                    <a href="../{{child.url}}">
+                        <li class="list-group-item">
+                            {{ child.name }}
+                        </li>
+                    </a>
+                    {% endfor %}
+                </ul>
+            </div>
+
+            <div class="col-lg-9">
+                <div class="card border-0 card-wrap p-3 shadow">
+                    <div class="card-body">
+                        {{exporter.content|safe}}
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+{% endblock content %}

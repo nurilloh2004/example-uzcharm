@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load i18n static %}
+
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mt-5 mb-5">
+
+
+                <div class="detail-date">
+                    <h4>{{ exhibition.created|date:"Y/m/d" }}</h4>
+                </div>
+
+                <div class="detail-title">
+                    <h3>{{ exhibition.title }}</h3>
+                </div>
+
+                <div class="detail-description">{{ exhibition.main_text|safe }}</div>
+
+            </div>
+        </div>
+    </div>
+{% endblock %}

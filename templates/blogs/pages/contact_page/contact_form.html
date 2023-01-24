@@ -1,0 +1,111 @@
+    {% extends 'base.html' %}
+{% load i18n static %}
+
+{% block content %}
+    <section class="all__news" style="background: url('{% static 'assets/images/bannerimg.png' %}')">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-md-12">
+                    <div class="heading_news-all">
+                        <h1>{% trans 'Contact' %}</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="content">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12">
+                    <div>
+                        {% for message in messages %}
+                            <div class="alert alert-{{ message.level_tag }}">{{ message }}</div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            <div class="row  no-gutters contact-wrap shadow-lg">
+                <div class="col-md-8">
+                    <div class="form h-100">
+                        <h3>{% trans 'Contact' %}</h3>
+
+                        <form action="{% url 'blogs:contact_form' %}" method="post">
+                            {% csrf_token %}
+
+                            <div class="row">
+                                <div class="col-md-6 form-group mb-2">
+                                    <label for="full_name" class="col-form-label">{% trans 'Your name' %}</label>
+                                    <input id="full_name" type="text" name="full_name" class="form-control" required>
+                                </div>
+                                <div class="col-md-6 form-group mb-2">
+                                    <label for="email" class="col-form-label">{% trans 'E-mail' %}</label>
+                                    <input id="email" type="text" name="email" class="form-control" required>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 form-group mb-2">
+                                    <label for="phone_number" class="col-form-label">{% trans 'Phone number' %}</label>
+                                    <input id="phone_number" type="text" name="phone_number" class="form-control" required>
+                                </div>
+                                <div class="col-md-6 form-group mb-2">
+                                    <label for="subject" class="col-form-label">{% trans 'Subject' %}</label>
+                                    <input id="subject" type="text" name="subject" class="form-control" required>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12 form-group mb-2">
+                                    <label for="message" class="col-form-label">{% trans 'Message' %}</label>
+                                    <textarea id="message" class="form-control" name="message" cols="30" rows="4" required></textarea>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12 form-group">
+                                    <input type="submit" class="btn__send_contact radius-5 text-decoration-none" value="{% trans 'Send' %}">
+                                </div>
+                            </div>
+
+                            <div>
+                                <iframe src="https://yandex.uz/map-widget/v1/-/CCU4q4bOkA" width="100%" height="300"
+                                        frameborder="1" allowfullscreen="true" class="border-0 shadow">
+                                </iframe>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="contact-info h-100">
+                        <h3>{% trans 'Feedback' %}</h3>
+                        <p class="mb-4 text-white">
+                            <i class="fas fa-map-marked-alt mr-3 mb-2"></i>
+                            100192, Узбекистан, Ташкент, Мирзо-Улугбекский район, проспект Мустакиллик,
+                            д.109{{ item.address }}</p>
+                        <ul class="list-unstyled">
+                            <li class="d-flex">
+                                <span class="text mb-3 text-white">Ассоциация «Узчармсаноат»{{ item.address }}</span>
+                            </li>
+                            <li class="d-flex">
+                                <a href="tel:+998 (71) 267-53-64" class="text text-white text-decoration-none">
+                                    <i class="fas fa-phone-square-alt mr-3"></i>
+                                    +998 (71) 267-53-64
+                                </a>
+                            </li>
+                            <li class="d-flex">
+                                <a href="mailto:info@uzcharm.com" class="text-white mb-2 text-decoration-none">
+                                    <i class="fal fa-envelope-open-text mr-3"></i>
+                                    info@uzcharm.com
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load i18n static %}
+
+
+{% block content %}
+    <div class="wrap-body">
+        <section class="all__pro" style="background-image: url({% static 'assets/images/bannerimg.png' %})">
+            <div class="container h-100">
+                <div class="row h-100">
+                    <div class="col-md-12">
+                        <div class="heading_pro-all">
+                            <h1 class="font-weight-bold">{% trans 'All products' %}</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="row pt-5 mt-5">
+        
+                {% for item in products %}
+                    <div class="col-lg-4 col-md-6 col-12 pro___card mb-5">
+                        <div class="card__head h-100 bg-white shadow">
+                            <div class="card border-0 card-fath">
+                                <a data-fancybox="gallery" href="{{ item.image.url }}" data-aos="fade-down-right">
+                                    <img class="image__proo" src="{{ item.image.url }}" alt="" style="border-radius: 0">
+                                </a>
+                            </div>
+                            <div class="card-body-description px-4">
+                                <h4>{{ item.title }}</h4>
+                                <p>{{ item.main_text|safe }}</p>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

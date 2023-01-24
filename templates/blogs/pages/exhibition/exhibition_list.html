@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% load i18n static %}
+
+{% block content %}
+
+    <section class="all__news" style="background: url('{% static 'assets/images/bannerimg.png' %}')">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-md-12">
+                    <div class="heading_news-all">
+                        <h1>{% trans 'Exhibitions and fairs' %}</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <ul class="list-group">
+                    <li class="list-group-item text-center text-white" style="background-color: #183b8c;">
+                        {{tuts_parent.name}}
+                    </li>
+                    {% for child in tuts_parent.children.all %}
+                        {% if child.url != "virtual_reception/" %}
+                            <a class="text-decoration-none" href="../{{child.url}}">
+                                <li class="list-group-item rounded-0">{{ child.name }}</li>
+                            </a>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="col-md-9">
+                <div class="row mt-5">
+                    {% for item in exhibitions %}
+                        <div class="col-md-6 mb-3">
+                            <a href="{% url 'blogs:exhibition_detail' item.created.year item.created.month item.created.day  item.slug %}" class="text-decoration-none text-dark">
+                                <div class="card border-0 card-wrap mb-5">
+                                    <div class="card-body">
+                                        <div class="col-md-12 p-0">
+                                            <img class="img-fluid img__exi" src="{{ item.image.url }}" alt="">
+                                            <ol class="p-0 px-3 ol__benefits__ex mt-5">
+                                                <li>{{ item.short_description }}</li>
+                                            </ol>
+                                            <p class="date mt-5 text-muted">
+                                                <i class="fas fa-calendar-alt mr-2"></i>
+                                                {{ item.created|date:"Y/m/d" }}
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

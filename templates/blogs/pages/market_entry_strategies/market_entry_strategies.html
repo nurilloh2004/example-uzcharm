@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% load i18n static %}
+{% load isimg %}
+
+{% block content %}
+
+<section
+  class="all__news"
+  style="background: url('{% static 'assets/images/bannerimg.png' %}')"
+>
+  <div class="container h-100">
+    <div class="row h-100">
+      <div class="col-md-12">
+        <div class="heading_news-all">
+          <h1>{{ market_entry_strategy.title }}</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% if market_entry_strategy.media %}
+<div class="container mt-4 mb-3">
+  <div class="row">
+    <div class="col-md-12 m-auto" style="text-align: center">
+      {% if market_entry_strategy.media|isimg %}
+      <img src="{{ market_entry_strategy.media.url }}" style="width: 100%" />
+      {% else %}
+      <video height="400" controls>
+        <source src="{{ market_entry_strategy.media.url }}" type="video/mp4" />
+      </video>
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% endif %}
+
+<div class="container">
+  <div class="row">
+
+    <div class="col-md-3">
+        <ul class="list-group mt-0">
+            <li class="list-group-item text-center text-white" style="background-color: #183b8c;">
+                {{tuts_parent.name}}
+            </li>
+            {% for child in tuts_parent.children.all %}
+            <a href="../{{child.url}}">
+                <li class="list-group-item">
+                    {{ child.name }}
+                </li>
+            </a>
+            {% endfor %}
+
+        </ul>
+    </div>
+    <div class="col-md-9">
+      <div class="card shadow border-0">
+        <div class="card-body">
+          {{ market_entry_strategy.content|safe }}
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+{% endblock content %}

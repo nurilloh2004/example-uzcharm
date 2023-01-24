@@ -1,0 +1,23 @@
+{% load active_link_tags %}
+
+{% load i18n %}
+
+<ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link {% active_link 'profile' %}" href="{% url 'profile' %}">
+        Messages
+        {% if not request.user.is_superadmin %}
+          <span class="badge bg-primary">{{unread_messages_count}}</span>
+        {% endif %}
+      </a>
+    </li>
+    {% if not request.user.is_superadmin %}
+      <li class="nav-item">
+        <a class="nav-link {% active_link 'settings' %}" href="{% url 'settings' %}">{% trans 'Tab Settings' %}</a>
+      </li>
+    {% endif %}
+    <li style="margin-left: auto;">
+        <a href="{% url 'logout' %}" class="btn btn-outline-secondary">{% trans 'Log out' %}</a>
+    </li>
+</ul>
+<br>

@@ -1,0 +1,1592 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-09-08 11:28+0500\n"
+"PO-Revision-Date: 2021-09-08 18:39+0437\n"
+"Last-Translator: b'Anonymous User <>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Translated-Using: django-rosetta 0.9.3\n"
+
+#: blogs/admin.py:12
+msgid "Uzcharmsanoat admin panel"
+msgstr "Uzcharmsanoat"
+
+#: blogs/admin.py:13
+msgid "Uzcharmsanoat Admin Portal"
+msgstr "Uzcharmsanoat uyushmasi"
+
+#: blogs/admin.py:14
+msgid "Welcome to Uzcharmsanoat Portal"
+msgstr "Uzcharmsanoat ga xush kelibsiz"
+
+#: blogs/forms.py:49 templates/users/admin_profile.html:11
+#: templates/users/profile.html:9 templates/users/register.html:35
+#: templates/users/settings.html:16
+msgid "Fullname"
+msgstr "To'liq ism"
+
+#: blogs/forms.py:50
+msgid "email"
+msgstr "Elektron pochta"
+
+#: blogs/forms.py:51 blogs/models.py:608
+msgid "phone_number"
+msgstr "Telefon raqam"
+
+#: blogs/forms.py:52 blogs/models.py:123
+msgid "region"
+msgstr "Viloyat"
+
+#: blogs/forms.py:53
+msgid "address"
+msgstr "Manzil"
+
+#: blogs/forms.py:54
+msgid "date_of_birth"
+msgstr "Tug'ilgan sana"
+
+#: blogs/forms.py:55
+msgid "gender"
+msgstr "Jins"
+
+#: blogs/forms.py:56
+msgid "marital_status"
+msgstr "Oilaviy ahvol"
+
+#: blogs/forms.py:57
+msgid "file_upload"
+msgstr "Fayl yuklash"
+
+#: blogs/forms.py:58
+msgid "message"
+msgstr "Xabar"
+
+#: blogs/models.py:41 blogs/models.py:122 blogs/models.py:736
+#: blogs/models.py:799 blogs/models.py:814 blogs/models.py:829
+#: blogs/models.py:844 blogs/models.py:859 blogs/models.py:877
+#: blogs/models.py:892 blogs/models.py:907 blogs/models.py:924
+#: blogs/models.py:942 blogs/models.py:960 blogs/models.py:978
+#: blogs/models.py:996 blogs/models.py:1014 blogs/models.py:1030
+#: blogs/models.py:1046 blogs/models.py:1061 blogs/models.py:1077
+#: blogs/models.py:1098 blogs/models.py:1113 blogs/models.py:1131
+msgid "title"
+msgstr "Sarlavha"
+
+#: blogs/models.py:42
+msgid " short_description"
+msgstr "Qisqa tasvir"
+
+#: blogs/models.py:43 blogs/models.py:75 blogs/models.py:158
+#: blogs/models.py:234 blogs/models.py:517 blogs/models.py:638
+#: blogs/models.py:653
+msgid "Full text"
+msgstr "To'liq matn"
+
+#: blogs/models.py:51
+msgid "status"
+msgstr "Status"
+
+#: blogs/models.py:59
+msgid "Post"
+msgstr "Yangilik"
+
+#: blogs/models.py:60
+msgid "Posts"
+msgstr "Yangiliklar"
+
+#: blogs/models.py:73 blogs/models.py:637 blogs/models.py:652
+#: blogs/models.py:769
+msgid "Title"
+msgstr "Sarlavha"
+
+#: blogs/models.py:74
+msgid "Short description"
+msgstr "qisqa Tasvir"
+
+#: blogs/models.py:90
+msgid "Tender"
+msgstr "Tender"
+
+#: blogs/models.py:91
+msgid "Tenders"
+msgstr "Tenderlar"
+
+#: blogs/models.py:101 blogs/models.py:138
+msgid "name"
+msgstr "Foydalanuvchi nomi"
+
+#: blogs/models.py:104 blogs/models.py:125 blogs/models.py:141
+msgid "image"
+msgstr "Rasm"
+
+#: blogs/models.py:105 blogs/models.py:142 blogs/models.py:1116
+msgid "slug"
+msgstr "Slag"
+
+#: blogs/models.py:114
+msgid "Company Type"
+msgstr "Kompaniya turi"
+
+#: blogs/models.py:115
+msgid "Company Types"
+msgstr "Kompaniya turlari"
+
+#: blogs/models.py:121
+msgid "stir"
+msgstr "STIR"
+
+#: blogs/models.py:132
+msgid "Menu Company"
+msgstr "Menu Kompamiya"
+
+#: blogs/models.py:133
+msgid "Menu Companys"
+msgstr "Menu Kompamiyalar"
+
+#: blogs/models.py:150
+#, fuzzy
+#| msgid "Product Categories"
+msgid "Product Category"
+msgstr "Mahsulot toifasi"
+
+#: blogs/models.py:151 templates/blogs/pages/product/product_list.html:34
+msgid "Product Categories"
+msgstr "Mahsulot toifalari"
+
+#: blogs/models.py:172
+msgid "Product"
+msgstr "Mahsulotlar"
+
+#: blogs/models.py:173
+msgid "Products"
+msgstr "Mahsulotlar"
+
+#: blogs/models.py:185 blogs/models.py:201
+msgid "Website link"
+msgstr "Veb-sayt havolasi"
+
+#: blogs/models.py:191
+msgid "Useful Link"
+msgstr "Foydali havola"
+
+#: blogs/models.py:192
+msgid "Useful Links"
+msgstr "Foydali havolar"
+
+#: blogs/models.py:207
+msgid "Expo Link"
+msgstr "Expo havolalari"
+
+#: blogs/models.py:208
+msgid "Expo Links"
+msgstr "Expo havolalari"
+
+#: blogs/models.py:215
+msgid "adress"
+msgstr "Manzil"
+
+#: blogs/models.py:226
+msgid "Partner"
+msgstr "Hamkor"
+
+#: blogs/models.py:227
+msgid "Partners"
+msgstr "Hamkorlar"
+
+#: blogs/models.py:242
+msgid "Vacancy"
+msgstr "Bo'sh ish o'rinlari"
+
+#: blogs/models.py:243
+msgid "Vacancys"
+msgstr "Bo'sh ish o'rinlari"
+
+#: blogs/models.py:263
+msgid "Gallery Category"
+msgstr "Galereya toifasi"
+
+#: blogs/models.py:264
+msgid "Gallery Categorys"
+msgstr "Galereya toifalar"
+
+#: blogs/models.py:293
+msgid "Gallery Image"
+msgstr "Galereya tasviri"
+
+#: blogs/models.py:294
+msgid "Gallery Images"
+msgstr "Galereya tasvirlari"
+
+#: blogs/models.py:315 blogs/models.py:316
+msgid "Media"
+msgstr "Video lavhalar"
+
+#: blogs/models.py:334
+msgid "Infographic"
+msgstr "Infografika"
+
+#: blogs/models.py:335
+msgid "Infographics"
+msgstr "Infografiklar"
+
+#: blogs/models.py:342 blogs/models.py:360 blogs/models.py:378
+#: blogs/models.py:672 blogs/models.py:752
+msgid "Content"
+msgstr "Tarkiblar"
+
+#: blogs/models.py:352
+msgid "Static Content"
+msgstr "Statik Tarkib"
+
+#: blogs/models.py:353
+msgid "Static Contents"
+msgstr "Statik Tarkiblar"
+
+#: blogs/models.py:370
+msgid "Legal Document"
+msgstr "Normativ-xuquqiy xujjatlar"
+
+#: blogs/models.py:371
+msgid "Legal Documents"
+msgstr "Normativ-xuquqiy xujjatlar"
+
+#: blogs/models.py:388
+msgid "Statistic"
+msgstr "Uyushma faoliyati raqamlarda"
+
+#: blogs/models.py:389 templates/blogs/index.html:115
+#: templates/blogs/pages/statistics/list.html:11
+msgid "Statistics"
+msgstr "Uyushma faoliyati raqamlarda"
+
+#: blogs/models.py:405
+msgid "Menu item"
+msgstr "Menyu elementi"
+
+#: blogs/models.py:406
+msgid "Menu items"
+msgstr "Menyu elementlari"
+
+#: blogs/models.py:416
+msgid "Icon"
+msgstr "Ikonka"
+
+#: blogs/models.py:423
+msgid "ShortLink item"
+msgstr "ShortLink elementi"
+
+#: blogs/models.py:424
+msgid "ShortLink items"
+msgstr "ShortLink elementlari"
+
+#: blogs/models.py:453
+msgid "Staff"
+msgstr "Xodimlar"
+
+#: blogs/models.py:454
+msgid "Staffs"
+msgstr "Xodimlar"
+
+#: blogs/models.py:461
+msgid "content about us"
+msgstr "Biz haqimizda ma'lumot"
+
+#: blogs/models.py:462
+msgid "history about us"
+msgstr "Kompaniya tarixi"
+
+#: blogs/models.py:464
+msgid "company_structure"
+msgstr "Kompaniya tuzilishi"
+
+#: blogs/models.py:465
+msgid "company_report"
+msgstr "Kompaniya hisoboti"
+
+#: blogs/models.py:470
+msgid "Company Info"
+msgstr "Kompaniya asoschilari"
+
+#: blogs/models.py:471
+msgid "Company Infos"
+msgstr "Kompaniya asoschilari"
+
+#: blogs/models.py:484 blogs/models.py:485
+msgid "FAQ"
+msgstr "Savol-javoblar"
+
+#: blogs/models.py:504
+msgid "Site Setting"
+msgstr "Sayt Sozlamalari"
+
+#: blogs/models.py:505
+msgid "Site Settings"
+msgstr "Sayt Sozlamalari"
+
+#: blogs/models.py:535
+msgid "Exhibition"
+msgstr "Ko'rgazma va yarmarkalar"
+
+#: blogs/models.py:536
+msgid "Exhibitions"
+msgstr "Ko'rgazma va yarmarkalar"
+
+#: blogs/models.py:542
+msgid "Male"
+msgstr "Erkak"
+
+#: blogs/models.py:543
+msgid "Female"
+msgstr "Ayol"
+
+#: blogs/models.py:547
+msgid "Single"
+msgstr "Yolg'iz"
+
+#: blogs/models.py:548
+msgid "Married"
+msgstr "Oilali"
+
+#: blogs/models.py:580 blogs/models.py:581 templates/base.html:471
+msgid "Virtual Reception"
+msgstr "Virtual qabulxona"
+
+#: blogs/models.py:598 blogs/models.py:628
+msgid "Request form: Contact form data"
+msgstr "So'rov shakli: Kontakt shaklidagi ma'lumotlar"
+
+#: blogs/models.py:599 blogs/models.py:629
+msgid "Request forms: Contact form data"
+msgstr "So'rov shakllari: aloqa shakli haqidagi ma'lumotlar"
+
+#: blogs/models.py:606 blogs/models.py:621
+msgid "full_name"
+msgstr "Toliq ism"
+
+#: blogs/models.py:609 blogs/models.py:624
+msgid "subject"
+msgstr "Mavzu"
+
+#: blogs/models.py:615 templates/base.html:53
+#: templates/blogs/pages/contact_page/contact_form.html:10
+#: templates/blogs/pages/contact_page/contact_form.html:31
+msgid "Contact"
+msgstr "Aloqa"
+
+#: blogs/models.py:616
+msgid "Contacts"
+msgstr "Aloqa"
+
+#: blogs/models.py:622
+msgid "phone"
+msgstr "Telefon"
+
+#: blogs/models.py:645 templates/blogs/pages/about/indexAbout.html:81
+msgid "Legislation"
+msgstr "Qonunchilik"
+
+#: blogs/models.py:646
+msgid "Legislations"
+msgstr "Qonunchilik"
+
+#: blogs/models.py:660 blogs/models.py:661
+#: templates/blogs/pages/about/indexAbout.html:93
+msgid "Regional Administration"
+msgstr "Viloyat Boshqarmalar"
+
+#: blogs/models.py:668
+msgid "Logo text"
+msgstr "Logo matni"
+
+#: blogs/models.py:669
+msgid "Logo text footer"
+msgstr "Futer logo matni"
+
+#: blogs/models.py:670 templates/base.html:381
+#: templates/blogs/pages/membership/detail.html:32
+#: templates/blogs/pages/vacancy/vacancy_list_view.html:69
+msgid "Address"
+msgstr "Manzil"
+
+#: blogs/models.py:671
+msgid "Operating Mode"
+msgstr "Ishlash tartibi"
+
+#: blogs/models.py:673
+msgid "Home Page Text"
+msgstr "Bosh sahifa matni"
+
+#: blogs/models.py:675
+msgid "Image"
+msgstr "Rasm"
+
+#: blogs/models.py:676
+msgid "Tel First"
+msgstr "Birinchi telefon"
+
+#: blogs/models.py:677
+msgid "Tel Second"
+msgstr "Ikkinchi telefon"
+
+#: blogs/models.py:678
+msgid "Tel Third"
+msgstr "Uchinchi telefon"
+
+#: blogs/models.py:679
+msgid "Tel Fourth"
+msgstr "Tortinchi raqam"
+
+#: blogs/models.py:682
+msgid "Since"
+msgstr "Ishlash Yillari"
+
+#: blogs/models.py:689
+msgid "Site Background"
+msgstr "Saytning orqa foni"
+
+#: blogs/models.py:690
+msgid "Site Background 2"
+msgstr "Saytning orqa foni 2"
+
+#: blogs/models.py:694 blogs/models.py:695
+msgid "Menu Settings"
+msgstr "Menyu Sozlamalari"
+
+#: blogs/models.py:701
+msgid "Text"
+msgstr "Tekst"
+
+#: blogs/models.py:703
+msgid "Banner Carousel"
+msgstr "Banner"
+
+#: blogs/models.py:706 blogs/models.py:707
+msgid "Banners"
+msgstr "Hamkorlar"
+
+#: blogs/models.py:713
+#, fuzzy
+#| msgid "Region"
+msgid "Region Name"
+msgstr "Viloyat"
+
+#: blogs/models.py:714
+msgid "Director Name"
+msgstr "Direktor ismi"
+
+#: blogs/models.py:715
+msgid "Company Name"
+msgstr "Kompaniya nomi"
+
+#: blogs/models.py:718 templates/users/register.html:47
+#: templates/users/settings.html:28
+msgid "Phone"
+msgstr "Telefon"
+
+#: blogs/models.py:719 templates/blogs/pages/vacancy/vacancy_list_view.html:79
+#: templates/users/register.html:60 templates/users/settings.html:20
+msgid "Email"
+msgstr "Elektron pochta"
+
+#: blogs/models.py:724
+msgid "Region"
+msgstr "Viloyat"
+
+#: blogs/models.py:725
+msgid "Regions"
+msgstr "Bo'limlar"
+
+#: blogs/models.py:738 blogs/models.py:1128
+msgid "link"
+msgstr "Havola"
+
+#: blogs/models.py:746
+msgid "Menu Overlay"
+msgstr "Menyu qoplamasi"
+
+#: blogs/models.py:747
+msgid "Menu Overlays"
+msgstr "Menyu qoplamalari"
+
+#: blogs/models.py:762 blogs/models.py:763
+msgid "How to join"
+msgstr "A’zo bo‘lish tartibi"
+
+#: blogs/models.py:777
+#| msgid "Benefits"
+msgid "Benefit"
+msgstr "Uyushmaga a’zolikning afzaliklari"
+
+#: blogs/models.py:778
+msgid "Benefits"
+msgstr "Uyushmaga a’zolikning afzaliklari"
+
+#: blogs/models.py:792
+msgid "Structure"
+msgstr "Tuzilma"
+
+#: blogs/models.py:793
+msgid "Structures"
+msgstr "Tuzilma"
+
+#: blogs/models.py:800 blogs/models.py:815 blogs/models.py:830
+#: blogs/models.py:845 blogs/models.py:860 blogs/models.py:878
+#: blogs/models.py:893 blogs/models.py:908 blogs/models.py:925
+#: blogs/models.py:943 blogs/models.py:961 blogs/models.py:979
+#: blogs/models.py:997 blogs/models.py:1015 blogs/models.py:1031
+#: blogs/models.py:1047 blogs/models.py:1062 blogs/models.py:1078
+#: blogs/models.py:1099
+msgid "content"
+msgstr "Tarkib"
+
+#: blogs/models.py:807 blogs/models.py:808
+msgid "History of Organization"
+msgstr "Tashkilotlar tarixi"
+
+#: blogs/models.py:822 blogs/models.py:823
+msgid "Territorial Administration"
+msgstr "Xududiy Boshqarmalar"
+
+#: blogs/models.py:837
+msgid "Subsidary"
+msgstr "“O‘ZCHARMIMPEKS” UK"
+
+#: blogs/models.py:838
+msgid "Subsidaries"
+msgstr "“O‘ZCHARMIMPEKS” UK"
+
+#: blogs/models.py:852
+msgid "Subsidary 2"
+msgstr "“CHARM VA POYABZAL DIZAYNI MARKAZI” SHK"
+
+#: blogs/models.py:853
+msgid "Subsidaries 2"
+msgstr "“CHARM VA POYABZAL DIZAYNI MARKAZI” SHK"
+
+#: blogs/models.py:870
+msgid "Foreighn Representation"
+msgstr "Xorijiy vakolatxonalar"
+
+#: blogs/models.py:871
+msgid "Foreighn Representations"
+msgstr "Xorijiy vakolatxonalar"
+
+#: blogs/models.py:885
+msgid "Press service"
+msgstr "Press Servis"
+
+#: blogs/models.py:886
+msgid "Press services"
+msgstr "Press Servis"
+
+#: blogs/models.py:900 blogs/models.py:901
+msgid "Moscow"
+msgstr "Moskva"
+
+#: blogs/models.py:917 blogs/models.py:918
+msgid "Events Admin"
+msgstr "Tadbirlar"
+
+#: blogs/models.py:935
+msgid "Investment potential"
+msgstr "Investitsiya salohiyati"
+
+#: blogs/models.py:936
+msgid "Investment potentials"
+msgstr "Investitsiya salohiyati"
+
+#: blogs/models.py:953
+msgid "Export Potential"
+msgstr "Eksport hajmi"
+
+#: blogs/models.py:954
+msgid "Export Potentials"
+msgstr "Eksport hajmi"
+
+#: blogs/models.py:971
+msgid "Export Implementation"
+msgstr "Eksportni amalga oshirish"
+
+#: blogs/models.py:972
+msgid "Export Implementations"
+msgstr "Eksportni amalga oshirish"
+
+#: blogs/models.py:989
+msgid "Export Law"
+msgstr "Eksport Qonuni"
+
+#: blogs/models.py:990
+msgid "Export Laws"
+msgstr "Eksport Qonuni"
+
+#: blogs/models.py:1007
+#, fuzzy
+#| msgid "Market entry strategies"
+msgid "Market entry strategy"
+msgstr "Bozorga kirish strategiyalari"
+
+#: blogs/models.py:1008
+msgid "Market entry strategies"
+msgstr "Bozorga kirish strategiyalari"
+
+#: blogs/models.py:1023
+#, fuzzy
+#| msgid "Presentations"
+msgid "Presentation"
+msgstr "Taqdimotlar"
+
+#: blogs/models.py:1024
+#: templates/blogs/pages/presentations/presentations.html:36
+msgid "Presentations"
+msgstr "Taqdimotlar"
+
+#: blogs/models.py:1039
+msgid "Press Release"
+msgstr "Press Relizlar"
+
+#: blogs/models.py:1040
+msgid "Press Releases"
+msgstr "Press Relizlar"
+
+#: blogs/models.py:1054
+msgid "Youth Policy"
+msgstr "Yoshlar Siyosati"
+
+#: blogs/models.py:1055
+#, fuzzy
+#| msgid "Youth Policy"
+msgid "Youth Policies"
+msgstr "Yoshlar Siyosati"
+
+#: blogs/models.py:1070
+#, fuzzy
+#| msgid "Publications"
+msgid "Publication"
+msgstr "Nashr"
+
+#: blogs/models.py:1071
+#: templates/blogs/pages/publications/publications.html:35
+msgid "Publications"
+msgstr "Nashrlar"
+
+#: blogs/models.py:1091
+msgid "Investor"
+msgstr "Investorlar"
+
+#: blogs/models.py:1092
+msgid "Investors"
+msgstr "Investorlar"
+
+#: blogs/models.py:1106
+#, fuzzy
+#| msgid "Exporters"
+msgid "Exporter"
+msgstr "Eksporterlar"
+
+#: blogs/models.py:1107
+msgid "Exporters"
+msgstr "Eksporterlar"
+
+#: blogs/models.py:1122
+msgid "Foreign Representative Link"
+msgstr "Xorijiy vakolatxonalar linklari"
+
+#: blogs/models.py:1123
+msgid "Foreign Representative Links"
+msgstr "Xorijiy vakolatxonalar linklari"
+
+#: blogs/models.py:1134
+msgid "icon"
+msgstr "Ikonka"
+
+#: blogs/models.py:1135
+msgid "file"
+msgstr "Fayl"
+
+#: blogs/models.py:1141
+msgid "Foreign Representative Item"
+msgstr "Xorijiy ofislar sahifalari"
+
+#: blogs/models.py:1142
+msgid "Foreign Representative Items"
+msgstr "Xorijiy ofislar sahifalari"
+
+#: templates/base.html:134 templates/users/register.html:85
+msgid "Register"
+msgstr "Ro'yxatdan o'tish"
+
+#: templates/base.html:138
+msgid "Contact phone number"
+msgstr "Aloqa uchun telefon raqam"
+
+#: templates/base.html:147 templates/users/login.html:32
+msgid "Login"
+msgstr "Kirish"
+
+#: templates/base.html:151
+msgid "Helpline"
+msgstr "Ishonch telefoni"
+
+#: templates/base.html:186 templates/base.html:257
+msgid "Hi"
+msgstr "Salom"
+
+#: templates/base.html:187 templates/base.html:259
+msgid "Edit profile"
+msgstr "Profilni tahrirlash"
+
+#: templates/base.html:188 templates/base.html:261
+#: templates/users/tabs.html:20
+msgid "Log out"
+msgstr "Chiqish"
+
+#: templates/base.html:319
+msgid "Type here to Search...."
+msgstr "Qidirish uchun shu yerga yozing...."
+
+#: templates/base.html:352
+#: templates/blogs/pages/contact_page/contact_form.html:49
+#: templates/blogs/pages/membership/detail.html:33
+#: templates/blogs/pages/vacancy/vacancy_list_view.html:74
+msgid "Phone number"
+msgstr "Telefon raqam"
+
+#: templates/base.html:391
+msgid "Visitor statistics"
+msgstr "Tashrif buyuruvchilar statistikasi"
+
+#: templates/base.html:398
+msgid "Working hours"
+msgstr "Ish vaqti"
+
+#: templates/base.html:402
+msgid "Social networks"
+msgstr "Ijtimoiy tarmoqlar"
+
+#: templates/base.html:433
+msgid "Developed by"
+msgstr "Sayt yaratuvchisi"
+
+#: templates/base.html:449
+msgid "Increasing the font size"
+msgstr "Shrift hajmini oshirish"
+
+#: templates/base.html:453
+msgid "Default font size"
+msgstr "Odatiy shrift hajmi"
+
+#: templates/base.html:457
+msgid "Reduce the font size"
+msgstr "Shrift hajmini kichraytiring"
+
+#: templates/base.html:461
+msgid "Sound assistance"
+msgstr "Ovozli yordam"
+
+#: templates/base.html:465
+msgid "Grayscale Mode"
+msgstr "Kulrang rang rejimi"
+
+#: templates/base.html:485
+msgid "Uzcharmsanoat"
+msgstr "Uzcharmsanoat"
+
+#: templates/blogs/index.html:80
+msgid "All news"
+msgstr "BARCHA YANGILIKLAR"
+
+#: templates/blogs/index.html:102 templates/blogs/index.html:164
+#: templates/blogs/index.html:193 templates/blogs/index.html:264
+msgid "more..."
+msgstr "Batafsil"
+
+#: templates/blogs/index.html:140
+msgid "PRODUCTS"
+msgstr "MAHSULOTLAR"
+
+#: templates/blogs/index.html:177
+msgid "PHOTO GALLERY"
+msgstr "FOTO GALEREYA"
+
+#: templates/blogs/index.html:205
+msgid "Media Uzcharmsanoat"
+msgstr "Video lavhalar"
+
+#: templates/blogs/index.html:223
+msgid "See all videos"
+msgstr "Barcha videolarni ko'rish"
+
+#: templates/blogs/index.html:238 templates/blogs/pages/faq/list_view.html:11
+msgid "FAQs"
+msgstr "Savol-javoblar"
+
+#: templates/blogs/index.html:284
+msgid "Кўргазма ва электрон платформалар"
+msgstr "Ko'rgazma va Elektron Platformalar"
+
+#: templates/blogs/index.html:310
+msgid "Interactive map"
+msgstr "HUDUDIY BOSHQARMALAR"
+
+#: templates/blogs/index.html:372
+msgid "ASSOCIATION PARTNERS"
+msgstr "UYUSHMA HAMKORLARI"
+
+#: templates/blogs/index.html:402
+msgid "USEFUL LINKS"
+msgstr "FOYDALI HAVOLALAR"
+
+#: templates/blogs/pages/about/indexAbout.html:20
+msgid "ABOUT THE ASSOCIATION"
+msgstr "UYUSHMA HAQIDA"
+
+#: templates/blogs/pages/about/indexAbout.html:35
+#: templates/blogs/pages/about/indexAbout.html:47
+msgid "About us"
+msgstr "Biz haqimizda"
+
+#: templates/blogs/pages/about/indexAbout.html:37
+#, fuzzy
+#| msgid "Association History"
+msgid "Association history"
+msgstr "Uyushma Tarixi"
+
+#: templates/blogs/pages/about/indexAbout.html:38
+msgid "report"
+msgstr "Hisobot"
+
+#: templates/blogs/pages/about/indexAbout.html:39
+#, fuzzy
+#| msgid "Legislation"
+msgid "legislation"
+msgstr "Qonunchilik"
+
+#: templates/blogs/pages/about/indexAbout.html:40
+#, fuzzy
+#| msgid "Regional Administration"
+msgid "Regional administration"
+msgstr "Xududiy Boshqarmalar"
+
+#: templates/blogs/pages/about/indexAbout.html:57
+msgid "Association History"
+msgstr "Uyushma Tarixi"
+
+#: templates/blogs/pages/about/indexAbout.html:70
+msgid "REPORTS ON THE ACCOMPLISHED WORK"
+msgstr "BAJARILGAN ISHLAR YUZASIDAN HISOBOTLAR"
+
+#: templates/blogs/pages/about2/leadership.html:78
+msgid "LEADERSHIP"
+msgstr "RAHBARIYAT"
+
+#: templates/blogs/pages/about2/leadership.html:80
+msgid "PRESS LEADERS"
+msgstr "MATBUOT"
+
+#: templates/blogs/pages/about2/leadership.html:107
+msgid "Qabul kunlari"
+msgstr "Qabul kunlari"
+
+#: templates/blogs/pages/about2/leadership.html:112
+msgid "Phone Number"
+msgstr "Telefon raqam"
+
+#: templates/blogs/pages/contact_page/contact_form.html:38
+msgid "Your name"
+msgstr "Ismingiz"
+
+#: templates/blogs/pages/contact_page/contact_form.html:42
+msgid "E-mail"
+msgstr "Elektron pochta"
+
+#: templates/blogs/pages/contact_page/contact_form.html:53
+msgid "Subject"
+msgstr "Mavzu"
+
+#: templates/blogs/pages/contact_page/contact_form.html:60
+msgid "Message"
+msgstr "Xabar"
+
+#: templates/blogs/pages/contact_page/contact_form.html:67
+#: templates/blogs/pages/virtual_reception/virtual_reception_form.html:102
+#: templates/users/admin_profile.html:72 templates/users/profile.html:77
+msgid "Send"
+msgstr "Yuborish"
+
+#: templates/blogs/pages/contact_page/contact_form.html:83
+msgid "Feedback"
+msgstr "Qayta aloqa"
+
+#: templates/blogs/pages/exhibition/exhibition_list.html:11
+#: templates/blogs/pages/legislation/exhibition_list.html:11
+msgid "Exhibitions and fairs"
+msgstr "Ko'rgazma va yarmarkalar"
+
+#: templates/blogs/pages/for_entrepreneurs/entrepreneurs.html:11
+msgid "List of member enterprises of the association"
+msgstr "Uyushmaga a'zo korxonalar ro'yxati"
+
+#: templates/blogs/pages/for_entrepreneurs/entrepreneurs.html:24
+msgid "Search by TIN and by company name"
+msgstr "INN va kompaniya nomi bilan qidirish"
+
+#: templates/blogs/pages/for_entrepreneurs/entrepreneurs.html:35
+msgid "TIN"
+msgstr "INN"
+
+#: templates/blogs/pages/for_entrepreneurs/entrepreneurs.html:36
+msgid "Full name of the organization"
+msgstr "Uyushmaning to'liq nomi"
+
+#: templates/blogs/pages/for_entrepreneurs/entrepreneurs.html:37
+msgid "Territory"
+msgstr "Territory"
+
+#: templates/blogs/pages/foreighn_representations/foreign_representations.html:49
+msgid "Foreign Representations Groups"
+msgstr "Xorijiy vakolatxonalar "
+
+#: templates/blogs/pages/foreighn_representations/foreign_representations.html:73
+#: templates/blogs/pages/menu_companys/company_types.html:86
+#: templates/blogs/pages/menu_companys/menu_companys.html:72
+msgid "Topilmadi!"
+msgstr "Topilmadi!"
+
+#: templates/blogs/pages/foreighn_representations/items.html:47
+msgid "“Ўзчармсаноат” уюшмаси фаолиятига доир меъёрий-ҳуқуқий ҳужжатлар"
+msgstr "“O'zcharmansanoat” uyushmasi faoliyatiga doir me'moriy-xujjatlar"
+
+#: templates/blogs/pages/foreighn_representations/links.html:47
+msgid "МЕЪЁРИЙ-ҲУҚУҚИЙ ҲУЖЖАТЛАР РЎЙХАТИ"
+msgstr "MEHYORIY-HUQUQIY HUJJATLAR RUYXATI"
+
+#: templates/blogs/pages/gallery/images.html:11
+#: templates/blogs/pages/gallery/indexG.html:59
+msgid "All photos"
+msgstr "Barcha fotosuratlar"
+
+#: templates/blogs/pages/how_to_join/how_to_join.html:29
+msgid "Uyushmaga aʼzo boʻlish tartibi"
+msgstr "Uyushmaga a'zo bo'lish tartibi"
+
+#: templates/blogs/pages/legaldocument/detail.html:12
+#: templates/blogs/pages/news/detail.html:30
+#: templates/blogs/pages/static_content/detail.html:12
+#: templates/blogs/pages/statistics/detail.html:12
+msgid "Print"
+msgstr "Chop etish"
+
+#: templates/blogs/pages/legaldocument/detail.html:36
+#: templates/blogs/pages/static_content/detail.html:36
+#: templates/blogs/pages/statistics/detail.html:36
+#: templates/blogs/pages/tender/detail.html:28
+msgid "share"
+msgstr "Baham ko'rmoq"
+
+#: templates/blogs/pages/legaldocument/list.html:11
+msgid "Normative legal documents"
+msgstr "Normativ-xuquqiy xujjatlar"
+
+#: templates/blogs/pages/membership/detail.html:8
+msgid "ТЕРИНИ ҚАЙТА ИШЛАШ ҚОРХОНАЛАРИ"
+msgstr "TЕRINI QAYTA ISHLASH QORXONALARI"
+
+#: templates/blogs/pages/membership/detail.html:13
+msgid "Post date:"
+msgstr "Xabar sanasi:"
+
+#: templates/blogs/pages/membership/detail.html:17
+msgid "PDF version"
+msgstr "PDF versiya"
+
+#: templates/blogs/pages/membership/detail.html:27
+msgid "Enterprise name"
+msgstr "Korxona nomi"
+
+#: templates/blogs/pages/membership/detail.html:28
+msgid "Type of activity"
+msgstr "Faoliyat turi"
+
+#: templates/blogs/pages/membership/detail.html:29
+msgid "Enterprise"
+msgstr "Korxona"
+
+#: templates/blogs/pages/membership/list.html:11
+msgid "MEMBERS OF THE ASSOCIATION"
+msgstr "Uyushma a'zolari"
+
+#: templates/blogs/pages/membership/list.html:26
+msgid "Uyushmaga azolikning afzalliklari."
+msgstr "Uyushmaga azolikning afzalliklari"
+
+#: templates/blogs/pages/membership/list.html:29
+#, fuzzy
+#| msgid "Uyushmaga aʼzo boʻlish tartibi"
+msgid "A'zo bo'lish tartibi."
+msgstr "Uyushmaga a'zo bo'lish tartibi"
+
+#: templates/blogs/pages/membership/list.html:32
+msgid "Uyushmaga onlayn ariza yuborish."
+msgstr "Uyushmaga onlayn ariza yuborish"
+
+#: templates/blogs/pages/membership/list.html:35
+#, fuzzy
+#| msgid "Uyushma tarkibidagi aʼzo korxonalar kategoriyasi"
+msgid "Uyishma tartibidagi a'zo korxonalar ro'yxati"
+msgstr "Uyushma tarkibidagi aʼzo korxonalar kategoriyasi"
+
+#: templates/blogs/pages/membership_procedure/membership_procedure.html:9
+msgid "The procedure for membership in the association"
+msgstr "Uyushmaga a'zo bo'lish tartibi"
+
+#: templates/blogs/pages/menu_companys/company_types.html:49
+msgid "Uyushma tarkibidagi aʼzo korxonalar kategoriyasi"
+msgstr "Uyushma tarkibidagi aʼzo korxonalar kategoriyasi"
+
+#: templates/blogs/pages/menu_companys/menu_companys.html:39
+msgid "Поиск по ИНН и по названию предприятия"
+msgstr "INN va kompaniyaning nomi bo'yicha qidirish"
+
+#: templates/blogs/pages/news/list.html:11
+msgid "All News"
+msgstr "Barcha yangiliklar"
+
+#: templates/blogs/pages/news/list.html:37
+msgid "More"
+msgstr "Batafsil"
+
+#: templates/blogs/pages/news/search_post_result.html:11
+msgid "Search results"
+msgstr "Qidiruv natijalari"
+
+#: templates/blogs/pages/news/search_post_result.html:33
+msgid "No data found"
+msgstr "Ma'lumot topilmadi"
+
+#: templates/blogs/pages/product/item.html:12
+msgid "All products"
+msgstr "Barcha mahsulotlar"
+
+#: templates/blogs/pages/tender/list.html:11
+msgid "Announcements and Tenders"
+msgstr "E'lonlar va tenderlar"
+
+#: templates/blogs/pages/tender/list.html:47
+msgid "From"
+msgstr "Dan"
+
+#: templates/blogs/pages/tender/list.html:51
+msgid "To"
+msgstr "Gacha"
+
+#: templates/blogs/pages/tender/list.html:55
+#: templates/blogs/pages/tender/list.html:56
+msgid "Show"
+msgstr "Ko'rsatish"
+
+#: templates/blogs/pages/vacancy/vacancy_list_view.html:14
+msgid "Main"
+msgstr "Asosiy"
+
+#: templates/blogs/pages/vacancy/vacancy_list_view.html:21
+msgid "Resume"
+msgstr "Rezyume"
+
+#: templates/blogs/pages/vacancy/vacancy_list_view.html:43
+msgid "Full Name"
+msgstr "To'liq ism"
+
+#: templates/blogs/pages/vacancy/vacancy_list_view.html:48
+msgid "Date of birth"
+msgstr "Tug'ilgan sana"
+
+#: templates/blogs/pages/vacancy/vacancy_list_view.html:53
+msgid "Nationality"
+msgstr "Millatingiz"
+
+#: templates/blogs/pages/vacancy/vacancy_list_view.html:61
+msgid "Marital status"
+msgstr "Oilaviy ahvol"
+
+#: templates/blogs/pages/vacancy/vacancy_list_view.html:84
+msgid "TIN number"
+msgstr "INN raqam"
+
+#: templates/blogs/pages/vacancy/vacancy_list_view.html:89
+msgid "Degree"
+msgstr "Darajangiz"
+
+#: templates/blogs/pages/vacancy/vacancy_list_view.html:94
+msgid "Speciality"
+msgstr "Mutaxassisligingiz"
+
+#: templates/blogs/pages/vacancy/vacancy_list_view.html:108
+msgid "Additional information"
+msgstr "Qo'shimcha ma'lumot"
+
+#: templates/blogs/pages/vacancy/vacancy_list_view.html:116
+msgid "Upload Resume"
+msgstr "Rezyume yuklash"
+
+#: templates/blogs/pages/video/index.html:10
+msgid "All Videos"
+msgstr "Barcha videolar"
+
+#: templates/blogs/pages/virtual_reception/virtual_reception_form.html:96
+msgid "Allow my question to be published"
+msgstr "Ma'lumotlar nashr etilishiga ruxsat berish"
+
+#: templates/blogs/pages/virtual_reception/virtual_reception_form.html:112
+#: templates/users/login.html:37 templates/users/register.html:91
+msgid "Back to home"
+msgstr "Bosh sahifaga qaytish"
+
+#: templates/users/admin_profile.html:49
+msgid "FILE"
+msgstr "Fayl"
+
+#: templates/users/login.html:27 templates/users/register.html:28
+#: templates/users/settings.html:24
+msgid "Username"
+msgstr "Foydalanuvchi nomi "
+
+#: templates/users/login.html:30 templates/users/register.html:41
+msgid "Password"
+msgstr "Parol"
+
+#: templates/users/profile.html:27
+msgid "Choose chat"
+msgstr "Suhbatni tanlang"
+
+#: templates/users/register.html:52 templates/users/settings.html:36
+msgid "Financial Projections"
+msgstr "Moliyaviy ko'rsatkichlar"
+
+#: templates/users/register.html:65
+msgid "Password (Confirmation)"
+msgstr "Parol (tasdiqlash)"
+
+#: templates/users/register.html:77 templates/users/settings.html:32
+msgid "Organization Passport"
+msgstr "Tashkilotlar"
+
+#: templates/users/settings.html:9
+msgid "Fullname:"
+msgstr "To'liq ism"
+
+#: templates/users/settings.html:48
+msgid "Organization Charter"
+msgstr "Tashkilotlar"
+
+#: templates/users/settings.html:52
+msgid "Save Changes"
+msgstr "O'zgarishlarni saqlash"
+
+#: templates/users/tabs.html:16
+msgid "Tab Settings"
+msgstr "Menyu elementlari"
+
+#~ msgid "Andijan"
+#~ msgstr "Andijon"
+
+#~ msgid "Bukhara"
+#~ msgstr "Buxoro"
+
+#~ msgid "Fergana"
+#~ msgstr "Farg'ona"
+
+#~ msgid "Jizzakh"
+#~ msgstr "Jizzax"
+
+#~ msgid "Xorazm"
+#~ msgstr "Xorazm"
+
+#~ msgid "Namangan"
+#~ msgstr "Namangan"
+
+#~ msgid "Navoiy"
+#~ msgstr "Navoiy"
+
+#~ msgid "Qashqadaryo"
+#~ msgstr "Qashqadaryo"
+
+#~ msgid "Samarqand"
+#~ msgstr "Samarqand"
+
+#~ msgid "Sirdaryo"
+#~ msgstr "Sirdaryo"
+
+#~ msgid "Guliston"
+#~ msgstr "Guliston"
+
+#~ msgid "Surxondaryo"
+#~ msgstr "Surxondaryo"
+
+#~ msgid "TashkentRegion"
+#~ msgstr "Toshkent viloyati"
+
+#~ msgid "Karakalpakstan"
+#~ msgstr "Qoraqalpog'iston"
+
+#~ msgid "Tashkentt"
+#~ msgstr "Toshkent"
+
+#~ msgid "AndijanNumber"
+#~ msgstr "Andijon raqami"
+
+#~ msgid "BukharaNumber"
+#~ msgstr "Buxoro raqami"
+
+#~ msgid "FerganaNumber"
+#~ msgstr "Telefon Fergana"
+
+#~ msgid "JizzakhNumber"
+#~ msgstr "Jizzax raqami"
+
+#~ msgid "XorazmNumber"
+#~ msgstr "Xorazm raqami"
+
+#~ msgid "NamanganNumber"
+#~ msgstr "Namangan raqami"
+
+#~ msgid "NavoiyNumber"
+#~ msgstr "Telefon Navoiy"
+
+#~ msgid "QashqadaryoNumber"
+#~ msgstr "Qashqadaryo raqami"
+
+#~ msgid "SamarqandNumber"
+#~ msgstr "Samarqand raqami"
+
+#~ msgid "SirdaryoNumber"
+#~ msgstr "Sirdaryo raqami"
+
+#~ msgid "SurxondaryoNumber"
+#~ msgstr "Surxondaryo raqami"
+
+#~ msgid "TashkentNumber"
+#~ msgstr "Telefon raqam"
+
+#~ msgid "GulistonNumber"
+#~ msgstr "Guliston raqami"
+
+#~ msgid "KarakalpakstanNumber"
+#~ msgstr "Qoraqalpog'iston raqami"
+
+#~ msgid "TashkentRegionNumber"
+#~ msgstr "Toshkent viloyati raqami"
+
+#~ msgid "Нашр этилган"
+#~ msgstr "Nashr etilgan:"
+
+#~ msgid "Select a country"
+#~ msgstr "Hududni tanlang"
+
+#~ msgid "Company Structure"
+#~ msgstr "Kompaniya Tarkibi"
+
+#~ msgid "Phone number:"
+#~ msgstr "Telefon raqam:"
+
+#~ msgid "VIRTUAL RECEPTION"
+#~ msgstr "Virtual qabul qilish"
+
+#~ msgid "Select a region"
+#~ msgstr "Mintaqani tanlang"
+
+#~ msgid "Gender"
+#~ msgstr "Jins"
+
+#~ msgid "Upload file"
+#~ msgstr "Faylni yuklash"
+
+#~ msgid "Экран сухандони"
+#~ msgstr "Ekran suxandoni"
+
+#~ msgid ""
+#~ "Сайтда овозли ўқиш кўрсатмаси <br> <br> Сайтда овозли ўқиш имконияти мавжуд."
+#~ " Матинни овозли ешитиш учун матин белгиланг."
+#~ msgstr ""
+#~ "Saytda ovozli o'quvish shartnomasi <br> <br> Saytda ovozli o'ish imkoniyati "
+#~ "mavjud. Matinni ovozli eshitish uchun matin belgilang."
+
+#~ msgid "Close"
+#~ msgstr "Yopish"
+
+#~ msgid "Stir"
+#~ msgstr "Stir kod"
+
+#~ msgid "The full name of the organization"
+#~ msgstr "Uyushmaning to'liq nomi"
+
+#, fuzzy
+#~ msgid "Registration"
+#~ msgstr "Qonunchilik"
+
+#~ msgid "Foreign powers"
+#~ msgstr "Chet ellik asoschilar"
+
+#~ msgid "Adress"
+#~ msgstr "Manzil"
+
+#~ msgid "Video"
+#~ msgstr "Video"
+
+#~ msgid "Home Page GIF"
+#~ msgstr "Bosh Sahifa GIF"
+
+#~ msgid "news/"
+#~ msgstr "Barcha yangiliklar"
+
+#~ msgid "tender/"
+#~ msgstr "Jins"
+
+#~ msgid "product/"
+#~ msgstr "Products"
+
+#~ msgid "membership/"
+#~ msgstr "A'zolik Foydasi"
+
+#~ msgid "exhibitions/"
+#~ msgstr "Ko'rgazma va yarmarkalar"
+
+#~ msgid "contact/"
+#~ msgstr "Aloqa"
+
+#~ msgid "virtual_reception/"
+#~ msgstr "Virtual qabulxona"
+
+#, fuzzy
+#~ msgid "presentations/"
+#~ msgstr "Qonunchilik"
+
+#, fuzzy
+#~ msgid "publications/"
+#~ msgstr "Ko'rgazma va yarmarkalar"
+
+#, fuzzy
+#~ msgid "exporters/"
+#~ msgstr "Hisobot"
+
+#, fuzzy
+#~ msgid "structure/"
+#~ msgstr "kompaniya tuzilishi"
+
+#, fuzzy
+#~ msgid "partners/"
+#~ msgstr "Hamkorlar"
+
+#, fuzzy
+#~ msgid "history_of_organization/"
+#~ msgstr "Uyushma rahbari"
+
+#~ msgid "legal/<slug:slug>"
+#~ msgstr "Statistika"
+
+#~ msgid "statistic/"
+#~ msgstr "Statistika"
+
+#~ msgid "statistic/<slug:slug>"
+#~ msgstr "Statistika"
+
+#~ msgid "Learn more"
+#~ msgstr "Batafsil ma'lumot"
+
+#, fuzzy
+#~ msgid "Reception:"
+#~ msgstr "Qabul kuni:"
+
+#~ msgid "Enterprise address"
+#~ msgstr "Korxona manzili"
+
+#~ msgid "Organizational legal form"
+#~ msgstr "Tashkiliy-huquqiy shakli"
+
+#~ msgid "Date of registration"
+#~ msgstr "Ro'yxatga olingan sana"
+
+#~ msgid "Authorized capital"
+#~ msgstr "Ustav kapitali"
+
+#~ msgid "Share of foreign capital"
+#~ msgstr "Chet el kapitali ulushi"
+
+#~ msgid "Company founders"
+#~ msgstr "Kompaniya asoschilari"
+
+#~ msgid "Foreign founders"
+#~ msgstr "Chet ellik asoschilar"
+
+#~ msgid "Total area"
+#~ msgstr "Umumiy maydoni"
+
+#~ msgid "Types of producing products"
+#~ msgstr "Mahsulotlarni ishlab chiqarish turlari"
+
+#~ msgid "Main production indicators"
+#~ msgstr "Asosiy ishlab chiqarish ko'rsatkichlari"
+
+#~ msgid "Annual revenue"
+#~ msgstr "Yillik daromad"
+
+#~ msgid "Number of employees"
+#~ msgstr "Xodimlar soni"
+
+#~ msgid "Export volume"
+#~ msgstr "Eksport hajmi"
+
+#~ msgid "Import volume"
+#~ msgstr "Import hajmi"
+
+#~ msgid "OKPO code"
+#~ msgstr "INN kod"
+
+#~ msgid "Bank details"
+#~ msgstr "Bank tafsilotlari"
+
+#~ msgid "Web site"
+#~ msgstr "Veb sayt"
+
+#~ msgid "Head of organization"
+#~ msgstr "Uyushma rahbari"
+
+#~ msgid "Search files"
+#~ msgstr "Fayllarni qidirish"
+
+#~ msgid "Messages"
+#~ msgstr "Xabar"
+
+#~ msgid "Static Files"
+#~ msgstr "Statistika"
+
+#~ msgid "Syndication"
+#~ msgstr "Bo'limlar"
+
+#~ msgid "Enter a valid email address."
+#~ msgstr "Korxona manzili"
+
+#~ msgid "Enter a valid IPv4 address."
+#~ msgstr "Korxona manzili"
+
+#~ msgid "Enter a valid IPv6 address."
+#~ msgstr "Korxona manzili"
+
+#~ msgid "Enter a number."
+#~ msgstr "Telefon raqam"
+
+#~ msgid "Decimal number"
+#~ msgstr "Telefon raqam"
+
+#~ msgid "Email address"
+#~ msgstr "Korxona manzili"
+
+#~ msgid "Floating point number"
+#~ msgstr "Aloqa uchun telefon raqam"
+
+#~ msgid "IPv4 address"
+#~ msgstr "Manzil"
+
+#~ msgid "IP address"
+#~ msgstr "Manzil"
+
+#~ msgid "Enter a whole number."
+#~ msgstr "Aloqa uchun telefon raqam"
+
+#~ msgid "November"
+#~ msgstr "Telefon raqam"
+
+#~ msgid "oct"
+#~ msgstr "Aloqa"
+
+#~ msgctxt "alt. month"
+#~ msgid "November"
+#~ msgstr "Telefon raqam"
+
+#~ msgid "or"
+#~ msgstr "Batafsil"
+
+#~ msgid "Date out of range"
+#~ msgstr "Tug'ilgan sana"
+
+#~ msgid "About the organization"
+#~ msgstr "Uyushma haqida"
+
+#~ msgid "Management"
+#~ msgstr "Boshqaruv"
+
+#~ msgid "Reception time:"
+#~ msgstr "Qabul vaqti:"
+
+#~ msgid "Membership Benefits"
+#~ msgstr "A'zolik Foydasi"
+
+#~ msgid "Reasons why you should be a member of the association"
+#~ msgstr "Uyushma a'zosi bo'lish sabablari"
+
+#~ msgid "Vacancies"
+#~ msgstr "Bo'sh ish o'rinlari"
+
+#~ msgid ""
+#~ "Association of leather and footwear and fur enterprises of Uzbekistan "
+#~ "«Uzcharmsanoat»"
+#~ msgstr ""
+#~ "O'zbekiston charm-poyabzal va mo'yna korxonalari uyushmasi «Uzcharmsanoat»"
+
+#~ msgid "Membership in the association"
+#~ msgstr "Assotsiatsiyaga a'zolik"
+
+#~ msgid "News"
+#~ msgstr "Yangiliklar"
+
+#~ msgid "About Asosation"
+#~ msgstr "Uyushma haqida"
+
+#~ msgid "membership in the association"
+#~ msgstr "Assotsiatsiyaga a'zolik"
+
+#~ msgid "Photo gallery"
+#~ msgstr "Fotogalereya"
+
+#~ msgid "News and Tenders"
+#~ msgstr "E'lonlar va tenderlar"
+
+#~ msgid "ASSOCIATION UZCHARMSANOAT"
+#~ msgstr "UZCHARMSANOAT Assotsiatsiyasi"
+
+#~ msgid "Working hours 09:00 - 18:00 <br> Lunch 13:00 - 14:00"
+#~ msgstr "Ish vaqti 09:00 - 18:00 <br> Tushlik 13:00 - 14:00"
+
+#~ msgid "Screensaver"
+#~ msgstr "Экран сухандони"
+
+#~ msgid "All"
+#~ msgstr "Hammasi"
+
+#~ msgid "Archive"
+#~ msgstr "Arxiv"
+
+#~ msgid "UZCHARMSANOAT"
+#~ msgstr "UZCHARMSANOAT"
+
+#~ msgid "Upload your file"
+#~ msgstr "Faylingizni yuklang"
+
+#~ msgid "Login to access our resources"
+#~ msgstr "Resurslarni korish uchun kirish"
+
+#~ msgid "Register to access all our resources"
+#~ msgstr "Bizning resurslarimizga kirish uchun ro'yxatdan o'ting"
+
+#~ msgid "Share"
+#~ msgstr "Baham ko'rish"

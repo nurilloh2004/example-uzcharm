@@ -1,0 +1,82 @@
+{% extends "users/base.html" %}
+
+{% load i18n %}
+{% load isimg %}
+{% load count_unread %}
+{% load last_wildcard %}
+
+
+{% block main %}
+<div class="card mt-3" style="border: none;">
+    <div style="font-weight: 700; line-height: 100%; text-align: center; margin-left: auto;" class="mb-2">{% trans 'Fullname' %}: {{request.user.fullname}}
+    </div>
+    {% include "users/tabs.html" %}
+
+    <div class="container-fluid p-0">
+        <div class="row">
+            <div class="col-3">
+                {% if request.user.is_superuser %}
+                    <div class="list-group" style="height: 60vh; overflow: auto;">
+                        {% for chat in to_superadmin_chats %}
+                            <a href="{% url 'admin_profile' chat.id %}" class="list-group-item list-group-item-action {% if request|last_wildcard == chat.id %}active{% endif %}" aria-current="true">{{chat.fullname}} <div class="badge bg-primary">{{chat|count_unread}}</div></a>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+
+            <div class="col-9">
+                <div class="card rounded-0 p-3" style="height: 60vh; overflow-y: auto;" id="chat-box">
+
+                    {% for message in chat_messages %}
+
+                        {% if message.text %}
+                        <div style="margin-bottom: 10px;">
+                            <div style="max-width: 55vw; float: {% if message.sender == request.user %}right{% else %}left{% endif %}; background: {% if message.sender == request.user %}rgb(255, 237, 177){% else %}rgb(201, 201, 255){% endif %}; border-radius: 10px; padding: 10px;">
+                                <span style="{% if message.sender == request.user %}right{% else %}left{% endif %};">{{message.text}}</span>
+                            </div>
+                        </div>
+                        {% endif %}
+
+                        {% if message.attachment %}
+                        <div style="margin-bottom: 10px;">
+                            <div style="max-width: 55vw; float: {% if message.sender == request.user %}right{% else %}left{% endif %}; background: {% if message.sender == request.user %}rgb(255, 237, 177){% else %}rgb(201, 201, 255){% endif %}; border-radius: 10px; border: 1px solid #333; padding: 10px;">
+                                <span style="{% if message.sender == request.user %}right{% else %}left{% endif %};">
+                                    {% if message.attachment|isimg %}
+                                        <a data-fancybox="gallery" href="{{message.attachment.url}}">
+                                            <img class="portfolio_image" src="{{message.attachment.url}}" alt="portfolio" style="width: 200px;"/>
+                                        </a>
+                                    {% else %}
+                                        <a href="{{message.attachment.url}}" class="btn btn-link">{% trans 'FILE' %}</a>
+                                    {% endif %}
+                                </span>
+                            </div>
+                        </div>
+                        {% endif %}
+
+                    {% endfor %}
+
+                    <div id="last-item"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-2">
+        <form class='form' enctype="multipart/form-data" method="post">
+            {% csrf_token %}
+            <div class="form-group mb-2">
+                <textarea name="text" class="form-control textarea" cols="30" rows="2"></textarea>
+            </div>
+            <div class="form-group mb-2">
+                <input type="file" name="attachment">
+                <input type="submit" class="btn btn-primary submit" style="float: right;" value="{% trans 'Send' %}">
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+    document.querySelector("#chat-box").scrollTo(0,document.querySelector("#chat-box").scrollHeight);
+</script>
+
+{% endblock %}

@@ -1,0 +1,639 @@
+{% load i18n static %}
+{% load reverse_lang %}
+{% load current_lang %}
+
+<!DOCTYPE html>
+<html lang="en" class="html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UZCHARMSANOAT</title>
+    <meta property="og:image" content="assets/images/brand.png">
+    <meta name="keywords"
+          content="ЧАРМ-ПОЙАБЗАЛ, УЗЧАРМСАНОАТ УЮШМАСИ, ТОШКЕНТ ВИЛОЯТИДА ЧАРМ-ПОЙАБЗАЛ, UzCharmExpo,УЗЭКПОЦЕНТР,"/>
+    <link rel="shortcut icon" href="{% static 'assets/images/brand.svg' %}" type="image/png">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"/>
+
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/owl-css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/owl-css/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/fancy/jquery.fancybox.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/aos/dist/aos.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Home.css' %}">
+    <link rel="stylesheet" href="{% static 'css/media.css' %}">
+
+    {% block css %}
+        <style>
+        .voice.active {
+            background-color: #183b8c;
+            color: white;
+        }
+        .voice{
+            background-color: #fff;
+        }
+        </style>
+    {% endblock %}
+</head>
+<body>
+
+{#brinchi kok navbar#}
+
+<section class="header">
+    <div class="container">
+        <div class="menu">
+            <div class="menu_left">
+                <ul>
+                    <li class="list-text">
+                        <a href="{% url 'blogs:contact_form' %}" class="border-menu-int">
+                            <img class="white-bag" src="{% static 'assets/images/Group__con.svg' %}" alt="images">
+                            <span>{% trans 'Contact' %}</span>
+                        </a>
+                    </li>
+                    <li class="list-text mobile__version_c">
+                        <a href="mailto:Info@uzcharm.uz" target="_blank">
+                            <i class="fas fa-envelope-open-text mr-2"></i> <span>Info@uzcharm.uz</span>
+                        </a>
+                    </li>
+                    <li class="list-text">
+                        <a {% if menu_settings.instagram %}href="{{ menu_settings.instagram }}" {% else %}
+                           target="_blank" {% endif %}>
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="list-text">
+                        <a {% if menu_settings.telegram %}href="{{ menu_settings.telegram }}" {% else %}
+                           target="_blank" {% endif %}>
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                    </li>
+                    <li class="list-text">
+                        <a {% if menu_settings.facebook %}href="{{ menu_settings.facebook }}" {% else %}
+                           target="_blank" {% endif %}>
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                    </li>
+                    <li class="list-text">
+                        <a {% if menu_settings.facebook %}href="{{ menu_settings.youtube }}" {% else %}
+                           target="_blank" {% endif %}>
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li class="search-btn">
+                        <div href="#" class="topbar-one__search search-popup__toggler">
+                            <i class="fa fa-search help-icon"></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="menu_right">
+                <ul class="p-0">
+                    <li>
+                        <a href="{% reverse_lang request 'uz' %}"
+                           class="{% if request.LANGUAGE_CODE == 'uz' %}active-lang{% endif %}">UZ</a>
+                        <a href="#" class="language-slesh">/</a>
+                    </li>
+                    <li>
+                        <a href="{% reverse_lang request 'ru' %}"
+                           class="{% if request.LANGUAGE_CODE == 'ru' %}active-lang{% endif %}">RU</a>
+                        <a href="#" class="language-slesh">/</a>
+                    </li>
+                    <li>
+                        <a href="{% reverse_lang request 'en' %}"
+                           class="{% if request.LANGUAGE_CODE == 'en' %}active-lang{% endif %}">EN</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{#brinchi kok navbar tugadi#}
+
+
+{#logo va register joylashgan joy#}
+<section class="header-middle">
+    <div class="container">
+        <div class="row style__columns">
+            <div class="col-lg-7 d-flex align-items-center col-header-logo">
+                <a href="{% url 'blogs:index' %}" class="text-decoration-none text-res">
+                    <img src="{{ menu_settings.logo.url }}" class="brand__logo event-content" alt="logo">
+                    <h3 class="brand-text m-0 text-center">{{ menu_settings.logo_text|safe }}</h3>
+                </a>
+            </div>
+
+            <div class="col-lg-5 numbers-col">
+                <div class="phone_numbers">
+                    {% if not user.is_authenticated %}
+                        <a href="{% url 'register' %}" class="register-button text-decoration-none">
+                            <span>{% trans 'Register' %}</span>
+                            <img src="{% static 'assets/images/Sign__up.svg' %}" class="ml-2" alt="">
+                        </a>
+                    {% endif %}
+                    <p>{% trans 'Contact phone number' %}</p>
+                    <a href="tel:{{ menu_settings.tel_first }}"
+                       class="text-decoration-none">{{ menu_settings.tel_first }}</a>
+                </div>
+                <div class="border-number mx-4"></div>
+
+                <div class="phone_numbers2">
+                    {% if not user.is_authenticated %}
+                        <a href="{% url 'login' %}" class="enter-button text-decoration-none">
+                            <span>{% trans 'Login' %}</span>
+                            <i class="far fa-sign-in"></i>
+                        </a>
+                    {% endif %}
+                    <p>{% trans 'Helpline' %}</p>
+                    <a href="tel:{{ menu_settings.tel_second }}"
+                       class="text-decoration-none">{{ menu_settings.tel_second }}</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+{#logo va register joylashgan joy tugadi#}
+
+
+{#menu likla#}
+<section class="nav-bottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar navbar-expand-lg" id="navbar_top">
+                    <div class="nav-link menu-mega" id="open">
+                        <img class="menu" src="{% static 'assets/images/burger.svg' %}" alt="">
+                    </div>
+                    {% if user.is_authenticated %}
+                        <div class="name__company d-sm-block d-lg-none d-md-block">
+                            <div class="dropdown account__drop account__head">
+                                <button
+                                        class="account__drop_btn"
+                                        id="dropdownMenuButton"
+                                        data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-user-circle account__icons"></i>
+                                </button>
+
+                                <div class="dropdown-menu shadow w-auto account__drop-menu border-0 p-0"
+                                     aria-labelledby="dropdownMenuButton">
+                                    <span class="dropdown-item">{% trans 'Hi' %}, {{ request.user.username }}</span>
+                                    <a class="dropdown-item" href="{% url 'profile' %}">{% trans 'Edit profile' %}</a>
+                                    <a class="dropdown-item" href="{% url 'logout' %}">{% trans 'Log out' %}</a>
+                                </div>
+                            </div>
+                        </div>
+                    {% endif %}
+                    <div class="navbar-collapse" style="z-index: 3;" id="main_nav">
+                        <div class="offcanvas-header mt-3">
+                            <button class="btn-close float-right bg-transparent border-0">
+                                <i class="ri-close-line "></i>
+                            </button>
+                        </div>
+                        <ul class="navbar-nav ">
+                            <li class="nav-item">
+                                <a class="nav-link text-white img-house" href="{% url 'blogs:index' %}">
+                                    <img src="{% static 'assets/images/house.svg' %}" alt="">
+                                </a>
+                            </li>
+                            {% for menu in menus %}
+                                <li class="nav-item hover__dropp">
+                                    <a class="nav-link" {% if menu.link %} href="https://{{ request.get_host }}/{% current_lang request %}/{{ menu.link }}" {% else %} {% endif %}>{{ menu.name }}</a>
+                                    {% if menu.children.all %}
+                                        <ul class="drop__item__menu">
+                                            {% for menu in menu.children.all %}
+                                                <li class="li__hover__bg second__hover">
+                                                    <a href="https://{{ request.get_host }}/{% current_lang request %}/{{ menu.link }}">{{ menu.name }}</a>
+                                                    <ul class="nav__menu_open">
+                                                        {% for menu in menu.children.all %}
+                                                            <li class="listtsttsts">
+                                                                <a href="https://{{ request.get_host }}/{% current_lang request %}/{{ menu.link }}">{{ menu.name }}</a>
+                                                                <ul class="third__hoverr">
+                                                                    {% for menu in menu.children.all %}
+                                                                        <li>
+                                                                            <a href="https://{{ request.get_host }}/{% current_lang request %}/{{ menu.link }}">{{ menu.name }}</a>
+                                                                        </li>
+                                                                    {% endfor %}
+                                                                </ul>
+                                                            </li>
+                                                        {% endfor %}
+                                                    </ul>
+                                                </li>
+                                            {% endfor %}
+                                        </ul>
+                                    {% endif %}
+                                </li>
+                            {% endfor %}
+                            <script>
+                                let menulinks = document.querySelectorAll(".nav-link");
+                                menulinks.forEach((link) => {
+                                    if (link.innerHTML.search("lex.uz") !== -1) {
+                                        link.setAttribute("href", "https://lex.uz");
+                                    }
+                                });
+                            </script>
+                        </ul>
+
+                        {% if user.is_authenticated %}
+                            <ul class="navbar-nav text-white ml-auto">
+                                <li>
+                                    <div class="dropdown account__drop account__head">
+                                        <button
+                                                class="account__drop_btn"
+                                                id="dropdownMenuButton"
+                                                data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
+                                            <i class="fas fa-user-circle account__icons"></i>
+                                        </button>
+                                        <div class="dropdown-menu shadow w-auto account__drop-menu border-0 p-0"
+                                             aria-labelledby="dropdownMenuButton">
+                                            <span style="font-size: 11px;"
+                                                  class="dropdown-item">{% trans 'Hi' %}, {{ request.user.username }}</span>
+                                            <a style="font-size: 11px;" class="dropdown-item"
+                                               href="{% url 'profile' %}">{% trans 'Edit profile' %}</a>
+                                            <a style="font-size: 11px;" class="dropdown-item"
+                                               href="{% url 'logout' %}">{% trans 'Log out' %}</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        {% endif %}
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>
+
+{#menu likla tugadi#}
+
+
+{#hamburger mega menu#}
+<div id="overlay" class="over-lay">
+    <svg class="cross" id="close" width="33" height="33" viewBox="0 0 18 17" fill="none"
+         xmlns="http://www.w3.org/2000/svg">
+        <path d="M1 2L17 15M1 15L17 2" stroke="black" stroke-width="3"/>
+    </svg>
+    <div class="container overlay__con">
+        <div class="row">
+
+            {% for menu in menu_links %}
+                {% if menu.children.all %}
+                    <div class="col-lg-4 col-md-4 col-12 insite-menu-mega mb-5">
+                        <ul>
+                            <h3 class="header-menu__nav-link" {% if menu.link %}
+                                href="https://{{ request.get_host }}/{% current_lang request %}/{{ menu.link }}" {% else %} {% endif %}>{{ menu.title }}</h3>
+                            {% if menu.children.all %}
+                                {% for child in menu.children.all %}
+                                    <li>
+                                        <a href="https://{{ request.get_host }}/{% current_lang request %}/{{ child.link }}">
+                                            {{ child.title }}
+                                        </a>
+                                    </li>
+                                {% endfor %}
+                            {% endif %}
+                    </div>
+                {% endif %}
+            {% endfor %}
+
+        </div>
+    </div>
+</div>
+{#hamburger mega menu tugadi#}
+
+
+{#poisk#}
+<div class="search-popup">
+    <form action="{% url 'blogs:news_search_url' %}">
+        <div class="search-popup__overlay custom-cursor__overlay">
+            <span id="circle" class="circle"><i class="ri-close-line"></i></span>
+        </div>
+        <div class="search-popup__inner">
+            <div class="search-popup__form">
+                <input type="text" name="search" placeholder="{% trans 'Type here to Search....' %}">
+                <button type="submit"><i class="fa fa-search help-icon"></i></button>
+            </div>
+        </div>
+    </form>
+</div>
+{#poisk tugadi#}
+
+{% block content %}{% endblock %}
+
+
+{#footer#}
+<section class="footer mt-5">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4 col-md-12">
+                <a href="{% url 'blogs:index' %}" class="logo text-decoration-none">
+                    <img class="footer__logo event-content"
+                         src="http://uzcharmexpo.uz/sites/default/files/logo_belyy.png" alt="">
+                    <h1 class="text-white ml-2">{{ menu_settings.logo_text_footer }}</h1>
+                </a>
+
+                <ul class="p-0 list-unstyled">
+                    <li>
+                        <p class="description-about-com mt-4">
+                            {{ menu_settings.since }}<br>
+                            {{ menu_settings.content }}
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-4 footer-res">
+                <ul class="phone_number list-unstyled">
+                    <li><h1>{% trans 'Phone number' %}</h1></li>
+                    {% if menu_settings.tel_first %}
+                        <li><a href="tel:+998712684066" class="title">{{ menu_settings.tel_first }}</a></li>
+                    {% endif %}
+                    {% if menu_settings.tel_second %}
+                        <li><a href="tel:+998712684066" class="title">{{ menu_settings.tel_second }}</a></li>
+                    {% endif %}
+
+                    {% if menu_settings.tel_third %}
+                        <li><a href="tel:+998712684066" class="title">{{ menu_settings.tel_third }}</a></li>
+                    {% endif %}
+
+                    {% if menu_settings.tel_fourth %}
+                        <li><a href="tel:+998712684066" class="title">{{ menu_settings.tel_fourth }}</a></li>
+                    {% endif %}
+
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-4 footer-res">
+                <ul class="phone_number list-unstyled">
+                    <li><h1>E-mail</h1></li>
+                    <li>
+                        <a href="mailto:info@uzcharm.uz" class="title">{{ menu_settings.email }}</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-4 footer-res">
+                <ul class="phone_number list-unstyled">
+                    <li><h1>{% trans 'Address' %}</h1></li>
+                    <p class="adress">
+                        {{ menu_settings.address }}
+                    </p>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-lg-4">
+                <h2 class="footer-text mb-3">{% trans 'Visitor statistics' %}</h2>
+                <a href="">
+                    <img src="http://cnt0.www.uz/counter/collect?id=25371&r=&pg=http%3A//uzcharm.uz/&c=Y&j=N&wh=1536x864&px=24&js=1.3&col=D0D0CF&t=ffffff&p=24211Da"
+                         alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4">
+                <h2 class="footer-text mb-3">{% trans 'Working hours' %}</h2>
+                <p class="working-hours">{{ menu_settings.operating_mode }}</p>
+            </div>
+            <div class="col-lg-2 col-md-4">
+                <h2 class="footer-text mb-3">{% trans 'Social networks' %}</h2>
+                <ul class="d-flex list-unstyled footer-mob">
+                    <li>
+                        <a href="{{ menu_settings.instagram }}" class="icons-footer text-decoration-none"
+                           target="_blank">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ menu_settings.facebook }}" class="icons-footer text-decoration-none"
+                           target="_blank">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ menu_settings.youtube }}"
+                           class="icons-footer text-decoration-none"
+                           target="_blank">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ menu_settings.telegram }}" class="icons-footer text-decoration-none"
+                           target="_blank">
+                            <i class="fab fa-telegram-plane" aria-hidden="false"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-4">
+                <a href="https://datasite.uz/" target="_blank" class="text-decoration-none">
+                    <p class="text-white mb-3 footer-text">{% trans 'Developed by' %}</p>
+                    <img src="{% static 'assets/images/img-gallery/Group 125.png' %}" class="dataSite-logo" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+{#footer#}
+
+
+{#razmer kotta kichik qladigan#}
+<aside class="help">
+    <ul class="m-0">
+        <li class="help-item1 help-item" id='plus'>
+            A+
+            <div class="component-helpItem">{% trans 'Increasing the font size' %}</div>
+        </li>
+        <li class="help-item2 help-item" id='reset'>
+            A
+            <div class="component-helpItem">{% trans 'Default font size' %}</div>
+        </li>
+        <li class="help-item2 help-item" id='minus'>
+            A-
+            <div class="component-helpItem">{% trans 'Reduce the font size' %}</div>
+        </li>
+        <li class="help-item2 help-item voice">
+            <i class="fa fa-volume-up help-icon"></i>
+            <div class="component-helpItem">{% trans 'Sound assistance' %}</div>
+        </li>
+        <li class="pooreye help-item3 help-item">
+            <i class="fa fa-eye help-icon"></i>
+            <div class="component-helpItem">{% trans 'Grayscale Mode' %}</div>
+        </li>
+        <li class=" help-item3 help-item">
+            <i class="fas fa-tv"></i>
+            <div class="component-helpItem"> 
+                <a class="text-decoration-none text-white" href="{% url 'blogs:virtual_reception_form' %}">
+                {% trans 'Virtual Reception' %}
+            </a>
+        </div>
+        </li>
+    </ul>
+</aside>
+
+{#razmer kotta kichik qladigan tugadi#}
+
+<a id="back-top" href="#top">
+    <button title="UP"><i class="ri-arrow-drop-up-line"></i></button>
+</a>
+
+<div id="preloader">
+    <p id="myText" class="pretext">{% trans "Uzcharmsanoat" %}</p>
+</div>
+
+<script src="{% static 'bootstrap/jquery/jquery.min.js' %}"></script>
+<script src="{% static 'bootstrap/js/popper.min.js' %}"></script>
+<script src="{% static 'bootstrap/js/bootstrap.js' %}"></script>
+<script src="{% static 'assets/owl-js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'assets/app/nav.js' %}"></script>
+<script src="{% static 'assets/app/drop.js' %}"></script>
+<script src="{% static 'assets/fancy/jquery.fancybox.min.js' %}"></script>
+<script src="{% static 'assets/aos/dist/aos.js' %}"></script>
+
+<script>
+
+    const voice = document.querySelector('.voice');
+
+    localStorage.setItem('soundAssistantEnabled', 'true');
+
+    voice.addEventListener("click", function () {
+        var t = JSON.parse(localStorage.getItem("soundAssistantEnabled"));
+        localStorage.setItem("soundAssistantEnabled", !t);
+        voice.classList.toggle('active');
+    });
+
+    $(window).on("mouseup", function () {
+        let lastSoundAssistantTimeout = null;
+        const locales = {
+            en: "US English Female",
+            ru: "Russian Female",
+            uz: "Russian Female"
+        }
+
+        if (JSON.parse(localStorage.getItem("soundAssistantEnabled"))) {
+            let t = window.getSelection();
+            "" !== t.toString() && (lastSoundAssistantTimeout = setTimeout(function (t) {
+                responsiveVoice.isPlaying() && responsiveVoice.cancel(),
+                    responsiveVoice.speak(window.getSelection().toString(), locales[page_lang])
+            }, 250))
+        } else
+            clearTimeout(lastSoundAssistantTimeout)
+    });
+</script>
+<script src="https://code.responsivevoice.org/responsivevoice.js?key=vrXTDTA2"></script>
+
+
+<script>
+    if ($('.search-popup__toggler').length) {
+        $('.search-popup__toggler').on('click', function (e) {
+            $('.search-popup').addClass('active');
+            e.preventDefault();
+        });
+    }
+
+    if ($('.search-popup__overlay').length) {
+        $('.search-popup__overlay').on('click', function (e) {
+            $('.search-popup').removeClass('active');
+            e.preventDefault();
+        });
+    }
+
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > 50) {
+                document.getElementById('navbar_top').classList.add('fixed-top');
+                navbar_height = document.querySelector('.navbar').offsetHeight;
+                document.body.style.paddingTop = navbar_height + 'px';
+            } else {
+                document.getElementById('navbar_top').classList.remove('fixed-top');
+                document.body.style.paddingTop = '0';
+            }
+        });
+    });
+</script>
+<script>
+    var time = 2, cc = 1;
+    $(window).scroll(function () {
+        $('#counter').each(function () {
+            var
+                cPos = $(this).offset().top,
+                topWindow = $(window).scrollTop();
+            if (cPos < topWindow + 600) {
+                $('.numbers').addClass('viz')
+                if (cc < 2) {
+                    $('div').each(function () {
+                        var
+                            i = 1,
+                            num = $(this).data('num'),
+                            step = 1000 * time / num,
+                            that = $(this),
+                            int = setInterval(function () {
+                                if (i <= num) {
+                                    that.html(i);
+                                } else {
+                                    cc = cc + 2;
+                                    clearInterval(int);
+                                }
+                                i++;
+                            }, step);
+                    })
+                }
+            }
+        })
+    })
+</script>
+<script>
+    $('.language-select').click(function () {
+        $(this).toggleClass('open');
+
+    })
+
+    $('.language-select li').click(function () {
+        $('ul li').removeClass('active');
+        $(this).toggleClass('active');
+    })
+</script>
+<script>
+    $(".accordion__title.active").next().slideDown();
+    $(".accordion__title").on("click", function () {
+        if ($(this).hasClass('active')) {
+            $(this).removeClass("active").next().slideUp();
+        } else {
+            $(".accordion__title.active").removeClass("active").next(".accordion__body").slideUp();
+            $(this).addClass('active').next('.accordion__body').slideDown();
+        }
+    });
+
+</script>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/60c232627f4b000ac036e875/1f7r99lai';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+    })();
+</script>
+<script>
+    window.onload = () => {
+        const urlParts = (window.location.href).split("/");
+        console.log(urlParts.length);
+        if(urlParts.length > 5){
+            window.scrollBy(0,400);
+        }
+    }
+</script>
+<!--End of Tawk.to Script-->
+{% block js %}{% endblock %}
+</body>
+</html>

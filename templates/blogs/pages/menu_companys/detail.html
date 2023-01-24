@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load i18n static %}
+
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-md-12 mt-5">
+                <img src="{{ post.image.url }}" alt="{{ post.title }}" class="ml-lg-n3 img__news__detail" style="height: auto; width: 100%;">
+            </div>
+            <div class="col-md-12 mt-5 mb-5">
+                <div class="detail-date">
+                    <h4>{{ company_type.created|date:"d.m.Y" }}</h4>
+                </div>
+
+                <div class="detail-title">
+                    <h3>{{ company_type.name }}</h3>
+                </div>
+
+                <div class="detail-description">{{ company_type.content|safe }}</div>
+
+            </div>
+
+        </div>
+    </div>
+{% endblock %}

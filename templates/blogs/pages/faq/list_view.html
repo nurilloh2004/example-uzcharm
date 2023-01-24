@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load i18n static %}
+
+{% block content %}
+
+    <section class="all__news" style="background: url('{% static 'assets/images/bannerimg.png' %}')">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-md-12">
+                    <div class="heading_news-all">
+                        <h1>{% trans 'FAQs' %}</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-12 mt-5">
+                <div class="accordion">
+                    {% for item in faqs %}
+                        <div class="accordion__item">
+                            <h2 class="accordion__title">
+                                <span style="width: 90%;">{{ item.question }}</span>
+                            </h2>
+                            <div class="accordion__body">
+                                <p>{{ item.answer }}</p>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,1190 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-09-08 11:28+0500\n"
+"PO-Revision-Date: 2021-09-08 11:29+0437\n"
+"Last-Translator: b'Anonymous User <anonymous@user.tld>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.9.3\n"
+
+#: blogs/admin.py:12
+msgid "Uzcharmsanoat admin panel"
+msgstr ""
+
+#: blogs/admin.py:13
+msgid "Uzcharmsanoat Admin Portal"
+msgstr ""
+
+#: blogs/admin.py:14
+msgid "Welcome to Uzcharmsanoat Portal"
+msgstr ""
+
+#: blogs/forms.py:49 templates/users/admin_profile.html:11
+#: templates/users/profile.html:9 templates/users/register.html:35
+#: templates/users/settings.html:16
+msgid "Fullname"
+msgstr "Fullname"
+
+#: blogs/forms.py:50
+msgid "email"
+msgstr "Email"
+
+#: blogs/forms.py:51 blogs/models.py:608
+msgid "phone_number"
+msgstr ""
+
+#: blogs/forms.py:52 blogs/models.py:123
+msgid "region"
+msgstr ""
+
+#: blogs/forms.py:53
+msgid "address"
+msgstr "Address"
+
+#: blogs/forms.py:54
+msgid "date_of_birth"
+msgstr "Date of Birth"
+
+#: blogs/forms.py:55
+msgid "gender"
+msgstr "Gender"
+
+#: blogs/forms.py:56
+msgid "marital_status"
+msgstr "Maritial Status"
+
+#: blogs/forms.py:57
+msgid "file_upload"
+msgstr ""
+
+#: blogs/forms.py:58
+msgid "message"
+msgstr "Message"
+
+#: blogs/models.py:41 blogs/models.py:122 blogs/models.py:736
+#: blogs/models.py:799 blogs/models.py:814 blogs/models.py:829
+#: blogs/models.py:844 blogs/models.py:859 blogs/models.py:877
+#: blogs/models.py:892 blogs/models.py:907 blogs/models.py:924
+#: blogs/models.py:942 blogs/models.py:960 blogs/models.py:978
+#: blogs/models.py:996 blogs/models.py:1014 blogs/models.py:1030
+#: blogs/models.py:1046 blogs/models.py:1061 blogs/models.py:1077
+#: blogs/models.py:1098 blogs/models.py:1113 blogs/models.py:1131
+msgid "title"
+msgstr ""
+
+#: blogs/models.py:42
+msgid " short_description"
+msgstr ""
+
+#: blogs/models.py:43 blogs/models.py:75 blogs/models.py:158
+#: blogs/models.py:234 blogs/models.py:517 blogs/models.py:638
+#: blogs/models.py:653
+msgid "Full text"
+msgstr ""
+
+#: blogs/models.py:51
+msgid "status"
+msgstr ""
+
+#: blogs/models.py:59
+msgid "Post"
+msgstr ""
+
+#: blogs/models.py:60
+msgid "Posts"
+msgstr ""
+
+#: blogs/models.py:73 blogs/models.py:637 blogs/models.py:652
+#: blogs/models.py:769
+msgid "Title"
+msgstr ""
+
+#: blogs/models.py:74
+msgid "Short description"
+msgstr ""
+
+#: blogs/models.py:90
+msgid "Tender"
+msgstr ""
+
+#: blogs/models.py:91
+msgid "Tenders"
+msgstr ""
+
+#: blogs/models.py:101 blogs/models.py:138
+msgid "name"
+msgstr ""
+
+#: blogs/models.py:104 blogs/models.py:125 blogs/models.py:141
+msgid "image"
+msgstr ""
+
+#: blogs/models.py:105 blogs/models.py:142 blogs/models.py:1116
+msgid "slug"
+msgstr ""
+
+#: blogs/models.py:114
+msgid "Company Type"
+msgstr ""
+
+#: blogs/models.py:115
+msgid "Company Types"
+msgstr ""
+
+#: blogs/models.py:121
+msgid "stir"
+msgstr ""
+
+#: blogs/models.py:132
+msgid "Menu Company"
+msgstr ""
+
+#: blogs/models.py:133
+msgid "Menu Companys"
+msgstr ""
+
+#: blogs/models.py:150
+#, fuzzy
+#| msgid "Product Categories"
+msgid "Product Category"
+msgstr "Product Categories"
+
+#: blogs/models.py:151 templates/blogs/pages/product/product_list.html:34
+msgid "Product Categories"
+msgstr "Product Categories"
+
+#: blogs/models.py:172
+msgid "Product"
+msgstr ""
+
+#: blogs/models.py:173
+msgid "Products"
+msgstr ""
+
+#: blogs/models.py:185 blogs/models.py:201
+msgid "Website link"
+msgstr ""
+
+#: blogs/models.py:191
+msgid "Useful Link"
+msgstr ""
+
+#: blogs/models.py:192
+msgid "Useful Links"
+msgstr ""
+
+#: blogs/models.py:207
+msgid "Expo Link"
+msgstr ""
+
+#: blogs/models.py:208
+msgid "Expo Links"
+msgstr ""
+
+#: blogs/models.py:215
+msgid "adress"
+msgstr ""
+
+#: blogs/models.py:226
+msgid "Partner"
+msgstr ""
+
+#: blogs/models.py:227
+msgid "Partners"
+msgstr ""
+
+#: blogs/models.py:242
+msgid "Vacancy"
+msgstr ""
+
+#: blogs/models.py:243
+msgid "Vacancys"
+msgstr ""
+
+#: blogs/models.py:263
+msgid "Gallery Category"
+msgstr ""
+
+#: blogs/models.py:264
+msgid "Gallery Categorys"
+msgstr ""
+
+#: blogs/models.py:293
+msgid "Gallery Image"
+msgstr ""
+
+#: blogs/models.py:294
+msgid "Gallery Images"
+msgstr ""
+
+#: blogs/models.py:315 blogs/models.py:316
+msgid "Media"
+msgstr ""
+
+#: blogs/models.py:334
+msgid "Infographic"
+msgstr ""
+
+#: blogs/models.py:335
+msgid "Infographics"
+msgstr ""
+
+#: blogs/models.py:342 blogs/models.py:360 blogs/models.py:378
+#: blogs/models.py:672 blogs/models.py:752
+msgid "Content"
+msgstr ""
+
+#: blogs/models.py:352
+msgid "Static Content"
+msgstr ""
+
+#: blogs/models.py:353
+msgid "Static Contents"
+msgstr ""
+
+#: blogs/models.py:370
+msgid "Legal Document"
+msgstr ""
+
+#: blogs/models.py:371
+msgid "Legal Documents"
+msgstr ""
+
+#: blogs/models.py:388
+msgid "Statistic"
+msgstr ""
+
+#: blogs/models.py:389 templates/blogs/index.html:115
+#: templates/blogs/pages/statistics/list.html:11
+msgid "Statistics"
+msgstr ""
+
+#: blogs/models.py:405
+msgid "Menu item"
+msgstr ""
+
+#: blogs/models.py:406
+msgid "Menu items"
+msgstr ""
+
+#: blogs/models.py:416
+msgid "Icon"
+msgstr ""
+
+#: blogs/models.py:423
+msgid "ShortLink item"
+msgstr ""
+
+#: blogs/models.py:424
+msgid "ShortLink items"
+msgstr ""
+
+#: blogs/models.py:453
+msgid "Staff"
+msgstr ""
+
+#: blogs/models.py:454
+msgid "Staffs"
+msgstr ""
+
+#: blogs/models.py:461
+msgid "content about us"
+msgstr ""
+
+#: blogs/models.py:462
+msgid "history about us"
+msgstr ""
+
+#: blogs/models.py:464
+msgid "company_structure"
+msgstr ""
+
+#: blogs/models.py:465
+msgid "company_report"
+msgstr ""
+
+#: blogs/models.py:470
+msgid "Company Info"
+msgstr ""
+
+#: blogs/models.py:471
+msgid "Company Infos"
+msgstr ""
+
+#: blogs/models.py:484 blogs/models.py:485
+msgid "FAQ"
+msgstr ""
+
+#: blogs/models.py:504
+msgid "Site Setting"
+msgstr ""
+
+#: blogs/models.py:505
+msgid "Site Settings"
+msgstr ""
+
+#: blogs/models.py:535
+msgid "Exhibition"
+msgstr ""
+
+#: blogs/models.py:536
+msgid "Exhibitions"
+msgstr ""
+
+#: blogs/models.py:542
+msgid "Male"
+msgstr ""
+
+#: blogs/models.py:543
+msgid "Female"
+msgstr ""
+
+#: blogs/models.py:547
+msgid "Single"
+msgstr ""
+
+#: blogs/models.py:548
+msgid "Married"
+msgstr ""
+
+#: blogs/models.py:580 blogs/models.py:581 templates/base.html:471
+msgid "Virtual Reception"
+msgstr ""
+
+#: blogs/models.py:598 blogs/models.py:628
+msgid "Request form: Contact form data"
+msgstr ""
+
+#: blogs/models.py:599 blogs/models.py:629
+msgid "Request forms: Contact form data"
+msgstr ""
+
+#: blogs/models.py:606 blogs/models.py:621
+msgid "full_name"
+msgstr ""
+
+#: blogs/models.py:609 blogs/models.py:624
+msgid "subject"
+msgstr ""
+
+#: blogs/models.py:615 templates/base.html:53
+#: templates/blogs/pages/contact_page/contact_form.html:10
+#: templates/blogs/pages/contact_page/contact_form.html:31
+msgid "Contact"
+msgstr ""
+
+#: blogs/models.py:616
+msgid "Contacts"
+msgstr ""
+
+#: blogs/models.py:622
+msgid "phone"
+msgstr ""
+
+#: blogs/models.py:645 templates/blogs/pages/about/indexAbout.html:81
+msgid "Legislation"
+msgstr ""
+
+#: blogs/models.py:646
+msgid "Legislations"
+msgstr ""
+
+#: blogs/models.py:660 blogs/models.py:661
+#: templates/blogs/pages/about/indexAbout.html:93
+msgid "Regional Administration"
+msgstr ""
+
+#: blogs/models.py:668
+msgid "Logo text"
+msgstr ""
+
+#: blogs/models.py:669
+msgid "Logo text footer"
+msgstr ""
+
+#: blogs/models.py:670 templates/base.html:381
+#: templates/blogs/pages/membership/detail.html:32
+#: templates/blogs/pages/vacancy/vacancy_list_view.html:69
+msgid "Address"
+msgstr "Address"
+
+#: blogs/models.py:671
+msgid "Operating Mode"
+msgstr ""
+
+#: blogs/models.py:673
+msgid "Home Page Text"
+msgstr ""
+
+#: blogs/models.py:675
+msgid "Image"
+msgstr ""
+
+#: blogs/models.py:676
+msgid "Tel First"
+msgstr ""
+
+#: blogs/models.py:677
+msgid "Tel Second"
+msgstr ""
+
+#: blogs/models.py:678
+msgid "Tel Third"
+msgstr ""
+
+#: blogs/models.py:679
+msgid "Tel Fourth"
+msgstr ""
+
+#: blogs/models.py:682
+msgid "Since"
+msgstr ""
+
+#: blogs/models.py:689
+msgid "Site Background"
+msgstr ""
+
+#: blogs/models.py:690
+msgid "Site Background 2"
+msgstr ""
+
+#: blogs/models.py:694 blogs/models.py:695
+msgid "Menu Settings"
+msgstr ""
+
+#: blogs/models.py:701
+msgid "Text"
+msgstr ""
+
+#: blogs/models.py:703
+msgid "Banner Carousel"
+msgstr ""
+
+#: blogs/models.py:706 blogs/models.py:707
+msgid "Banners"
+msgstr ""
+
+#: blogs/models.py:713
+msgid "Region Name"
+msgstr ""
+
+#: blogs/models.py:714
+msgid "Director Name"
+msgstr ""
+
+#: blogs/models.py:715
+msgid "Company Name"
+msgstr ""
+
+#: blogs/models.py:718 templates/users/register.html:47
+#: templates/users/settings.html:28
+msgid "Phone"
+msgstr ""
+
+#: blogs/models.py:719 templates/blogs/pages/vacancy/vacancy_list_view.html:79
+#: templates/users/register.html:60 templates/users/settings.html:20
+msgid "Email"
+msgstr ""
+
+#: blogs/models.py:724
+msgid "Region"
+msgstr ""
+
+#: blogs/models.py:725
+msgid "Regions"
+msgstr ""
+
+#: blogs/models.py:738 blogs/models.py:1128
+msgid "link"
+msgstr ""
+
+#: blogs/models.py:746
+msgid "Menu Overlay"
+msgstr ""
+
+#: blogs/models.py:747
+msgid "Menu Overlays"
+msgstr ""
+
+#: blogs/models.py:762 blogs/models.py:763
+msgid "How to join"
+msgstr ""
+
+#: blogs/models.py:777
+msgid "Benefit"
+msgstr ""
+
+#: blogs/models.py:778
+msgid "Benefits"
+msgstr ""
+
+#: blogs/models.py:792
+msgid "Structure"
+msgstr ""
+
+#: blogs/models.py:793
+msgid "Structures"
+msgstr ""
+
+#: blogs/models.py:800 blogs/models.py:815 blogs/models.py:830
+#: blogs/models.py:845 blogs/models.py:860 blogs/models.py:878
+#: blogs/models.py:893 blogs/models.py:908 blogs/models.py:925
+#: blogs/models.py:943 blogs/models.py:961 blogs/models.py:979
+#: blogs/models.py:997 blogs/models.py:1015 blogs/models.py:1031
+#: blogs/models.py:1047 blogs/models.py:1062 blogs/models.py:1078
+#: blogs/models.py:1099
+msgid "content"
+msgstr ""
+
+#: blogs/models.py:807 blogs/models.py:808
+msgid "History of Organization"
+msgstr ""
+
+#: blogs/models.py:822 blogs/models.py:823
+msgid "Territorial Administration"
+msgstr ""
+
+#: blogs/models.py:837
+msgid "Subsidary"
+msgstr ""
+
+#: blogs/models.py:838
+msgid "Subsidaries"
+msgstr ""
+
+#: blogs/models.py:852
+msgid "Subsidary 2"
+msgstr ""
+
+#: blogs/models.py:853
+msgid "Subsidaries 2"
+msgstr ""
+
+#: blogs/models.py:870
+msgid "Foreighn Representation"
+msgstr ""
+
+#: blogs/models.py:871
+msgid "Foreighn Representations"
+msgstr ""
+
+#: blogs/models.py:885
+msgid "Press service"
+msgstr ""
+
+#: blogs/models.py:886
+msgid "Press services"
+msgstr ""
+
+#: blogs/models.py:900 blogs/models.py:901
+msgid "Moscow"
+msgstr ""
+
+#: blogs/models.py:917 blogs/models.py:918
+msgid "Events Admin"
+msgstr ""
+
+#: blogs/models.py:935
+msgid "Investment potential"
+msgstr ""
+
+#: blogs/models.py:936
+msgid "Investment potentials"
+msgstr ""
+
+#: blogs/models.py:953
+msgid "Export Potential"
+msgstr ""
+
+#: blogs/models.py:954
+msgid "Export Potentials"
+msgstr ""
+
+#: blogs/models.py:971
+msgid "Export Implementation"
+msgstr ""
+
+#: blogs/models.py:972
+msgid "Export Implementations"
+msgstr ""
+
+#: blogs/models.py:989
+msgid "Export Law"
+msgstr ""
+
+#: blogs/models.py:990
+msgid "Export Laws"
+msgstr ""
+
+#: blogs/models.py:1007
+msgid "Market entry strategy"
+msgstr ""
+
+#: blogs/models.py:1008
+msgid "Market entry strategies"
+msgstr ""
+
+#: blogs/models.py:1023
+msgid "Presentation"
+msgstr ""
+
+#: blogs/models.py:1024
+#: templates/blogs/pages/presentations/presentations.html:36
+msgid "Presentations"
+msgstr ""
+
+#: blogs/models.py:1039
+msgid "Press Release"
+msgstr ""
+
+#: blogs/models.py:1040
+msgid "Press Releases"
+msgstr ""
+
+#: blogs/models.py:1054
+msgid "Youth Policy"
+msgstr ""
+
+#: blogs/models.py:1055
+msgid "Youth Policies"
+msgstr ""
+
+#: blogs/models.py:1070
+msgid "Publication"
+msgstr ""
+
+#: blogs/models.py:1071
+#: templates/blogs/pages/publications/publications.html:35
+msgid "Publications"
+msgstr ""
+
+#: blogs/models.py:1091
+msgid "Investor"
+msgstr ""
+
+#: blogs/models.py:1092
+msgid "Investors"
+msgstr ""
+
+#: blogs/models.py:1106
+msgid "Exporter"
+msgstr ""
+
+#: blogs/models.py:1107
+msgid "Exporters"
+msgstr ""
+
+#: blogs/models.py:1122
+msgid "Foreign Representative Link"
+msgstr ""
+
+#: blogs/models.py:1123
+msgid "Foreign Representative Links"
+msgstr ""
+
+#: blogs/models.py:1134
+msgid "icon"
+msgstr ""
+
+#: blogs/models.py:1135
+msgid "file"
+msgstr ""
+
+#: blogs/models.py:1141
+msgid "Foreign Representative Item"
+msgstr ""
+
+#: blogs/models.py:1142
+msgid "Foreign Representative Items"
+msgstr ""
+
+#: templates/base.html:134 templates/users/register.html:85
+msgid "Register"
+msgstr ""
+
+#: templates/base.html:138
+msgid "Contact phone number"
+msgstr ""
+
+#: templates/base.html:147 templates/users/login.html:32
+msgid "Login"
+msgstr ""
+
+#: templates/base.html:151
+msgid "Helpline"
+msgstr ""
+
+#: templates/base.html:186 templates/base.html:257
+msgid "Hi"
+msgstr ""
+
+#: templates/base.html:187 templates/base.html:259
+msgid "Edit profile"
+msgstr ""
+
+#: templates/base.html:188 templates/base.html:261
+#: templates/users/tabs.html:20
+msgid "Log out"
+msgstr "Log out"
+
+#: templates/base.html:319
+msgid "Type here to Search...."
+msgstr ""
+
+#: templates/base.html:352
+#: templates/blogs/pages/contact_page/contact_form.html:49
+#: templates/blogs/pages/membership/detail.html:33
+#: templates/blogs/pages/vacancy/vacancy_list_view.html:74
+msgid "Phone number"
+msgstr ""
+
+#: templates/base.html:391
+msgid "Visitor statistics"
+msgstr ""
+
+#: templates/base.html:398
+msgid "Working hours"
+msgstr ""
+
+#: templates/base.html:402
+msgid "Social networks"
+msgstr ""
+
+#: templates/base.html:433
+msgid "Developed by"
+msgstr ""
+
+#: templates/base.html:449
+msgid "Increasing the font size"
+msgstr ""
+
+#: templates/base.html:453
+msgid "Default font size"
+msgstr ""
+
+#: templates/base.html:457
+msgid "Reduce the font size"
+msgstr ""
+
+#: templates/base.html:461
+msgid "Sound assistance"
+msgstr ""
+
+#: templates/base.html:465
+msgid "Grayscale Mode"
+msgstr ""
+
+#: templates/base.html:485
+msgid "Uzcharmsanoat"
+msgstr ""
+
+#: templates/blogs/index.html:80
+msgid "All news"
+msgstr "ALL NEWS"
+
+#: templates/blogs/index.html:102 templates/blogs/index.html:164
+#: templates/blogs/index.html:193 templates/blogs/index.html:264
+msgid "more..."
+msgstr "More"
+
+#: templates/blogs/index.html:140
+msgid "PRODUCTS"
+msgstr ""
+
+#: templates/blogs/index.html:177
+msgid "PHOTO GALLERY"
+msgstr ""
+
+#: templates/blogs/index.html:205
+msgid "Media Uzcharmsanoat"
+msgstr ""
+
+#: templates/blogs/index.html:223
+msgid "See all videos"
+msgstr ""
+
+#: templates/blogs/index.html:238 templates/blogs/pages/faq/list_view.html:11
+msgid "FAQs"
+msgstr ""
+
+#: templates/blogs/index.html:284
+msgid "Кўргазма ва электрон платформалар"
+msgstr "EXHIBITIONS AND ELECTRONIC SITES"
+
+#: templates/blogs/index.html:310
+msgid "Interactive map"
+msgstr "Interactive map"
+
+#: templates/blogs/index.html:372
+msgid "ASSOCIATION PARTNERS"
+msgstr "ASSOCIATION PARTNERS"
+
+#: templates/blogs/index.html:402
+msgid "USEFUL LINKS"
+msgstr ""
+
+#: templates/blogs/pages/about/indexAbout.html:20
+msgid "ABOUT THE ASSOCIATION"
+msgstr ""
+
+#: templates/blogs/pages/about/indexAbout.html:35
+#: templates/blogs/pages/about/indexAbout.html:47
+msgid "About us"
+msgstr ""
+
+#: templates/blogs/pages/about/indexAbout.html:37
+msgid "Association history"
+msgstr ""
+
+#: templates/blogs/pages/about/indexAbout.html:38
+msgid "report"
+msgstr ""
+
+#: templates/blogs/pages/about/indexAbout.html:39
+msgid "legislation"
+msgstr ""
+
+#: templates/blogs/pages/about/indexAbout.html:40
+msgid "Regional administration"
+msgstr ""
+
+#: templates/blogs/pages/about/indexAbout.html:57
+msgid "Association History"
+msgstr ""
+
+#: templates/blogs/pages/about/indexAbout.html:70
+msgid "REPORTS ON THE ACCOMPLISHED WORK"
+msgstr ""
+
+#: templates/blogs/pages/about2/leadership.html:78
+msgid "LEADERSHIP"
+msgstr ""
+
+#: templates/blogs/pages/about2/leadership.html:80
+msgid "PRESS LEADERS"
+msgstr "PRESS"
+
+#: templates/blogs/pages/about2/leadership.html:107
+msgid "Qabul kunlari"
+msgstr "Reception days"
+
+#: templates/blogs/pages/about2/leadership.html:112
+msgid "Phone Number"
+msgstr ""
+
+#: templates/blogs/pages/contact_page/contact_form.html:38
+msgid "Your name"
+msgstr ""
+
+#: templates/blogs/pages/contact_page/contact_form.html:42
+msgid "E-mail"
+msgstr ""
+
+#: templates/blogs/pages/contact_page/contact_form.html:53
+msgid "Subject"
+msgstr ""
+
+#: templates/blogs/pages/contact_page/contact_form.html:60
+msgid "Message"
+msgstr "Message"
+
+#: templates/blogs/pages/contact_page/contact_form.html:67
+#: templates/blogs/pages/virtual_reception/virtual_reception_form.html:102
+#: templates/users/admin_profile.html:72 templates/users/profile.html:77
+msgid "Send"
+msgstr ""
+
+#: templates/blogs/pages/contact_page/contact_form.html:83
+msgid "Feedback"
+msgstr ""
+
+#: templates/blogs/pages/exhibition/exhibition_list.html:11
+#: templates/blogs/pages/legislation/exhibition_list.html:11
+msgid "Exhibitions and fairs"
+msgstr ""
+
+#: templates/blogs/pages/for_entrepreneurs/entrepreneurs.html:11
+msgid "List of member enterprises of the association"
+msgstr ""
+
+#: templates/blogs/pages/for_entrepreneurs/entrepreneurs.html:24
+msgid "Search by TIN and by company name"
+msgstr ""
+
+#: templates/blogs/pages/for_entrepreneurs/entrepreneurs.html:35
+msgid "TIN"
+msgstr ""
+
+#: templates/blogs/pages/for_entrepreneurs/entrepreneurs.html:36
+msgid "Full name of the organization"
+msgstr ""
+
+#: templates/blogs/pages/for_entrepreneurs/entrepreneurs.html:37
+msgid "Territory"
+msgstr ""
+
+#: templates/blogs/pages/foreighn_representations/foreign_representations.html:49
+msgid "Foreign Representations Groups"
+msgstr ""
+
+#: templates/blogs/pages/foreighn_representations/foreign_representations.html:73
+#: templates/blogs/pages/menu_companys/company_types.html:86
+#: templates/blogs/pages/menu_companys/menu_companys.html:72
+msgid "Topilmadi!"
+msgstr "Not found!"
+
+#: templates/blogs/pages/foreighn_representations/items.html:47
+msgid "“Ўзчармсаноат” уюшмаси фаолиятига доир меъёрий-ҳуқуқий ҳужжатлар"
+msgstr ""
+
+#: templates/blogs/pages/foreighn_representations/links.html:47
+msgid "МЕЪЁРИЙ-ҲУҚУҚИЙ ҲУЖЖАТЛАР РЎЙХАТИ"
+msgstr ""
+
+#: templates/blogs/pages/gallery/images.html:11
+#: templates/blogs/pages/gallery/indexG.html:59
+msgid "All photos"
+msgstr ""
+
+#: templates/blogs/pages/how_to_join/how_to_join.html:29
+msgid "Uyushmaga aʼzo boʻlish tartibi"
+msgstr "How to Join"
+
+#: templates/blogs/pages/legaldocument/detail.html:12
+#: templates/blogs/pages/news/detail.html:30
+#: templates/blogs/pages/static_content/detail.html:12
+#: templates/blogs/pages/statistics/detail.html:12
+msgid "Print"
+msgstr ""
+
+#: templates/blogs/pages/legaldocument/detail.html:36
+#: templates/blogs/pages/static_content/detail.html:36
+#: templates/blogs/pages/statistics/detail.html:36
+#: templates/blogs/pages/tender/detail.html:28
+msgid "share"
+msgstr ""
+
+#: templates/blogs/pages/legaldocument/list.html:11
+msgid "Normative legal documents"
+msgstr ""
+
+#: templates/blogs/pages/membership/detail.html:8
+msgid "ТЕРИНИ ҚАЙТА ИШЛАШ ҚОРХОНАЛАРИ"
+msgstr ""
+
+#: templates/blogs/pages/membership/detail.html:13
+msgid "Post date:"
+msgstr ""
+
+#: templates/blogs/pages/membership/detail.html:17
+msgid "PDF version"
+msgstr ""
+
+#: templates/blogs/pages/membership/detail.html:27
+msgid "Enterprise name"
+msgstr ""
+
+#: templates/blogs/pages/membership/detail.html:28
+msgid "Type of activity"
+msgstr ""
+
+#: templates/blogs/pages/membership/detail.html:29
+msgid "Enterprise"
+msgstr ""
+
+#: templates/blogs/pages/membership/list.html:11
+msgid "MEMBERS OF THE ASSOCIATION"
+msgstr ""
+
+#: templates/blogs/pages/membership/list.html:26
+msgid "Uyushmaga azolikning afzalliklari."
+msgstr ""
+
+#: templates/blogs/pages/membership/list.html:29
+#, fuzzy
+#| msgid "Uyushmaga aʼzo boʻlish tartibi"
+msgid "A'zo bo'lish tartibi."
+msgstr "How to Join"
+
+#: templates/blogs/pages/membership/list.html:32
+msgid "Uyushmaga onlayn ariza yuborish."
+msgstr ""
+
+#: templates/blogs/pages/membership/list.html:35
+msgid "Uyishma tartibidagi a'zo korxonalar ro'yxati"
+msgstr ""
+
+#: templates/blogs/pages/membership_procedure/membership_procedure.html:9
+msgid "The procedure for membership in the association"
+msgstr ""
+
+#: templates/blogs/pages/menu_companys/company_types.html:49
+msgid "Uyushma tarkibidagi aʼzo korxonalar kategoriyasi"
+msgstr ""
+
+#: templates/blogs/pages/menu_companys/menu_companys.html:39
+msgid "Поиск по ИНН и по названию предприятия"
+msgstr ""
+
+#: templates/blogs/pages/news/list.html:11
+msgid "All News"
+msgstr ""
+
+#: templates/blogs/pages/news/list.html:37
+msgid "More"
+msgstr "More"
+
+#: templates/blogs/pages/news/search_post_result.html:11
+msgid "Search results"
+msgstr ""
+
+#: templates/blogs/pages/news/search_post_result.html:33
+msgid "No data found"
+msgstr ""
+
+#: templates/blogs/pages/product/item.html:12
+msgid "All products"
+msgstr ""
+
+#: templates/blogs/pages/tender/list.html:11
+msgid "Announcements and Tenders"
+msgstr ""
+
+#: templates/blogs/pages/tender/list.html:47
+msgid "From"
+msgstr ""
+
+#: templates/blogs/pages/tender/list.html:51
+msgid "To"
+msgstr ""
+
+#: templates/blogs/pages/tender/list.html:55
+#: templates/blogs/pages/tender/list.html:56
+msgid "Show"
+msgstr ""
+
+#: templates/blogs/pages/vacancy/vacancy_list_view.html:14
+msgid "Main"
+msgstr ""
+
+#: templates/blogs/pages/vacancy/vacancy_list_view.html:21
+msgid "Resume"
+msgstr ""
+
+#: templates/blogs/pages/vacancy/vacancy_list_view.html:43
+msgid "Full Name"
+msgstr ""
+
+#: templates/blogs/pages/vacancy/vacancy_list_view.html:48
+msgid "Date of birth"
+msgstr ""
+
+#: templates/blogs/pages/vacancy/vacancy_list_view.html:53
+msgid "Nationality"
+msgstr ""
+
+#: templates/blogs/pages/vacancy/vacancy_list_view.html:61
+msgid "Marital status"
+msgstr ""
+
+#: templates/blogs/pages/vacancy/vacancy_list_view.html:84
+msgid "TIN number"
+msgstr ""
+
+#: templates/blogs/pages/vacancy/vacancy_list_view.html:89
+msgid "Degree"
+msgstr ""
+
+#: templates/blogs/pages/vacancy/vacancy_list_view.html:94
+msgid "Speciality"
+msgstr ""
+
+#: templates/blogs/pages/vacancy/vacancy_list_view.html:108
+msgid "Additional information"
+msgstr ""
+
+#: templates/blogs/pages/vacancy/vacancy_list_view.html:116
+msgid "Upload Resume"
+msgstr ""
+
+#: templates/blogs/pages/video/index.html:10
+msgid "All Videos"
+msgstr ""
+
+#: templates/blogs/pages/virtual_reception/virtual_reception_form.html:96
+msgid "Allow my question to be published"
+msgstr ""
+
+#: templates/blogs/pages/virtual_reception/virtual_reception_form.html:112
+#: templates/users/login.html:37 templates/users/register.html:91
+msgid "Back to home"
+msgstr "Back to home"
+
+#: templates/users/admin_profile.html:49
+msgid "FILE"
+msgstr ""
+
+#: templates/users/login.html:27 templates/users/register.html:28
+#: templates/users/settings.html:24
+msgid "Username"
+msgstr "Username"
+
+#: templates/users/login.html:30 templates/users/register.html:41
+msgid "Password"
+msgstr ""
+
+#: templates/users/profile.html:27
+msgid "Choose chat"
+msgstr ""
+
+#: templates/users/register.html:52 templates/users/settings.html:36
+msgid "Financial Projections"
+msgstr ""
+
+#: templates/users/register.html:65
+msgid "Password (Confirmation)"
+msgstr ""
+
+#: templates/users/register.html:77 templates/users/settings.html:32
+msgid "Organization Passport"
+msgstr ""
+
+#: templates/users/settings.html:9
+msgid "Fullname:"
+msgstr "Fullname:"
+
+#: templates/users/settings.html:48
+msgid "Organization Charter"
+msgstr ""
+
+#: templates/users/settings.html:52
+msgid "Save Changes"
+msgstr ""
+
+#: templates/users/tabs.html:16
+msgid "Tab Settings"
+msgstr ""
+
+#~ msgid "Нашр этилган"
+#~ msgstr "Published at:"
+
+#~ msgid "Select a country"
+#~ msgstr "Select a region"
+
+#~ msgid "Select a region"
+#~ msgstr "Select a region"
+
+#~ msgid "Gender"
+#~ msgstr "Gender"

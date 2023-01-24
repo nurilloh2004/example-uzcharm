@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static i18n %}
+
+{% block content %}
+
+    <section class="all__news" style="background: url('{% static 'assets/images/bannerimg.png' %}')">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-md-12">
+                    <div class="heading_news-all">
+                        <h1>{% trans 'Announcements and Tenders' %}</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+    <div class="row mt-5">
+
+
+        {% for item in tenders %}
+            <div class="col-lg-4 col-md-6 col-12 mb-4">
+                <a href="{% url 'blogs:tender_detail' item.created.year item.created.month item.created.day item.slug %}" class="card border-0 advertising__card text-decoration-none">
+                    <div class="card-body">
+                        <div class="advertising__title">
+                            {{ item.title }}
+                        </div>
+                        <span class="sapan__Date">{{ item.created|date }}</span>
+                        <div class="advertising__arrow">
+                            <i class="far fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}
+
+<!-- <div class="col-lg-12 mb-5">
+    <div class="card columns__dates border-0">
+        <div class="card-body">
+             <div class="row">
+         <div class="col-lg-3 col-md-4 col-12">
+             <label>{% trans 'From' %}</label>
+             <input type="date" class="form-control advert__date">
+         </div>
+         <div class="col-lg-3 col-md-4 col-12">
+             <label>{% trans 'To' %}</label>
+             <input type="date" class="form-control advert__date">
+         </div>
+         <div class="col-lg-3 col-md-4 col-12">
+             <label>{% trans 'Show' %}</label>
+             <button class="btn btn__advert text-white form-control">{% trans 'Show' %}</button>
+         </div>
+     </div>
+        </div>
+    </div>
+ </div> -->

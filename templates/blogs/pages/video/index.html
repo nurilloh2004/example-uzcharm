@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load i18n static %}
+
+{% block content %}
+    <section class="all__video" style="background: url('{% static 'assets/images/bannerimg.png' %}')">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-md-12">
+                    <div class="heading_video">
+                        <h1 class="font-width-bold">{% trans 'All Videos' %}</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mb-5 text-center" data-aos="fade-up">
+              
+            </div>
+
+            {% for item in media %}
+                <div class="col-md-4">
+                    <div class="small_videos" data-aos="fade-up">
+                        <embed class="vido" src="https://youtube.com/embed/{{ item.link }}">
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

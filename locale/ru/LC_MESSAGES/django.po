@@ -1,0 +1,1627 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-09-08 11:28+0500\n"
+"PO-Revision-Date: 2021-09-08 11:29+0437\n"
+"Last-Translator: b'Anonymous User <anonymous@user.tld>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+"X-Translated-Using: django-rosetta 0.9.3\n"
+
+#: blogs/admin.py:12
+msgid "Uzcharmsanoat admin panel"
+msgstr "Узчармсаноат"
+
+#: blogs/admin.py:13
+msgid "Uzcharmsanoat Admin Portal"
+msgstr "Ассоциация Узчармсаноат"
+
+#: blogs/admin.py:14
+msgid "Welcome to Uzcharmsanoat Portal"
+msgstr "Добро пожаловать в Узчармсаноат"
+
+#: blogs/forms.py:49 templates/users/admin_profile.html:11
+#: templates/users/profile.html:9 templates/users/register.html:35
+#: templates/users/settings.html:16
+msgid "Fullname"
+msgstr "Полное имя"
+
+#: blogs/forms.py:50
+msgid "email"
+msgstr "Электронная почта"
+
+#: blogs/forms.py:51 blogs/models.py:608
+msgid "phone_number"
+msgstr "Номер телефона"
+
+#: blogs/forms.py:52 blogs/models.py:123
+msgid "region"
+msgstr "Область"
+
+#: blogs/forms.py:53
+msgid "address"
+msgstr "Адрес"
+
+#: blogs/forms.py:54
+msgid "date_of_birth"
+msgstr "Дата рождения"
+
+#: blogs/forms.py:55
+msgid "gender"
+msgstr "Пол"
+
+#: blogs/forms.py:56
+msgid "marital_status"
+msgstr "Семейное положение"
+
+#: blogs/forms.py:57
+msgid "file_upload"
+msgstr "Загрузка файла"
+
+#: blogs/forms.py:58
+msgid "message"
+msgstr "Сообщение"
+
+#: blogs/models.py:41 blogs/models.py:122 blogs/models.py:736
+#: blogs/models.py:799 blogs/models.py:814 blogs/models.py:829
+#: blogs/models.py:844 blogs/models.py:859 blogs/models.py:877
+#: blogs/models.py:892 blogs/models.py:907 blogs/models.py:924
+#: blogs/models.py:942 blogs/models.py:960 blogs/models.py:978
+#: blogs/models.py:996 blogs/models.py:1014 blogs/models.py:1030
+#: blogs/models.py:1046 blogs/models.py:1061 blogs/models.py:1077
+#: blogs/models.py:1098 blogs/models.py:1113 blogs/models.py:1131
+msgid "title"
+msgstr "заглавие"
+
+#: blogs/models.py:42
+msgid " short_description"
+msgstr "Краткое описание"
+
+#: blogs/models.py:43 blogs/models.py:75 blogs/models.py:158
+#: blogs/models.py:234 blogs/models.py:517 blogs/models.py:638
+#: blogs/models.py:653
+msgid "Full text"
+msgstr "Полный текст"
+
+#: blogs/models.py:51
+msgid "status"
+msgstr "статус"
+
+#: blogs/models.py:59
+msgid "Post"
+msgstr "Новость"
+
+#: blogs/models.py:60
+msgid "Posts"
+msgstr "Новости"
+
+#: blogs/models.py:73 blogs/models.py:637 blogs/models.py:652
+#: blogs/models.py:769
+msgid "Title"
+msgstr "заглавие"
+
+#: blogs/models.py:74
+msgid "Short description"
+msgstr "Краткое описание"
+
+#: blogs/models.py:90
+msgid "Tender"
+msgstr "Пол"
+
+#: blogs/models.py:91
+msgid "Tenders"
+msgstr "Пол"
+
+#: blogs/models.py:101 blogs/models.py:138
+msgid "name"
+msgstr "Имя пользователя"
+
+#: blogs/models.py:104 blogs/models.py:125 blogs/models.py:141
+msgid "image"
+msgstr "Картинка"
+
+#: blogs/models.py:105 blogs/models.py:142 blogs/models.py:1116
+msgid "slug"
+msgstr "слаг"
+
+#: blogs/models.py:114
+#, fuzzy
+#| msgid "Company Info"
+msgid "Company Type"
+msgstr "Информация о компании"
+
+#: blogs/models.py:115
+#, fuzzy
+#| msgid "Company Info"
+msgid "Company Types"
+msgstr "Информация о компании"
+
+#: blogs/models.py:121
+msgid "stir"
+msgstr "СТИР"
+
+#: blogs/models.py:132
+#, fuzzy
+#| msgid "Menu Companys"
+msgid "Menu Company"
+msgstr "Список компаний-членов ассоциации"
+
+#: blogs/models.py:133
+msgid "Menu Companys"
+msgstr "Список компаний-членов ассоциации"
+
+#: blogs/models.py:150
+#, fuzzy
+#| msgid "Product Categories"
+msgid "Product Category"
+msgstr "Категории продукта"
+
+#: blogs/models.py:151 templates/blogs/pages/product/product_list.html:34
+msgid "Product Categories"
+msgstr "Категории продукта"
+
+#: blogs/models.py:172
+msgid "Product"
+msgstr "Товары"
+
+#: blogs/models.py:173
+msgid "Products"
+msgstr "Товары"
+
+#: blogs/models.py:185 blogs/models.py:201
+msgid "Website link"
+msgstr "Ссылка на веб-сайт"
+
+#: blogs/models.py:191
+msgid "Useful Link"
+msgstr "Полезная ссылка"
+
+#: blogs/models.py:192
+msgid "Useful Links"
+msgstr "Полезные ссылки"
+
+#: blogs/models.py:207
+msgid "Expo Link"
+msgstr "Ссылка на выставку"
+
+#: blogs/models.py:208
+msgid "Expo Links"
+msgstr "Ссылки на выставки"
+
+#: blogs/models.py:215
+msgid "adress"
+msgstr "Адрес"
+
+#: blogs/models.py:226
+msgid "Partner"
+msgstr "Партнер"
+
+#: blogs/models.py:227
+msgid "Partners"
+msgstr "Партнеры"
+
+#: blogs/models.py:242
+msgid "Vacancy"
+msgstr "Вакансии"
+
+#: blogs/models.py:243
+msgid "Vacancys"
+msgstr "Вакансии"
+
+#: blogs/models.py:263
+msgid "Gallery Category"
+msgstr "Категория галереи"
+
+#: blogs/models.py:264
+msgid "Gallery Categorys"
+msgstr "Категории галереи"
+
+#: blogs/models.py:293
+msgid "Gallery Image"
+msgstr "Изображение галереи"
+
+#: blogs/models.py:294
+msgid "Gallery Images"
+msgstr "Галерея изображений"
+
+#: blogs/models.py:315 blogs/models.py:316
+msgid "Media"
+msgstr "Видео клипы"
+
+#: blogs/models.py:334
+msgid "Infographic"
+msgstr "Инфографика"
+
+#: blogs/models.py:335
+msgid "Infographics"
+msgstr "Инфографики"
+
+#: blogs/models.py:342 blogs/models.py:360 blogs/models.py:378
+#: blogs/models.py:672 blogs/models.py:752
+msgid "Content"
+msgstr "Содержание"
+
+#: blogs/models.py:352
+msgid "Static Content"
+msgstr "Содержание"
+
+#: blogs/models.py:353
+msgid "Static Contents"
+msgstr "Статические контенты"
+
+#: blogs/models.py:370
+msgid "Legal Document"
+msgstr "Нормативно-правовые документы"
+
+#: blogs/models.py:371
+msgid "Legal Documents"
+msgstr "Нормативно-правовые документы"
+
+#: blogs/models.py:388
+msgid "Statistic"
+msgstr "Деятельность организации в цифрах"
+
+#: blogs/models.py:389 templates/blogs/index.html:115
+#: templates/blogs/pages/statistics/list.html:11
+msgid "Statistics"
+msgstr "Деятельность организации в цифрах"
+
+#: blogs/models.py:405
+msgid "Menu item"
+msgstr "Пункт меню"
+
+#: blogs/models.py:406
+msgid "Menu items"
+msgstr "Пункты меню"
+
+#: blogs/models.py:416
+msgid "Icon"
+msgstr "Иконка"
+
+#: blogs/models.py:423
+msgid "ShortLink item"
+msgstr "Элемент короткой ссылки"
+
+#: blogs/models.py:424
+msgid "ShortLink items"
+msgstr "Элементы короткой ссылки"
+
+#: blogs/models.py:453
+msgid "Staff"
+msgstr "Персонал"
+
+#: blogs/models.py:454
+msgid "Staffs"
+msgstr "Персонал"
+
+#: blogs/models.py:461
+msgid "content about us"
+msgstr "контент о нас"
+
+#: blogs/models.py:462
+msgid "history about us"
+msgstr "история о нас"
+
+#: blogs/models.py:464
+msgid "company_structure"
+msgstr "структура компании"
+
+#: blogs/models.py:465
+msgid "company_report"
+msgstr "отчет компании"
+
+#: blogs/models.py:470
+msgid "Company Info"
+msgstr "Информация о компании"
+
+#: blogs/models.py:471
+msgid "Company Infos"
+msgstr "Информация о компании"
+
+#: blogs/models.py:484 blogs/models.py:485
+msgid "FAQ"
+msgstr "Часто задаваемые вопросы"
+
+#: blogs/models.py:504
+msgid "Site Setting"
+msgstr "Настройки Сайта"
+
+#: blogs/models.py:505
+msgid "Site Settings"
+msgstr "Настройки Сайта"
+
+#: blogs/models.py:535
+msgid "Exhibition"
+msgstr "Выставки и ярмарки"
+
+#: blogs/models.py:536
+msgid "Exhibitions"
+msgstr "Выставки и ярмарки"
+
+#: blogs/models.py:542
+msgid "Male"
+msgstr "Мужчина"
+
+#: blogs/models.py:543
+msgid "Female"
+msgstr "Женщина"
+
+#: blogs/models.py:547
+msgid "Single"
+msgstr "Одинокий"
+
+#: blogs/models.py:548
+msgid "Married"
+msgstr "Женатый"
+
+#: blogs/models.py:580 blogs/models.py:581 templates/base.html:471
+msgid "Virtual Reception"
+msgstr "Виртуальная Приемная"
+
+#: blogs/models.py:598 blogs/models.py:628
+msgid "Request form: Contact form data"
+msgstr "Форма запроса: Данные контактной формы"
+
+#: blogs/models.py:599 blogs/models.py:629
+msgid "Request forms: Contact form data"
+msgstr "Формы запроса: Данные контактной формы"
+
+#: blogs/models.py:606 blogs/models.py:621
+msgid "full_name"
+msgstr "ФИО"
+
+#: blogs/models.py:609 blogs/models.py:624
+msgid "subject"
+msgstr "предмет"
+
+#: blogs/models.py:615 templates/base.html:53
+#: templates/blogs/pages/contact_page/contact_form.html:10
+#: templates/blogs/pages/contact_page/contact_form.html:31
+msgid "Contact"
+msgstr "Контакты"
+
+#: blogs/models.py:616
+msgid "Contacts"
+msgstr "Контакты"
+
+#: blogs/models.py:622
+msgid "phone"
+msgstr "Телефон"
+
+#: blogs/models.py:645 templates/blogs/pages/about/indexAbout.html:81
+msgid "Legislation"
+msgstr "Законодательство"
+
+#: blogs/models.py:646
+msgid "Legislations"
+msgstr "Законодательство"
+
+#: blogs/models.py:660 blogs/models.py:661
+#: templates/blogs/pages/about/indexAbout.html:93
+msgid "Regional Administration"
+msgstr "Региональная администрация"
+
+#: blogs/models.py:668
+msgid "Logo text"
+msgstr "Текст логотипа"
+
+#: blogs/models.py:669
+msgid "Logo text footer"
+msgstr "Нижний колонтитул текста логотипа"
+
+#: blogs/models.py:670 templates/base.html:381
+#: templates/blogs/pages/membership/detail.html:32
+#: templates/blogs/pages/vacancy/vacancy_list_view.html:69
+msgid "Address"
+msgstr "Адрес"
+
+#: blogs/models.py:671
+msgid "Operating Mode"
+msgstr "Режим работы"
+
+#: blogs/models.py:673
+msgid "Home Page Text"
+msgstr "Текст домашней страницы"
+
+#: blogs/models.py:675
+msgid "Image"
+msgstr "Картинка"
+
+#: blogs/models.py:676
+msgid "Tel First"
+msgstr "Первый номер"
+
+#: blogs/models.py:677
+msgid "Tel Second"
+msgstr "Второй номер"
+
+#: blogs/models.py:678
+msgid "Tel Third"
+msgstr "Третий телефон"
+
+#: blogs/models.py:679
+msgid "Tel Fourth"
+msgstr "Четвертый телефон"
+
+#: blogs/models.py:682
+msgid "Since"
+msgstr "Годы работы"
+
+#: blogs/models.py:689
+msgid "Site Background"
+msgstr "Задний фон сайта"
+
+#: blogs/models.py:690
+msgid "Site Background 2"
+msgstr "Задний фон сайта 2"
+
+#: blogs/models.py:694 blogs/models.py:695
+msgid "Menu Settings"
+msgstr "Настройки меню"
+
+#: blogs/models.py:701
+msgid "Text"
+msgstr "Текст"
+
+#: blogs/models.py:703
+msgid "Banner Carousel"
+msgstr "Баннер"
+
+#: blogs/models.py:706 blogs/models.py:707
+msgid "Banners"
+msgstr "Баннер"
+
+#: blogs/models.py:713
+#, fuzzy
+#| msgid "Region"
+msgid "Region Name"
+msgstr "Область"
+
+#: blogs/models.py:714
+msgid "Director Name"
+msgstr "Имя директора"
+
+#: blogs/models.py:715
+#, fuzzy
+#| msgid "Company Info"
+msgid "Company Name"
+msgstr "Информация о компании"
+
+#: blogs/models.py:718 templates/users/register.html:47
+#: templates/users/settings.html:28
+msgid "Phone"
+msgstr "Телефон"
+
+#: blogs/models.py:719 templates/blogs/pages/vacancy/vacancy_list_view.html:79
+#: templates/users/register.html:60 templates/users/settings.html:20
+msgid "Email"
+msgstr "Электронная почта"
+
+#: blogs/models.py:724
+msgid "Region"
+msgstr "Область"
+
+#: blogs/models.py:725
+msgid "Regions"
+msgstr "Разделы"
+
+#: blogs/models.py:738 blogs/models.py:1128
+msgid "link"
+msgstr "ссылка"
+
+#: blogs/models.py:746
+msgid "Menu Overlay"
+msgstr "Оверлей меню"
+
+#: blogs/models.py:747
+#, fuzzy
+#| msgid "Menu Overlay"
+msgid "Menu Overlays"
+msgstr "Оверлей меню"
+
+#: blogs/models.py:762 blogs/models.py:763
+msgid "How to join"
+msgstr "Как присоединиться"
+
+#: blogs/models.py:777
+#, fuzzy
+#| msgid "Benefits"
+msgid "Benefit"
+msgstr "Преимущества Членства"
+
+#: blogs/models.py:778
+msgid "Benefits"
+msgstr "Преимущества Членства"
+
+#: blogs/models.py:792
+msgid "Structure"
+msgstr "Структура компании"
+
+#: blogs/models.py:793
+#, fuzzy
+#| msgid "Structure"
+msgid "Structures"
+msgstr "Структура компании"
+
+#: blogs/models.py:800 blogs/models.py:815 blogs/models.py:830
+#: blogs/models.py:845 blogs/models.py:860 blogs/models.py:878
+#: blogs/models.py:893 blogs/models.py:908 blogs/models.py:925
+#: blogs/models.py:943 blogs/models.py:961 blogs/models.py:979
+#: blogs/models.py:997 blogs/models.py:1015 blogs/models.py:1031
+#: blogs/models.py:1047 blogs/models.py:1062 blogs/models.py:1078
+#: blogs/models.py:1099
+msgid "content"
+msgstr "Содержание"
+
+#: blogs/models.py:807 blogs/models.py:808
+msgid "History of Organization"
+msgstr "Руководитель организации"
+
+#: blogs/models.py:822 blogs/models.py:823
+msgid "Territorial Administration"
+msgstr "Территориальная администрация"
+
+#: blogs/models.py:837
+#, fuzzy
+#| msgid "Subsidaries"
+msgid "Subsidary"
+msgstr "\"Узчармимпэкс\" УК"
+
+#: blogs/models.py:838
+msgid "Subsidaries"
+msgstr "\"Узчармимпэкс\" УК"
+
+#: blogs/models.py:852
+#, fuzzy
+#| msgid "Subsidaries2"
+msgid "Subsidary 2"
+msgstr "ПК \"Центр дизайна кожи и обуви\""
+
+#: blogs/models.py:853
+#, fuzzy
+#| msgid "Subsidaries2"
+msgid "Subsidaries 2"
+msgstr "ПК \"Центр дизайна кожи и обуви\""
+
+#: blogs/models.py:870
+msgid "Foreighn Representation"
+msgstr "Зарубежные представительства"
+
+#: blogs/models.py:871
+#, fuzzy
+#| msgid "Foreighn Representation"
+msgid "Foreighn Representations"
+msgstr "Зарубежные представительства"
+
+#: blogs/models.py:885
+msgid "Press service"
+msgstr "Пресс сервис"
+
+#: blogs/models.py:886
+#, fuzzy
+#| msgid "Press service"
+msgid "Press services"
+msgstr "Пресс сервис"
+
+#: blogs/models.py:900 blogs/models.py:901
+msgid "Moscow"
+msgstr "Москва"
+
+#: blogs/models.py:917 blogs/models.py:918
+#, fuzzy
+#| msgid "EventsAdmin"
+msgid "Events Admin"
+msgstr "События"
+
+#: blogs/models.py:935
+msgid "Investment potential"
+msgstr "Инвестиционный потенциал"
+
+#: blogs/models.py:936
+#, fuzzy
+#| msgid "Investment potential"
+msgid "Investment potentials"
+msgstr "Инвестиционный потенциал"
+
+#: blogs/models.py:953
+msgid "Export Potential"
+msgstr "Экспортный потенциал"
+
+#: blogs/models.py:954
+#, fuzzy
+#| msgid "Export Potential"
+msgid "Export Potentials"
+msgstr "Экспортный потенциал"
+
+#: blogs/models.py:971
+msgid "Export Implementation"
+msgstr "Реализация экспорта"
+
+#: blogs/models.py:972
+#, fuzzy
+#| msgid "Export Implementation"
+msgid "Export Implementations"
+msgstr "Реализация экспорта"
+
+#: blogs/models.py:989
+msgid "Export Law"
+msgstr "Экспортное законодательство"
+
+#: blogs/models.py:990
+#, fuzzy
+#| msgid "Export Law"
+msgid "Export Laws"
+msgstr "Экспортное законодательство"
+
+#: blogs/models.py:1007
+#, fuzzy
+#| msgid "Market entry strategies"
+msgid "Market entry strategy"
+msgstr "Стратегии выхода на рынок"
+
+#: blogs/models.py:1008
+msgid "Market entry strategies"
+msgstr "Стратегии выхода на рынок"
+
+#: blogs/models.py:1023
+#, fuzzy
+#| msgid "Presentations"
+msgid "Presentation"
+msgstr "Презентации"
+
+#: blogs/models.py:1024
+#: templates/blogs/pages/presentations/presentations.html:36
+msgid "Presentations"
+msgstr "Презентации"
+
+#: blogs/models.py:1039
+#, fuzzy
+#| msgid "Press Releases"
+msgid "Press Release"
+msgstr "Пресс релизы"
+
+#: blogs/models.py:1040
+msgid "Press Releases"
+msgstr "Пресс релизы"
+
+#: blogs/models.py:1054
+msgid "Youth Policy"
+msgstr "Молодежная Политика"
+
+#: blogs/models.py:1055
+#, fuzzy
+#| msgid "Youth Policy"
+msgid "Youth Policies"
+msgstr "Молодежная Политика"
+
+#: blogs/models.py:1070
+#, fuzzy
+#| msgid "Publications"
+msgid "Publication"
+msgstr "Публикации"
+
+#: blogs/models.py:1071
+#: templates/blogs/pages/publications/publications.html:35
+msgid "Publications"
+msgstr "Публикации"
+
+#: blogs/models.py:1091
+#, fuzzy
+#| msgid "Investors"
+msgid "Investor"
+msgstr "Инвесторы"
+
+#: blogs/models.py:1092
+msgid "Investors"
+msgstr "Инвесторы"
+
+#: blogs/models.py:1106
+#, fuzzy
+#| msgid "Exporters"
+msgid "Exporter"
+msgstr "Экспортеры"
+
+#: blogs/models.py:1107
+msgid "Exporters"
+msgstr "Экспортеры"
+
+#: blogs/models.py:1122
+#, fuzzy
+#| msgid "Foreighn Representation"
+msgid "Foreign Representative Link"
+msgstr "Зарубежные представительства"
+
+#: blogs/models.py:1123
+#, fuzzy
+#| msgid "Foreighn Representation"
+msgid "Foreign Representative Links"
+msgstr "Зарубежные представительства"
+
+#: blogs/models.py:1134
+msgid "icon"
+msgstr "значок"
+
+#: blogs/models.py:1135
+msgid "file"
+msgstr "файл"
+
+#: blogs/models.py:1141
+#, fuzzy
+#| msgid "Foreighn Representation"
+msgid "Foreign Representative Item"
+msgstr "Зарубежные представительства"
+
+#: blogs/models.py:1142
+#, fuzzy
+#| msgid "Foreighn Representation"
+msgid "Foreign Representative Items"
+msgstr "Зарубежные представительства"
+
+#: templates/base.html:134 templates/users/register.html:85
+msgid "Register"
+msgstr "Регистрация"
+
+#: templates/base.html:138
+msgid "Contact phone number"
+msgstr "Контактный телефон"
+
+#: templates/base.html:147 templates/users/login.html:32
+msgid "Login"
+msgstr "Логин"
+
+#: templates/base.html:151
+msgid "Helpline"
+msgstr "Телефон доверия"
+
+#: templates/base.html:186 templates/base.html:257
+msgid "Hi"
+msgstr "Привет"
+
+#: templates/base.html:187 templates/base.html:259
+msgid "Edit profile"
+msgstr "Изменить профиль"
+
+#: templates/base.html:188 templates/base.html:261
+#: templates/users/tabs.html:20
+msgid "Log out"
+msgstr "Выйти из системы"
+
+#: templates/base.html:319
+msgid "Type here to Search...."
+msgstr "Введите здесь для поиска..."
+
+#: templates/base.html:352
+#: templates/blogs/pages/contact_page/contact_form.html:49
+#: templates/blogs/pages/membership/detail.html:33
+#: templates/blogs/pages/vacancy/vacancy_list_view.html:74
+msgid "Phone number"
+msgstr "Номер телефона"
+
+#: templates/base.html:391
+msgid "Visitor statistics"
+msgstr "Статистика посетителей"
+
+#: templates/base.html:398
+msgid "Working hours"
+msgstr "Рабочее время"
+
+#: templates/base.html:402
+msgid "Social networks"
+msgstr "Социальные сети"
+
+#: templates/base.html:433
+msgid "Developed by"
+msgstr "Разработано"
+
+#: templates/base.html:449
+msgid "Increasing the font size"
+msgstr "Увеличение размера шрифта"
+
+#: templates/base.html:453
+msgid "Default font size"
+msgstr "Размер шрифта по умолчанию"
+
+#: templates/base.html:457
+msgid "Reduce the font size"
+msgstr "Уменьшение размера шрифта"
+
+#: templates/base.html:461
+msgid "Sound assistance"
+msgstr "Звуковая помощь"
+
+#: templates/base.html:465
+msgid "Grayscale Mode"
+msgstr "Режим оттенков серого"
+
+#: templates/base.html:485
+msgid "Uzcharmsanoat"
+msgstr "Узчармсаноат"
+
+#: templates/blogs/index.html:80
+msgid "All news"
+msgstr "ВСЕ НОВОСТИ"
+
+#: templates/blogs/index.html:102 templates/blogs/index.html:164
+#: templates/blogs/index.html:193 templates/blogs/index.html:264
+msgid "more..."
+msgstr "Подробнее"
+
+#: templates/blogs/index.html:140
+msgid "PRODUCTS"
+msgstr "ПРОДУКЦИЯ"
+
+#: templates/blogs/index.html:177
+msgid "PHOTO GALLERY"
+msgstr "ФОТОГАЛЕРЕЯ"
+
+#: templates/blogs/index.html:205
+msgid "Media Uzcharmsanoat"
+msgstr "Видео клипы"
+
+#: templates/blogs/index.html:223
+msgid "See all videos"
+msgstr "Смотреть все видео"
+
+#: templates/blogs/index.html:238 templates/blogs/pages/faq/list_view.html:11
+msgid "FAQs"
+msgstr "Часто задаваемые вопросы"
+
+#: templates/blogs/index.html:284
+msgid "Кўргазма ва электрон платформалар"
+msgstr "Выставки и электронные площадки"
+
+#: templates/blogs/index.html:310
+msgid "Interactive map"
+msgstr "ТЕРРИТОРИАЛЬНЫЕ УПРАВЛЕНИЯ"
+
+#: templates/blogs/index.html:372
+msgid "ASSOCIATION PARTNERS"
+msgstr "ПАРТНЕРЫ АССОЦИАЦИИ"
+
+#: templates/blogs/index.html:402
+msgid "USEFUL LINKS"
+msgstr "ПОЛЕЗНЫЕ ССЫЛКИ"
+
+#: templates/blogs/pages/about/indexAbout.html:20
+msgid "ABOUT THE ASSOCIATION"
+msgstr "ОБ АССОЦИАЦИИ"
+
+#: templates/blogs/pages/about/indexAbout.html:35
+#: templates/blogs/pages/about/indexAbout.html:47
+msgid "About us"
+msgstr "О нас"
+
+#: templates/blogs/pages/about/indexAbout.html:37
+#, fuzzy
+#| msgid "Association History"
+msgid "Association history"
+msgstr "История ассоциации"
+
+#: templates/blogs/pages/about/indexAbout.html:38
+#, fuzzy
+#| msgid "Report"
+msgid "report"
+msgstr "Отчет"
+
+#: templates/blogs/pages/about/indexAbout.html:39
+#, fuzzy
+#| msgid "Legislation"
+msgid "legislation"
+msgstr "Законодательство"
+
+#: templates/blogs/pages/about/indexAbout.html:40
+#, fuzzy
+#| msgid "Regional Administration"
+msgid "Regional administration"
+msgstr "Региональная администрация"
+
+#: templates/blogs/pages/about/indexAbout.html:57
+msgid "Association History"
+msgstr "История ассоциации"
+
+#: templates/blogs/pages/about/indexAbout.html:70
+msgid "REPORTS ON THE ACCOMPLISHED WORK"
+msgstr "ОТЧЕТЫ О ПРОДЕЛАННОЙ РАБОТЕ"
+
+#: templates/blogs/pages/about2/leadership.html:78
+msgid "LEADERSHIP"
+msgstr "РУКОВОДСТВО"
+
+#: templates/blogs/pages/about2/leadership.html:80
+msgid "PRESS LEADERS"
+msgstr "ПРЕССА"
+
+#: templates/blogs/pages/about2/leadership.html:107
+msgid "Qabul kunlari"
+msgstr "Приемные дни"
+
+#: templates/blogs/pages/about2/leadership.html:112
+msgid "Phone Number"
+msgstr "Номер телефона"
+
+#: templates/blogs/pages/contact_page/contact_form.html:38
+msgid "Your name"
+msgstr "Ваше имя"
+
+#: templates/blogs/pages/contact_page/contact_form.html:42
+msgid "E-mail"
+msgstr "Электронная почта"
+
+#: templates/blogs/pages/contact_page/contact_form.html:53
+msgid "Subject"
+msgstr "Тема"
+
+#: templates/blogs/pages/contact_page/contact_form.html:60
+msgid "Message"
+msgstr "Сообщение"
+
+#: templates/blogs/pages/contact_page/contact_form.html:67
+#: templates/blogs/pages/virtual_reception/virtual_reception_form.html:102
+#: templates/users/admin_profile.html:72 templates/users/profile.html:77
+msgid "Send"
+msgstr "Отправить"
+
+#: templates/blogs/pages/contact_page/contact_form.html:83
+msgid "Feedback"
+msgstr "Обратная связь"
+
+#: templates/blogs/pages/exhibition/exhibition_list.html:11
+#: templates/blogs/pages/legislation/exhibition_list.html:11
+msgid "Exhibitions and fairs"
+msgstr "Выставки и ярмарки"
+
+#: templates/blogs/pages/for_entrepreneurs/entrepreneurs.html:11
+msgid "List of member enterprises of the association"
+msgstr "Список предприятий-членов ассоциации"
+
+#: templates/blogs/pages/for_entrepreneurs/entrepreneurs.html:24
+msgid "Search by TIN and by company name"
+msgstr "Поиск по ИНН и по названию компании"
+
+#: templates/blogs/pages/for_entrepreneurs/entrepreneurs.html:35
+msgid "TIN"
+msgstr "ТИН"
+
+#: templates/blogs/pages/for_entrepreneurs/entrepreneurs.html:36
+msgid "Full name of the organization"
+msgstr "Полное наименование организации"
+
+#: templates/blogs/pages/for_entrepreneurs/entrepreneurs.html:37
+msgid "Territory"
+msgstr "Территория"
+
+#: templates/blogs/pages/foreighn_representations/foreign_representations.html:49
+msgid "Foreign Representations Groups"
+msgstr "Зарубежные представительства"
+
+#: templates/blogs/pages/foreighn_representations/foreign_representations.html:73
+#: templates/blogs/pages/menu_companys/company_types.html:86
+#: templates/blogs/pages/menu_companys/menu_companys.html:72
+msgid "Topilmadi!"
+msgstr "Не найдено!"
+
+#: templates/blogs/pages/foreighn_representations/items.html:47
+msgid "“Ўзчармсаноат” уюшмаси фаолиятига доир меъёрий-ҳуқуқий ҳужжатлар"
+msgstr "Нормативные документы по деятельности «Узчамсаноат»."
+
+#: templates/blogs/pages/foreighn_representations/links.html:47
+msgid "МЕЪЁРИЙ-ҲУҚУҚИЙ ҲУЖЖАТЛАР РЎЙХАТИ"
+msgstr "ПЕРЕЧЕНЬ НОРМАТИВНО-ПРАВОВЫХ ДОКУМЕНТОВ"
+
+#: templates/blogs/pages/gallery/images.html:11
+#: templates/blogs/pages/gallery/indexG.html:59
+msgid "All photos"
+msgstr "Все фотографии"
+
+#: templates/blogs/pages/how_to_join/how_to_join.html:29
+msgid "Uyushmaga aʼzo boʻlish tartibi"
+msgstr "Как присоедениться"
+
+#: templates/blogs/pages/legaldocument/detail.html:12
+#: templates/blogs/pages/news/detail.html:30
+#: templates/blogs/pages/static_content/detail.html:12
+#: templates/blogs/pages/statistics/detail.html:12
+msgid "Print"
+msgstr "Печать"
+
+#: templates/blogs/pages/legaldocument/detail.html:36
+#: templates/blogs/pages/static_content/detail.html:36
+#: templates/blogs/pages/statistics/detail.html:36
+#: templates/blogs/pages/tender/detail.html:28
+msgid "share"
+msgstr "поделиться"
+
+#: templates/blogs/pages/legaldocument/list.html:11
+msgid "Normative legal documents"
+msgstr "Нормативно-правовые документы"
+
+#: templates/blogs/pages/membership/detail.html:8
+msgid "ТЕРИНИ ҚАЙТА ИШЛАШ ҚОРХОНАЛАРИ"
+msgstr "ПРЕДПРИЯТИЯ ПО ОБРАБОТКЕ КОЖИ"
+
+#: templates/blogs/pages/membership/detail.html:13
+msgid "Post date:"
+msgstr "Дата публикации:"
+
+#: templates/blogs/pages/membership/detail.html:17
+msgid "PDF version"
+msgstr "PDF версия"
+
+#: templates/blogs/pages/membership/detail.html:27
+msgid "Enterprise name"
+msgstr "Название предприятия"
+
+#: templates/blogs/pages/membership/detail.html:28
+msgid "Type of activity"
+msgstr "Вид деятельности"
+
+#: templates/blogs/pages/membership/detail.html:29
+msgid "Enterprise"
+msgstr "Предприятие"
+
+#: templates/blogs/pages/membership/list.html:11
+msgid "MEMBERS OF THE ASSOCIATION"
+msgstr "ЧЛЕНЫ АССОЦИАЦИИ"
+
+#: templates/blogs/pages/membership/list.html:26
+msgid "Uyushmaga azolikning afzalliklari."
+msgstr "Преимущества членства в Ассоциации"
+
+#: templates/blogs/pages/membership/list.html:29
+#, fuzzy
+#| msgid "Uyushmaga aʼzo boʻlish tartibi"
+msgid "A'zo bo'lish tartibi."
+msgstr "Как присоедениться"
+
+#: templates/blogs/pages/membership/list.html:32
+msgid "Uyushmaga onlayn ariza yuborish."
+msgstr "Подать онлайн-заявку в Ассоциацию"
+
+#: templates/blogs/pages/membership/list.html:35
+#, fuzzy
+#| msgid "Uyushma tarkibidagi aʼzo korxonalar kategoriyasi"
+msgid "Uyishma tartibidagi a'zo korxonalar ro'yxati"
+msgstr "Категория предприятий-членов объединения"
+
+#: templates/blogs/pages/membership_procedure/membership_procedure.html:9
+msgid "The procedure for membership in the association"
+msgstr "Порядок членства в ассоциации"
+
+#: templates/blogs/pages/menu_companys/company_types.html:49
+msgid "Uyushma tarkibidagi aʼzo korxonalar kategoriyasi"
+msgstr "Категория предприятий-членов объединения"
+
+#: templates/blogs/pages/menu_companys/menu_companys.html:39
+msgid "Поиск по ИНН и по названию предприятия"
+msgstr "Поиск по ИНН и по названию предприятия"
+
+#: templates/blogs/pages/news/list.html:11
+msgid "All News"
+msgstr "Все новости"
+
+#: templates/blogs/pages/news/list.html:37
+msgid "More"
+msgstr "Подробнее"
+
+#: templates/blogs/pages/news/search_post_result.html:11
+msgid "Search results"
+msgstr "Результаты поиска"
+
+#: templates/blogs/pages/news/search_post_result.html:33
+msgid "No data found"
+msgstr "Данные не найдены"
+
+#: templates/blogs/pages/product/item.html:12
+msgid "All products"
+msgstr "Все продукты"
+
+#: templates/blogs/pages/tender/list.html:11
+msgid "Announcements and Tenders"
+msgstr "Объявления и тендеры"
+
+#: templates/blogs/pages/tender/list.html:47
+msgid "From"
+msgstr "От"
+
+#: templates/blogs/pages/tender/list.html:51
+msgid "To"
+msgstr "До"
+
+#: templates/blogs/pages/tender/list.html:55
+#: templates/blogs/pages/tender/list.html:56
+msgid "Show"
+msgstr "Показать"
+
+#: templates/blogs/pages/vacancy/vacancy_list_view.html:14
+msgid "Main"
+msgstr "Главный"
+
+#: templates/blogs/pages/vacancy/vacancy_list_view.html:21
+msgid "Resume"
+msgstr "Резюме"
+
+#: templates/blogs/pages/vacancy/vacancy_list_view.html:43
+msgid "Full Name"
+msgstr "Полное имя"
+
+#: templates/blogs/pages/vacancy/vacancy_list_view.html:48
+msgid "Date of birth"
+msgstr "Дата рождения"
+
+#: templates/blogs/pages/vacancy/vacancy_list_view.html:53
+msgid "Nationality"
+msgstr "Национальность"
+
+#: templates/blogs/pages/vacancy/vacancy_list_view.html:61
+msgid "Marital status"
+msgstr "Семейное положение"
+
+#: templates/blogs/pages/vacancy/vacancy_list_view.html:84
+msgid "TIN number"
+msgstr "ИНН номер"
+
+#: templates/blogs/pages/vacancy/vacancy_list_view.html:89
+msgid "Degree"
+msgstr "Степень"
+
+#: templates/blogs/pages/vacancy/vacancy_list_view.html:94
+msgid "Speciality"
+msgstr "Специальность"
+
+#: templates/blogs/pages/vacancy/vacancy_list_view.html:108
+msgid "Additional information"
+msgstr "Дополнительная информация"
+
+#: templates/blogs/pages/vacancy/vacancy_list_view.html:116
+msgid "Upload Resume"
+msgstr "Загрузить Резюме"
+
+#: templates/blogs/pages/video/index.html:10
+msgid "All Videos"
+msgstr "Все видео"
+
+#: templates/blogs/pages/virtual_reception/virtual_reception_form.html:96
+msgid "Allow my question to be published"
+msgstr "Соглашаюсь опубликовать мой вопрос"
+
+#: templates/blogs/pages/virtual_reception/virtual_reception_form.html:112
+#: templates/users/login.html:37 templates/users/register.html:91
+msgid "Back to home"
+msgstr "Вернуться домой"
+
+#: templates/users/admin_profile.html:49
+msgid "FILE"
+msgstr "ФАЙЛ"
+
+#: templates/users/login.html:27 templates/users/register.html:28
+#: templates/users/settings.html:24
+msgid "Username"
+msgstr "Имя пользователя"
+
+#: templates/users/login.html:30 templates/users/register.html:41
+msgid "Password"
+msgstr "Пароль"
+
+#: templates/users/profile.html:27
+msgid "Choose chat"
+msgstr "Выберите чат"
+
+#: templates/users/register.html:52 templates/users/settings.html:36
+#, fuzzy
+#| msgid "Financial indicators"
+msgid "Financial Projections"
+msgstr "Финансовые показатели"
+
+#: templates/users/register.html:65
+msgid "Password (Confirmation)"
+msgstr "Пароль (Подтверждение)"
+
+#: templates/users/register.html:77 templates/users/settings.html:32
+#, fuzzy
+msgid "Organization Passport"
+msgstr "Организации"
+
+#: templates/users/settings.html:9
+msgid "Fullname:"
+msgstr "Полное имя"
+
+#: templates/users/settings.html:48
+#, fuzzy
+msgid "Organization Charter"
+msgstr "Организации"
+
+#: templates/users/settings.html:52
+msgid "Save Changes"
+msgstr "Сохранить изменения"
+
+#: templates/users/tabs.html:16
+#, fuzzy
+#| msgid "Settings"
+msgid "Tab Settings"
+msgstr "Настройки Сайта"
+
+#~ msgid "Andijan"
+#~ msgstr "Андижан"
+
+#~ msgid "Bukhara"
+#~ msgstr "Бухара"
+
+#~ msgid "Fergana"
+#~ msgstr "Фергана"
+
+#~ msgid "Jizzakh"
+#~ msgstr "Джизак"
+
+#~ msgid "Xorazm"
+#~ msgstr "Хорезм"
+
+#~ msgid "Namangan"
+#~ msgstr "Наманган"
+
+#~ msgid "Navoiy"
+#~ msgstr "Наваи"
+
+#~ msgid "Qashqadaryo"
+#~ msgstr "Кашкадарья"
+
+#~ msgid "Samarqand"
+#~ msgstr "Самарканд"
+
+#~ msgid "Sirdaryo"
+#~ msgstr "Сирдарья"
+
+#~ msgid "Guliston"
+#~ msgstr "Гулистан"
+
+#~ msgid "Surxondaryo"
+#~ msgstr "Сурхандарья"
+
+#~ msgid "TashkentRegion"
+#~ msgstr "Ташкентская область"
+
+#~ msgid "Karakalpakstan"
+#~ msgstr "Каракалпакстан"
+
+#~ msgid "Tashkentt"
+#~ msgstr "Ташкент"
+
+#~ msgid "AndijanNumber"
+#~ msgstr "Андижанский номер"
+
+#~ msgid "BukharaNumber"
+#~ msgstr "Бухарский номер"
+
+#~ msgid "FerganaNumber"
+#~ msgstr "Номер Фергана"
+
+#~ msgid "JizzakhNumber"
+#~ msgstr "Джизакский номер"
+
+#~ msgid "XorazmNumber"
+#~ msgstr "Номер Хорезма"
+
+#~ msgid "NamanganNumber"
+#~ msgstr "Наманганский номер"
+
+#~ msgid "NavoiyNumber"
+#~ msgstr "Номер Навои"
+
+#~ msgid "QashqadaryoNumber"
+#~ msgstr "Кашкадарьинский номер"
+
+#~ msgid "SamarqandNumber"
+#~ msgstr "Самаркандский номер"
+
+#~ msgid "SirdaryoNumber"
+#~ msgstr "Сырдарьинский номер"
+
+#~ msgid "SurxondaryoNumber"
+#~ msgstr "Сурхондарьинский номер"
+
+#~ msgid "TashkentNumber"
+#~ msgstr "Номер Ташкента"
+
+#~ msgid "GulistonNumber"
+#~ msgstr "Число Гулистона"
+
+#~ msgid "KarakalpakstanNumber"
+#~ msgstr "Номер Каракалпакстана"
+
+#~ msgid "TashkentRegionNumber"
+#~ msgstr "Номер Ташкентской области"
+
+#~ msgid "Нашр этилган"
+#~ msgstr "Опубликованно: "
+
+#~ msgid "Select a country"
+#~ msgstr "Выберите область"
+
+#~ msgid "Company Structure"
+#~ msgstr "Структура компании"
+
+#~ msgid "Phone number:"
+#~ msgstr "Номер телефона:"
+
+#~ msgid "VIRTUAL RECEPTION"
+#~ msgstr "ВИРТУАЛЬНАЯ ПРИЕМНАЯ"
+
+#~ msgid "Select a region"
+#~ msgstr "Выберите регион"
+
+#~ msgid "Gender"
+#~ msgstr "Пол"
+
+#~ msgid "Upload file"
+#~ msgstr "Загрузить файл"
+
+#~ msgid "Экран сухандони"
+#~ msgstr "Экран suxandoni"
+
+#~ msgid ""
+#~ "Сайтда овозли ўқиш кўрсатмаси <br> <br> Сайтда овозли ўқиш имконияти мавжуд."
+#~ " Матинни овозли ешитиш учун матин белгиланг."
+#~ msgstr ""
+#~ "Электронное руководство по чтению. На сайте доступно чтение вслух. Выделите "
+#~ "текст, чтобы услышать его вслух."
+
+#~ msgid "Close"
+#~ msgstr "Закрыть"
+
+#~ msgid "Stir"
+#~ msgstr "СТИР код"
+
+#~ msgid "The full name of the organization"
+#~ msgstr "Полное наименование организации"
+
+#, fuzzy
+#~ msgid "Registration"
+#~ msgstr "Законодательство"
+
+#~ msgid "Foreign powers"
+#~ msgstr "Иностранные учредители"
+
+#~ msgid "Adress"
+#~ msgstr "Адрес"
+
+#~ msgid "Video"
+#~ msgstr "Видео"
+
+#~ msgid "Home Page GIF"
+#~ msgstr "Домашняя страница GIF"
+
+#~ msgid "news/"
+#~ msgstr "Все новости"
+
+#~ msgid "tender/"
+#~ msgstr "Пол"
+
+#~ msgid "product/"
+#~ msgstr "Товары"
+
+#~ msgid "membership/"
+#~ msgstr "Преимущества членства"
+
+#~ msgid "exhibitions/"
+#~ msgstr "Выставки и ярмарки"
+
+#~ msgid "contact/"
+#~ msgstr "Контакты"
+
+#, fuzzy
+#~ msgid "presentations/"
+#~ msgstr "Законодательство"
+
+#, fuzzy
+#~ msgid "publications/"
+#~ msgstr "Выставки и ярмарки"
+
+#~ msgid "investors/"
+#~ msgstr "Инвесторам"
+
+#, fuzzy
+#~ msgid "exporters/"
+#~ msgstr "Экспортерам"
+
+#~ msgid "Learn more"
+#~ msgstr "Узнать больше"
+
+#, fuzzy
+#~ msgid "Reception:"
+#~ msgstr "Дни приема:"
+
+#~ msgid "Enterprise address"
+#~ msgstr "Адрес предприятия"
+
+#~ msgid "Organizational legal form"
+#~ msgstr "Организационно - правовая форма"
+
+#~ msgid "Date of registration"
+#~ msgstr "Дата регистрации"
+
+#~ msgid "Authorized capital"
+#~ msgstr "Уставный капитал"
+
+#~ msgid "Share of foreign capital"
+#~ msgstr "Доля иностранного капитала"
+
+#~ msgid "Company founders"
+#~ msgstr "Учредители компании"
+
+#~ msgid "Foreign founders"
+#~ msgstr "Иностранные учредители"
+
+#~ msgid "Total area"
+#~ msgstr "Общая площадь"
+
+#~ msgid "Types of producing products"
+#~ msgstr "Виды производимой продукции"
+
+#~ msgid "Main production indicators"
+#~ msgstr "Основные производственные показатели"
+
+#~ msgid "Annual revenue"
+#~ msgstr "Годовой доход"
+
+#~ msgid "Number of employees"
+#~ msgstr "Количество сотрудников"
+
+#~ msgid "Export volume"
+#~ msgstr "Объем экспорта"
+
+#~ msgid "Import volume"
+#~ msgstr "Объем импорта"
+
+#~ msgid "OKPO code"
+#~ msgstr "ОКПО код"
+
+#~ msgid "Bank details"
+#~ msgstr "Банковские реквизиты"
+
+#~ msgid "Web site"
+#~ msgstr "Веб-сайт"
+
+#~ msgid "Head of organization"
+#~ msgstr "Руководитель организации"
+
+#~ msgid "Search files"
+#~ msgstr "Поиск файлов"
+
+#~ msgid "Messages"
+#~ msgstr "Сообщение"
+
+#~ msgid "Syndication"
+#~ msgstr "Разделы"
+
+#~ msgid "Enter a valid email address."
+#~ msgstr "Адрес предприятия"
+
+#~ msgid "Enter a valid IPv4 address."
+#~ msgstr "Адрес предприятия"
+
+#~ msgid "Enter a valid IPv6 address."
+#~ msgstr "Адрес предприятия"
+
+#~ msgid "Enter a number."
+#~ msgstr "Номер телефона"
+
+#~ msgid "Decimal number"
+#~ msgstr "Номер телефона"
+
+#~ msgid "Email address"
+#~ msgstr "Адрес предприятия"
+
+#~ msgid "Floating point number"
+#~ msgstr "Контактный телефон"
+
+#~ msgid "IPv4 address"
+#~ msgstr "Адрес"
+
+#~ msgid "IP address"
+#~ msgstr "Адрес"
+
+#~ msgid "Enter a whole number."
+#~ msgstr "Контактный телефон"
+
+#~ msgid "November"
+#~ msgstr "Номер телефона"
+
+#~ msgid "oct"
+#~ msgstr "Контакты"
+
+#~ msgctxt "alt. month"
+#~ msgid "November"
+#~ msgstr "Номер телефона"
+
+#~ msgid "or"
+#~ msgstr "Подробнее"
+
+#~ msgid "Date out of range"
+#~ msgstr "Дата рождения"
+
+#~ msgid "About the organization"
+#~ msgstr "Об организации"
+
+#~ msgid "Management"
+#~ msgstr "Руководство"
+
+#~ msgid "Reception time:"
+#~ msgstr "Время приема:"
+
+#~ msgid "Membership Benefits"
+#~ msgstr "Преимущества членства"
+
+#~ msgid "Reasons why you should be a member of the association"
+#~ msgstr "Причины, по которым вы должны быть членом ассоциации"
+
+#~ msgid "Vacancies"
+#~ msgstr "Вакансии"
+
+#~ msgid ""
+#~ "Association of leather and footwear and fur enterprises of Uzbekistan "
+#~ "«Uzcharmsanoat»"
+#~ msgstr ""
+#~ "Ассоциация кожевенно-обувных и меховых предприятий Узбекистана "
+#~ "«Узчармсаноат»"
+
+#~ msgid "Membership in the association"
+#~ msgstr "Членство в ассоциации"
+
+#~ msgid "News"
+#~ msgstr "Новости"
+
+#~ msgid "About Asosation"
+#~ msgstr "Об организации"
+
+#~ msgid "membership in the association"
+#~ msgstr "Членство в ассоциации"
+
+#~ msgid "Photo gallery"
+#~ msgstr "Галерея"
+
+#~ msgid "News and Tenders"
+#~ msgstr "Объявления и тендеры"
+
+#~ msgid "ASSOCIATION UZCHARMSANOAT"
+#~ msgstr "АССОЦИАЦИЯ УЗЧАРМСАНОАТ"
+
+#~ msgid "Working hours 09:00 - 18:00 <br> Lunch 13:00 - 14:00"
+#~ msgstr "Рабочее время 09:00 - 18:00 <br> Обед 13:00 - 14:00"
+
+#~ msgid "Screensaver"
+#~ msgstr "Экранная заставка"
+
+#~ msgid "All"
+#~ msgstr "Все"
+
+#~ msgid "Archive"
+#~ msgstr "Архив"
+
+#~ msgid "UZCHARMSANOAT"
+#~ msgstr "АССОЦИАЦИЯ УЗЧАРМСАНОАТ"
+
+#~ msgid "Upload your file"
+#~ msgstr "Загрузите свой файл"
+
+#~ msgid "Login to access our resources"
+#~ msgstr "Войдите, чтобы получить доступ к ресурсам"
+
+#~ msgid "Register to access all our resources"
+#~ msgstr "Зарегистрируйтесь, чтобы получить доступ к ресурсам"
+
+#, fuzzy
+#~ msgid "site/"
+#~ msgstr "Веб-сайт"
+
+#~ msgid "Share"
+#~ msgstr "Поделиться"
